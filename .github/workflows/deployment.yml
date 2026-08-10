@@ -1,5 +1,5 @@
 #
-# This source file is part of the Stanford Spezi open-source project
+# This source file is part of the ENGAGE-HF Android open-source project
 #
 # SPDX-FileCopyrightText: 2024 Stanford University
 #

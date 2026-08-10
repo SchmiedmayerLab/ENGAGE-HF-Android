@@ -1,3 +1,17 @@
+<!--
+
+This source file is part of the ENGAGE-HF Android open-source project
+
+
+
+SPDX-FileCopyrightText: 2025 Stanford University and the project authors (see CONTRIBUTORS.md)
+
+
+
+SPDX-License-Identifier: MIT
+
+-->
+
 # Module testing
 
 This module provides tools and utilities useful for testing. It includes components or functions that facilitate the testing.

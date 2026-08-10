@@ -1,4 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--
+
+This source file is part of the ENGAGE-HF Android open-source project
+
+
+
+SPDX-FileCopyrightText: 2025 Stanford University and the project authors (see CONTRIBUTORS.md)
+
+
+
+SPDX-License-Identifier: MIT
+
+-->
+
 <resources>
     <string name="account_error_sign_in_failed">Failed to sign in.</string>
     <string name="account_please_enter_a_valid_email">Please enter a valid email.</string>

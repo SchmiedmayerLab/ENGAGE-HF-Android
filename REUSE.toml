@@ -1,0 +1,58 @@
+version = 1
+
+[[annotations]]
+path = ["gradlew", "gradlew.bat", "gradle/wrapper/**"]
+SPDX-FileCopyrightText = "Gradle Inc."
+SPDX-License-Identifier = "Apache-2.0"
+
+# Images, fixtures and generated files cannot carry an SPDX header.
+[[annotations]]
+path = [
+  "app/google-services.json",
+  "app/src/main/ic_launcher-playstore.png",
+  "app/src/main/res/drawable/ic_engage_hf.png",
+  "app/src/main/res/mipmap-hdpi/**.webp",
+  "app/src/main/res/mipmap-mdpi/**.webp",
+  "app/src/main/res/mipmap-xhdpi/**.webp",
+  "app/src/main/res/mipmap-xxhdpi/**.webp",
+  "app/src/main/res/mipmap-xxxhdpi/**.webp",
+  "app/src/main/res/raw/country_emojis.json",
+  "engagehf-modules/onboarding/screens/**.jpg",
+  "fastlane/metadata/android/en-US/**.txt",
+  "fastlane/metadata/android/en-US/images/featureGraphic.png",
+  "fastlane/metadata/android/en-US/images/icon.png",
+  "fastlane/metadata/android/en-US/images/phoneScreenshots/**.png",
+  "fastlane/metadata/android/en-US/images/sevenInchScreenshots/**.png",
+  "fastlane/metadata/android/en-US/images/tenInchScreenshots/**.png",
+  "internal/guides/resources/**.png",
+]
+SPDX-FileCopyrightText = "2025 Stanford University and the project authors (see CONTRIBUTORS.md)"
+SPDX-License-Identifier = "MIT"
+
+# Material Symbols exported from Google's icon set.
+[[annotations]]
+path = [
+  "engagehf-modules/design/src/main/res/drawable/ic_arrow_up.xml",
+  "engagehf-modules/design/src/main/res/drawable/ic_assignment.xml",
+  "engagehf-modules/design/src/main/res/drawable/ic_blood_pressure.xml",
+  "engagehf-modules/design/src/main/res/drawable/ic_bluetooth.xml",
+  "engagehf-modules/design/src/main/res/drawable/ic_check.xml",
+  "engagehf-modules/design/src/main/res/drawable/ic_groups.xml",
+  "engagehf-modules/design/src/main/res/drawable/ic_home.xml",
+  "engagehf-modules/design/src/main/res/drawable/ic_info.xml",
+  "engagehf-modules/design/src/main/res/drawable/ic_medication.xml",
+  "engagehf-modules/design/src/main/res/drawable/ic_monitor_weight.xml",
+  "engagehf-modules/design/src/main/res/drawable/ic_school.xml",
+  "engagehf-modules/design/src/main/res/drawable/ic_visibility.xml",
+  "engagehf-modules/design/src/main/res/drawable/ic_visibility_off.xml",
+  "engagehf-modules/design/src/main/res/drawable/ic_vital_signs.xml",
+]
+SPDX-FileCopyrightText = "Google LLC"
+SPDX-License-Identifier = "Apache-2.0"
+
+# The Google wordmark is a trademark and is not redistributable under the project licence.
+[[annotations]]
+path = ["engagehf-modules/design/src/main/res/drawable/ic_google.xml"]
+SPDX-FileCopyrightText = "Google LLC"
+SPDX-License-Identifier = "LicenseRef-Google-Trademarks"
+
