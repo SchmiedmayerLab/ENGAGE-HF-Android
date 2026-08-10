@@ -60,10 +60,10 @@ jobs:
         run: |
           echo "Determining the Environment ..."
           if [[ -z "${{ inputs.environment }}" ]]; then
-            echo "environment=internal" >> $GITHUB_OUTPUT
+            echo "environment=internal" >> "$GITHUB_OUTPUT"
             echo "environment: internal"
           else
-            echo "environment=${{ inputs.environment }}" >> $GITHUB_OUTPUT
+            echo "environment=${{ inputs.environment }}" >> "$GITHUB_OUTPUT"
             echo "environment: ${{ inputs.environment }}"
           fi
   vars:
@@ -91,10 +91,10 @@ jobs:
             PATCH=$((PATCH + 1))
             NEW_VERSION="${MAJOR}.${MINOR}.${PATCH}"
 
-            echo "version=$NEW_VERSION" >> $GITHUB_OUTPUT
+            echo "version=$NEW_VERSION" >> "$GITHUB_OUTPUT"
             echo "version: $NEW_VERSION"
           else
-            echo "version=${{ inputs.version }}" >> $GITHUB_OUTPUT
+            echo "version=${{ inputs.version }}" >> "$GITHUB_OUTPUT"
             echo "version: ${{ inputs.version }}"
           fi
           echo "appidentifier: ${{ vars.APP_IDENTIFIER }}"
@@ -127,17 +127,17 @@ jobs:
       - name: Decode and Write Google Service JSON
         env:
           GOOGLE_SERVICES_JSON: ${{ secrets.GOOGLE_SERVICES_JSON }}
-        run: echo $GOOGLE_SERVICES_JSON | base64 --decode >./app/google-services.json
+        run: echo "$GOOGLE_SERVICES_JSON" | base64 --decode >./app/google-services.json
       - name: Decode and Write Secrets
         env:
           SECRETS_XML: ${{ secrets.SECRETS_XML }}
-        run: echo $SECRETS_XML | base64 --decode >./engagehf-modules/account/src/main/res/values/secrets.xml
+        run: echo "$SECRETS_XML" | base64 --decode >./engagehf-modules/account/src/main/res/values/secrets.xml
       - name: Setup keystore file
         env:
           KEY_STORE: ${{ secrets.KEY_STORE }}
         run: |
-          echo $KEY_STORE | base64 -d > keystore.jks
-          echo $KEY_STORE | base64 -d > app/keystore.jks
+          echo "$KEY_STORE" | base64 -d > keystore.jks
+          echo "$KEY_STORE" | base64 -d > app/keystore.jks
       - name: Build and Deploy
         env:
           KEY_PASSWORD: ${{ secrets.KEY_PASSWORD }}
