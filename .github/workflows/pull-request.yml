@@ -19,4 +19,9 @@ concurrency:
 jobs:
   buildtestandanalyze:
     uses: ./.github/workflows/build-test-analyze.yml
+    permissions:
+      actions: read
+      contents: write
+      packages: read
+      security-events: write
     secrets: inherit
