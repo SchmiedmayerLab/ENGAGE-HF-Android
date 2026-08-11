@@ -44,7 +44,9 @@ android {
             buildConfigField("boolean", "USE_FIREBASE_EMULATOR", "false")
         }
         debug {
-            enableAndroidTestCoverage = true
+            // JaCoCo cannot instrument the HAPI FHIR 6.0.22 jars: mergeExtDex fails with
+            // "Execution failed for JacocoTransform". Re-enable once HAPI FHIR is upgraded.
+            enableAndroidTestCoverage = false
             buildConfigField("boolean", "USE_FIREBASE_EMULATOR", "true")
         }
     }
