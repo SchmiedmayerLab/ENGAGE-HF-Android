@@ -1,17 +1,3 @@
-<!--
-
-This source file is part of the ENGAGE-HF Android open-source project
-
-
-
-SPDX-FileCopyrightText: 2025 Stanford University and the project authors (see CONTRIBUTORS.md)
-
-
-
-SPDX-License-Identifier: MIT
-
--->
-
 # Module healthconnectonfhir
 
 The HealthConnectOnFHIR library provides a mapper that converts supported [Android Health Connect](https://health.google/health-connect-android/) Records to corresponding [HL7® FHIR® R4 Observations](https://hl7.org/fhir/r4/observation.html) with standardized codes (e.g. [LOINC](https://loinc.org/)).
