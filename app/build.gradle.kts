@@ -1,3 +1,11 @@
+//
+// This source file is part of the ENGAGE-HF Android open-source project
+//
+// SPDX-FileCopyrightText: 2025 Stanford University and the project authors (see CONTRIBUTORS.md)
+//
+// SPDX-License-Identifier: MIT
+//
+
 plugins {
     alias(libs.plugins.spezi.application)
     alias(libs.plugins.spezi.compose)
@@ -16,7 +24,9 @@ android {
         applicationId = (project.findProperty("android.injected.application.id") as? String) ?: "edu.stanford.bdh.engagehf"
         versionCode =
             (project.findProperty("android.injected.version.code") as? String)?.toInt() ?: 1
-        versionName = (project.findProperty("android.injected.version.name") as? String) ?: "1.0.0"
+        versionName =
+            (project.findProperty("android.injected.version.name") as? String)
+                ?: providers.gradleProperty("app.versionName").get()
         targetSdk = libs.versions.targetSdk.get().toInt()
 
         vectorDrawables {
@@ -34,7 +44,8 @@ android {
             buildConfigField("boolean", "USE_FIREBASE_EMULATOR", "false")
         }
         debug {
-            // Disabling coverage due to: https://github.com/hapifhir/org.hl7.fhir.core/issues/1688
+            // JaCoCo cannot instrument the HAPI FHIR 6.0.22 jars: mergeExtDex fails with
+            // "Execution failed for JacocoTransform". Re-enable once HAPI FHIR is upgraded.
             enableAndroidTestCoverage = false
             buildConfigField("boolean", "USE_FIREBASE_EMULATOR", "true")
         }

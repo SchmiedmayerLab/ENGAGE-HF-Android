@@ -1,3 +1,11 @@
+//
+// This source file is part of the ENGAGE-HF Android open-source project
+//
+// SPDX-FileCopyrightText: 2025 Stanford University and the project authors (see CONTRIBUTORS.md)
+//
+// SPDX-License-Identifier: MIT
+//
+
 plugins {
     alias(libs.plugins.spezi.library)
     alias(libs.plugins.spezi.compose)
@@ -10,7 +18,8 @@ android {
 
     buildTypes {
         debug {
-            // Disabling coverage due to: https://github.com/hapifhir/org.hl7.fhir.core/issues/1688
+            // JaCoCo cannot instrument the HAPI FHIR 6.0.22 jars: mergeExtDex fails with
+            // "Execution failed for JacocoTransform". Re-enable once HAPI FHIR is upgraded.
             enableAndroidTestCoverage = false
         }
     }

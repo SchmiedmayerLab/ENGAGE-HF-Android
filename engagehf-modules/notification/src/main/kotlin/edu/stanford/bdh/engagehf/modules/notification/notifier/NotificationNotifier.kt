@@ -1,3 +1,11 @@
+//
+// This source file is part of the ENGAGE-HF Android open-source project
+//
+// SPDX-FileCopyrightText: 2025 Stanford University and the project authors (see CONTRIBUTORS.md)
+//
+// SPDX-License-Identifier: MIT
+//
+
 package edu.stanford.bdh.engagehf.modules.notification.notifier
 
 import android.Manifest
@@ -68,11 +76,10 @@ internal class NotificationNotifier @Inject constructor(
     ): PendingIntent? = PendingIntent.getActivity(
         context,
         SPEZI_MESSAGE_NOTIFICATION_REQUEST_CODE,
-        Intent().apply {
-            action = Intent.ACTION_VIEW
-            component = componentName
-            putExtra(FIREBASE_MESSAGE_KEY, firebaseMessage)
-        },
+        Intent()
+            .setComponent(componentName)
+            .setAction(Intent.ACTION_VIEW)
+            .putExtra(FIREBASE_MESSAGE_KEY, firebaseMessage),
         PendingIntent.FLAG_UPDATE_CURRENT or PendingIntent.FLAG_IMMUTABLE,
     )
 

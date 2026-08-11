@@ -1,4 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--
+
+This source file is part of the ENGAGE-HF Android open-source project
+
+
+
+SPDX-FileCopyrightText: 2025 Stanford University and the project authors (see CONTRIBUTORS.md)
+
+
+
+SPDX-License-Identifier: MIT
+
+-->
+
 <resources>
     <string name="onboarding_edit_icon">Edit Icon</string>
     <string name="onboarding_invitation_code">Invitation Code</string>

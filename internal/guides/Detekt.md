@@ -1,3 +1,17 @@
+<!--
+
+This source file is part of the ENGAGE-HF Android open-source project
+
+
+
+SPDX-FileCopyrightText: 2025 Stanford University and the project authors (see CONTRIBUTORS.md)
+
+
+
+SPDX-License-Identifier: MIT
+
+-->
+
 # Detekt Guide
 
 The Spezi project utilizes [Detekt](https://detekt.dev/) as a static code analyzer for Kotlin. This guide contains relevant information regarding Detekt setup and its usage.
