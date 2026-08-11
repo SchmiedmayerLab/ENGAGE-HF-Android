@@ -13,7 +13,7 @@ SPDX-License-Identifier: MIT
 [![Build and Test](https://github.com/SchmiedmayerLab/ENGAGE-HF-Android/actions/workflows/build-test-analyze.yml/badge.svg)](https://github.com/SchmiedmayerLab/ENGAGE-HF-Android/actions/workflows/build-test-analyze.yml)
 [![Deployment](https://github.com/SchmiedmayerLab/ENGAGE-HF-Android/actions/workflows/deployment.yml/badge.svg)](https://github.com/SchmiedmayerLab/ENGAGE-HF-Android/actions/workflows/deployment.yml)
 [![REUSE status](https://api.reuse.software/badge/github.com/SchmiedmayerLab/ENGAGE-HF-Android)](https://api.reuse.software/info/github.com/SchmiedmayerLab/ENGAGE-HF-Android)
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/SchmiedmayerLab/ENGAGE-HF-Android/blob/main/LICENSE.md)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE.md)
 
 ENGAGE-HF Android Application
 

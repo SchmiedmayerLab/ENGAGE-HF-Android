@@ -17,11 +17,12 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  buildtestandanalyze:
+  android:
+    name: Android
     uses: ./.github/workflows/build-test-analyze.yml
     permissions:
       actions: read
-      contents: write
+      contents: read
       packages: read
       security-events: write
     secrets: inherit

@@ -24,7 +24,9 @@ android {
         applicationId = (project.findProperty("android.injected.application.id") as? String) ?: "edu.stanford.bdh.engagehf"
         versionCode =
             (project.findProperty("android.injected.version.code") as? String)?.toInt() ?: 1
-        versionName = (project.findProperty("android.injected.version.name") as? String) ?: "1.0.0"
+        versionName =
+            (project.findProperty("android.injected.version.name") as? String)
+                ?: providers.gradleProperty("app.versionName").get()
         targetSdk = libs.versions.targetSdk.get().toInt()
 
         vectorDrawables {
@@ -42,8 +44,7 @@ android {
             buildConfigField("boolean", "USE_FIREBASE_EMULATOR", "false")
         }
         debug {
-            // Disabling coverage due to: https://github.com/hapifhir/org.hl7.fhir.core/issues/1688
-            enableAndroidTestCoverage = false
+            enableAndroidTestCoverage = true
             buildConfigField("boolean", "USE_FIREBASE_EMULATOR", "true")
         }
     }
