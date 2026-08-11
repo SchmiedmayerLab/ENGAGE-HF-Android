@@ -60,7 +60,7 @@ jobs:
   google_play:
     name: Upload App to Google Play
     needs: android
-    uses: SchmiedmayerLab/.github/.github/workflows/android-google-play.yml@v0.5
+    uses: SchmiedmayerLab/.github/.github/workflows/android-google-play.yml@feature/shared-android-workflows-and-caller-permissions
     permissions:
       contents: write
     secrets: inherit
