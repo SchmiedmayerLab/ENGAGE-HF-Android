@@ -11,17 +11,17 @@ package com.engagehf.modules.healthconnectonfhir.di
 import ca.uhn.fhir.context.FhirContext
 import ca.uhn.fhir.context.FhirVersionEnum
 import ca.uhn.fhir.parser.IParser
-import com.google.gson.Gson
-import dagger.Module
-import dagger.Provides
-import dagger.hilt.InstallIn
-import dagger.hilt.components.SingletonComponent
 import com.engagehf.modules.healthconnectonfhir.ObservationsDocumentMapper
 import com.engagehf.modules.healthconnectonfhir.QuestionnaireDocumentMapper
 import com.engagehf.modules.healthconnectonfhir.RecordToObservationMapper
 import com.engagehf.modules.healthconnectonfhir.internal.ObservationsDocumentMapperImpl
 import com.engagehf.modules.healthconnectonfhir.internal.QuestionnaireDocumentMapperImpl
 import com.engagehf.modules.healthconnectonfhir.internal.RecordToObservationMapperImpl
+import com.google.gson.Gson
+import dagger.Module
+import dagger.Provides
+import dagger.hilt.InstallIn
+import dagger.hilt.components.SingletonComponent
 import javax.inject.Singleton
 
 @Module

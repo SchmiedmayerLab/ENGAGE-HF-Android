@@ -20,10 +20,10 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import com.engagehf.R
-import com.engagehf.navigation.screens.AccountUiState
-import com.engagehf.navigation.screens.Action
 import com.engagehf.modules.ui.theme.Colors
 import com.engagehf.modules.ui.theme.Sizes
+import com.engagehf.navigation.screens.AccountUiState
+import com.engagehf.navigation.screens.Action
 
 @Composable
 fun AccountTopAppBarButton(accountUiState: AccountUiState, onAction: (Action) -> Unit) {

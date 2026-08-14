@@ -10,8 +10,8 @@ package com.engagehf.medication.ui
 
 import androidx.compose.ui.test.junit4.createComposeRule
 import com.engagehf.modules.design.R
-import com.engagehf.simulator.MedicationScreenSimulator
 import com.engagehf.modules.ui.StringResource
+import com.engagehf.simulator.MedicationScreenSimulator
 import org.junit.Rule
 import org.junit.Test
 

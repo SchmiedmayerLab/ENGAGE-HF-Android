@@ -8,10 +8,10 @@
 
 package com.engagehf.contact.data
 
-import com.google.firebase.firestore.FirebaseFirestore
 import com.engagehf.modules.account.manager.UserSessionManager
 import com.engagehf.modules.contact.Contact
 import com.engagehf.modules.core.logging.engageLogger
+import com.google.firebase.firestore.FirebaseFirestore
 import kotlinx.coroutines.tasks.await
 import javax.inject.Inject
 

@@ -9,9 +9,9 @@
 package com.engagehf.modules.ui.personalinfo
 
 import androidx.compose.ui.test.junit4.createComposeRule
-import com.google.common.truth.Truth.assertThat
 import com.engagehf.modules.ui.personalinfo.composables.NameFieldsTestComposable
 import com.engagehf.modules.ui.personalinfo.simulators.NameFieldsTestSimulator
+import com.google.common.truth.Truth.assertThat
 import org.junit.Before
 import org.junit.Rule
 import org.junit.Test

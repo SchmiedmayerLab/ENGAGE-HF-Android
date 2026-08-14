@@ -27,8 +27,8 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.DpSize
 import androidx.compose.ui.unit.dp
 import com.engagehf.modules.ui.theme.Colors
-import com.engagehf.modules.ui.theme.Spacings
 import com.engagehf.modules.ui.theme.EngageTheme
+import com.engagehf.modules.ui.theme.Spacings
 import com.engagehf.modules.ui.theme.TextStyles
 import com.engagehf.modules.ui.theme.ThemePreviews
 import kotlinx.coroutines.launch

@@ -11,13 +11,13 @@ package com.engagehf.health
 import androidx.health.connect.client.records.Record
 import androidx.health.connect.client.records.WeightRecord
 import androidx.health.connect.client.units.Mass
-import com.google.common.truth.Truth.assertThat
 import com.engagehf.R
 import com.engagehf.modules.healthconnectonfhir.Metadata
+import com.engagehf.modules.ui.StringResource
 import com.engagehf.modules.utils.LocaleProvider
 import com.engagehf.modules.utils.TimeProvider
 import com.engagehf.modules.utils.extensions.roundToDecimalPlaces
-import com.engagehf.modules.ui.StringResource
+import com.google.common.truth.Truth.assertThat
 import io.mockk.every
 import io.mockk.mockk
 import org.junit.Before

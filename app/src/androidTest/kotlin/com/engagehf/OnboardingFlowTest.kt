@@ -9,14 +9,14 @@
 package com.engagehf
 
 import androidx.compose.ui.test.junit4.createAndroidComposeRule
-import dagger.hilt.android.testing.HiltAndroidRule
-import dagger.hilt.android.testing.HiltAndroidTest
 import com.engagehf.modules.navigation.Navigator
 import com.engagehf.modules.onboarding.invitation.InvitationCodeRepository
 import com.engagehf.modules.onboarding.onboarding.OnboardingRepository
 import com.engagehf.modules.onboarding.sequential.SequentialOnboardingRepository
 import com.engagehf.simulator.NavigatorSimulator
 import com.engagehf.simulator.OnboardingFlowSimulator
+import dagger.hilt.android.testing.HiltAndroidRule
+import dagger.hilt.android.testing.HiltAndroidTest
 import kotlinx.coroutines.test.runTest
 import org.junit.Before
 import org.junit.Rule

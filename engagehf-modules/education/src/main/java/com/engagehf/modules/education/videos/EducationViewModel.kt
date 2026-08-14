@@ -10,13 +10,13 @@ package com.engagehf.modules.education.videos
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import dagger.hilt.android.lifecycle.HiltViewModel
+import com.engagehf.modules.core.logging.engageLogger
 import com.engagehf.modules.education.EducationNavigationEvent
 import com.engagehf.modules.education.R
 import com.engagehf.modules.education.videos.data.repository.EducationRepository
 import com.engagehf.modules.navigation.Navigator
-import com.engagehf.modules.core.logging.engageLogger
 import com.engagehf.modules.ui.StringResource
+import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.launch

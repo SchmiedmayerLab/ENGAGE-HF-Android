@@ -9,11 +9,11 @@
 package com.engagehf.modules.questionnaire
 
 import androidx.compose.ui.test.junit4.createAndroidComposeRule
-import dagger.hilt.android.testing.HiltAndroidRule
-import dagger.hilt.android.testing.HiltAndroidTest
 import com.engagehf.modules.questionnaire.composables.QuestionnaireTestComposable
 import com.engagehf.modules.questionnaire.simulators.QuestionnaireTestSimulator
 import com.engagehf.modules.testing.ui.ComposeContentActivity
+import dagger.hilt.android.testing.HiltAndroidRule
+import dagger.hilt.android.testing.HiltAndroidTest
 import org.junit.Rule
 import org.junit.Test
 

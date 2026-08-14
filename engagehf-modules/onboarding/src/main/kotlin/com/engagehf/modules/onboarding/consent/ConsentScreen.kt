@@ -26,8 +26,8 @@ import androidx.hilt.navigation.compose.hiltViewModel
 import com.engagehf.modules.ui.markdown.MarkdownComponent
 import com.engagehf.modules.ui.markdown.MarkdownElement
 import com.engagehf.modules.ui.testIdentifier
-import com.engagehf.modules.ui.theme.Spacings
 import com.engagehf.modules.ui.theme.EngageTheme
+import com.engagehf.modules.ui.theme.Spacings
 
 @Composable
 fun ConsentScreen() {

@@ -11,7 +11,6 @@ package com.engagehf.bluetooth.data.mapper
 import androidx.health.connect.client.records.BloodPressureRecord
 import androidx.health.connect.client.records.HeartRateRecord
 import androidx.health.connect.client.records.WeightRecord
-import com.google.common.truth.Truth.assertThat
 import com.engagehf.R
 import com.engagehf.bluetooth.component.OperationStatus
 import com.engagehf.bluetooth.data.models.Action
@@ -20,8 +19,9 @@ import com.engagehf.bluetooth.service.BLEDeviceSession
 import com.engagehf.bluetooth.service.EngageBLEServiceState
 import com.engagehf.bluetooth.service.Measurement
 import com.engagehf.modules.bluetooth.model.BLEDevice
-import com.engagehf.modules.utils.LocaleProvider
 import com.engagehf.modules.ui.StringResource
+import com.engagehf.modules.utils.LocaleProvider
+import com.google.common.truth.Truth.assertThat
 import io.mockk.every
 import io.mockk.mockk
 import org.junit.Test

@@ -47,9 +47,9 @@ import com.engagehf.modules.ui.lighten
 import com.engagehf.modules.ui.noRippleClickable
 import com.engagehf.modules.ui.theme.Colors
 import com.engagehf.modules.ui.theme.Colors.primary
+import com.engagehf.modules.ui.theme.EngageTheme
 import com.engagehf.modules.ui.theme.Sizes
 import com.engagehf.modules.ui.theme.Spacings
-import com.engagehf.modules.ui.theme.EngageTheme
 import com.engagehf.modules.ui.theme.TextStyles.bodyMedium
 import com.engagehf.modules.ui.theme.TextStyles.bodySmall
 import com.engagehf.modules.ui.theme.ThemePreviews

@@ -8,10 +8,10 @@
 
 package com.engagehf.modules.storage.credential
 
+import com.engagehf.modules.foundation.UUID
 import com.google.common.truth.Truth.assertThat
 import dagger.hilt.android.testing.HiltAndroidRule
 import dagger.hilt.android.testing.HiltAndroidTest
-import com.engagehf.modules.foundation.UUID
 import org.junit.After
 import org.junit.Before
 import org.junit.Rule

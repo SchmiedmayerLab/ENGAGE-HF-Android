@@ -8,8 +8,8 @@
 
 package com.engagehf.health.symptoms
 
-import com.google.common.truth.Truth.assertThat
 import com.engagehf.modules.utils.LocaleProvider
+import com.google.common.truth.Truth.assertThat
 import io.mockk.every
 import io.mockk.mockk
 import org.junit.Before

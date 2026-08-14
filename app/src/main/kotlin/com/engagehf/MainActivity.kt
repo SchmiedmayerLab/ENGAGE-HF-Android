@@ -29,11 +29,11 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import androidx.navigation.toRoute
-import dagger.hilt.android.AndroidEntryPoint
 import com.engagehf.contact.ui.ContactScreen
 import com.engagehf.modules.account.AccountNavigationEvent
 import com.engagehf.modules.account.login.LoginScreen
 import com.engagehf.modules.account.register.RegisterScreen
+import com.engagehf.modules.core.coroutines.Dispatching
 import com.engagehf.modules.education.EducationNavigationEvent
 import com.engagehf.modules.education.EducationRoutes
 import com.engagehf.modules.education.video.VideoScreen
@@ -44,6 +44,8 @@ import com.engagehf.modules.notification.NotificationRoutes
 import com.engagehf.modules.notification.setting.NotificationSettingScreen
 import com.engagehf.modules.onboarding.OnboardingNavigationEvent
 import com.engagehf.modules.onboarding.sequential.SequentialOnboardingScreen
+import com.engagehf.modules.ui.theme.EngageTheme
+import com.engagehf.modules.ui.theme.Sizes
 import com.engagehf.navigation.AppNavigationEvent
 import com.engagehf.navigation.RegisterParams
 import com.engagehf.navigation.Routes
@@ -54,9 +56,7 @@ import com.engagehf.onboarding.OnboardingScreen
 import com.engagehf.phonenumber.PhoneNumberSettingsNavigationEvent
 import com.engagehf.phonenumber.PhoneNumberSettingsScreen
 import com.engagehf.questionnaire.QuestionnaireScreen
-import com.engagehf.modules.core.coroutines.Dispatching
-import com.engagehf.modules.ui.theme.Sizes
-import com.engagehf.modules.ui.theme.EngageTheme
+import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.launch
 import javax.inject.Inject

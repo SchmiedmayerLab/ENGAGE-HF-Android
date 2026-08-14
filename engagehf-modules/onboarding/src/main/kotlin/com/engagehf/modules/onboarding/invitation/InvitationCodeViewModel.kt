@@ -10,10 +10,10 @@ package com.engagehf.modules.onboarding.invitation
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import dagger.hilt.android.lifecycle.HiltViewModel
 import com.engagehf.modules.account.manager.InvitationAuthManager
 import com.engagehf.modules.onboarding.R
 import com.engagehf.modules.ui.StringResource
+import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.update

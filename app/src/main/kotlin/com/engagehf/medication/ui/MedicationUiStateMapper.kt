@@ -9,13 +9,13 @@
 package com.engagehf.medication.ui
 
 import android.content.Context
-import dagger.hilt.android.qualifiers.ApplicationContext
 import com.engagehf.R
 import com.engagehf.medication.data.DosageInformation
 import com.engagehf.medication.data.DoseSchedule
 import com.engagehf.medication.data.MedicationRecommendation
 import com.engagehf.medication.data.MedicationRecommendationType
 import com.engagehf.modules.ui.StringResource
+import dagger.hilt.android.qualifiers.ApplicationContext
 import javax.inject.Inject
 import com.engagehf.modules.design.R.drawable as DrawableR
 

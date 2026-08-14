@@ -18,8 +18,8 @@ import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
-import com.engagehf.modules.ui.theme.Spacings
 import com.engagehf.modules.ui.theme.EngageTheme
+import com.engagehf.modules.ui.theme.Spacings
 import com.engagehf.modules.ui.theme.TextStyles
 
 @Composable

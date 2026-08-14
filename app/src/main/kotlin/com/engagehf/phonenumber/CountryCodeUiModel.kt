@@ -20,8 +20,8 @@ import androidx.compose.ui.text.style.TextOverflow
 import com.engagehf.modules.ui.ComposableContent
 import com.engagehf.modules.ui.noRippleClickable
 import com.engagehf.modules.ui.theme.Colors
-import com.engagehf.modules.ui.theme.Spacings
 import com.engagehf.modules.ui.theme.EngageTheme
+import com.engagehf.modules.ui.theme.Spacings
 import com.engagehf.modules.ui.theme.TextStyles
 import com.engagehf.modules.ui.theme.ThemePreviews
 

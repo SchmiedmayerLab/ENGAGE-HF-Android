@@ -14,9 +14,9 @@ import android.bluetooth.BluetoothDevice
 import com.engagehf.modules.bluetooth.api.BLEService
 import com.engagehf.modules.bluetooth.model.BLEServiceEvent
 import com.engagehf.modules.bluetooth.model.BLEServiceState
-import com.engagehf.modules.utils.PermissionChecker
 import com.engagehf.modules.core.coroutines.Dispatching
 import com.engagehf.modules.core.logging.engageLogger
+import com.engagehf.modules.utils.PermissionChecker
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.MutableSharedFlow

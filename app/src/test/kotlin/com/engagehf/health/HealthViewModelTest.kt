@@ -8,9 +8,9 @@
 
 package com.engagehf.health
 
-import com.google.common.truth.Truth.assertThat
 import com.engagehf.bluetooth.component.AppScreenEvents
 import com.engagehf.modules.testing.verifyNever
+import com.google.common.truth.Truth.assertThat
 import io.mockk.mockk
 import io.mockk.verify
 import org.junit.Test

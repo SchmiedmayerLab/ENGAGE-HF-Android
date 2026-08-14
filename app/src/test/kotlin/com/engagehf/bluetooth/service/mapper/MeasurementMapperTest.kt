@@ -9,9 +9,9 @@
 package com.engagehf.bluetooth.service.mapper
 
 import android.bluetooth.BluetoothGattCharacteristic
-import com.google.common.truth.Truth.assertThat
 import com.engagehf.bluetooth.service.Measurement
 import com.engagehf.modules.testing.runTestUnconfined
+import com.google.common.truth.Truth.assertThat
 import io.mockk.coEvery
 import io.mockk.every
 import io.mockk.mockk

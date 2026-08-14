@@ -8,14 +8,14 @@
 
 package com.engagehf.modules.utils.di
 
-import dagger.Binds
-import dagger.Module
-import dagger.hilt.InstallIn
-import dagger.hilt.components.SingletonComponent
 import com.engagehf.modules.utils.BuildInfo
 import com.engagehf.modules.utils.BuildInfoImpl
 import com.engagehf.modules.utils.LocaleProvider
 import com.engagehf.modules.utils.LocaleProviderImpl
+import dagger.Binds
+import dagger.Module
+import dagger.hilt.InstallIn
+import dagger.hilt.components.SingletonComponent
 
 @Module
 @InstallIn(SingletonComponent::class)

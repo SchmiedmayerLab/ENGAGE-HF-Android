@@ -8,13 +8,13 @@
 
 package com.engagehf.contact.data
 
-import com.google.firebase.firestore.DocumentSnapshot
 import com.engagehf.modules.contact.Contact
 import com.engagehf.modules.contact.ContactOption
 import com.engagehf.modules.contact.call
 import com.engagehf.modules.contact.email
 import com.engagehf.modules.ui.StringResource
 import com.engagehf.modules.ui.personalinfo.PersonNameComponents
+import com.google.firebase.firestore.DocumentSnapshot
 import javax.inject.Inject
 
 class ContactDocumentToContactMapper @Inject constructor() {

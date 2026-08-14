@@ -40,8 +40,6 @@ import androidx.compose.ui.tooling.preview.PreviewParameterProvider
 import androidx.compose.ui.window.Dialog
 import androidx.compose.ui.window.DialogProperties
 import com.engagehf.R
-import com.engagehf.navigation.screens.AccountUiState
-import com.engagehf.navigation.screens.Action
 import com.engagehf.modules.ui.VerticalSpacer
 import com.engagehf.modules.ui.lighten
 import com.engagehf.modules.ui.theme.Colors
@@ -50,15 +48,17 @@ import com.engagehf.modules.ui.theme.Colors.onPrimary
 import com.engagehf.modules.ui.theme.Colors.primary
 import com.engagehf.modules.ui.theme.Colors.secondary
 import com.engagehf.modules.ui.theme.Colors.surface
+import com.engagehf.modules.ui.theme.EngageTheme
 import com.engagehf.modules.ui.theme.Sizes
 import com.engagehf.modules.ui.theme.Spacings
-import com.engagehf.modules.ui.theme.EngageTheme
 import com.engagehf.modules.ui.theme.TextStyles
 import com.engagehf.modules.ui.theme.TextStyles.bodyMedium
 import com.engagehf.modules.ui.theme.TextStyles.bodySmall
 import com.engagehf.modules.ui.theme.TextStyles.headlineMedium
 import com.engagehf.modules.ui.theme.TextStyles.headlineSmall
 import com.engagehf.modules.ui.theme.ThemePreviews
+import com.engagehf.navigation.screens.AccountUiState
+import com.engagehf.navigation.screens.Action
 
 @Composable
 fun AccountDialog(accountUiState: AccountUiState, onAction: (Action) -> Unit) {

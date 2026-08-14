@@ -10,10 +10,10 @@ package com.engagehf.modules.account.register
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import dagger.hilt.android.lifecycle.HiltViewModel
 import com.engagehf.modules.account.AccountEvents
 import com.engagehf.modules.account.manager.AuthenticationManager
 import com.engagehf.modules.utils.MessageNotifier
+import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.update

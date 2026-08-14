@@ -8,11 +8,11 @@
 
 package com.engagehf.health
 
-import com.google.common.truth.Truth.assertThat
 import com.engagehf.R
 import com.engagehf.bluetooth.component.AppScreenEvents
 import com.engagehf.modules.testing.CoroutineTestRule
 import com.engagehf.modules.utils.MessageNotifier
+import com.google.common.truth.Truth.assertThat
 import io.mockk.coEvery
 import io.mockk.coVerify
 import io.mockk.every

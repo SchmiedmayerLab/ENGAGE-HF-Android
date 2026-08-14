@@ -9,7 +9,6 @@
 package com.engagehf.phonenumber
 
 import android.content.Context
-import com.google.common.truth.Truth.assertThat
 import com.engagehf.R
 import com.engagehf.modules.account.manager.UserSessionManager
 import com.engagehf.modules.account.manager.UserState
@@ -17,8 +16,9 @@ import com.engagehf.modules.navigation.NavigationEvent
 import com.engagehf.modules.navigation.Navigator
 import com.engagehf.modules.testing.CoroutineTestRule
 import com.engagehf.modules.testing.verifyNever
-import com.engagehf.modules.utils.MessageNotifier
 import com.engagehf.modules.ui.StringResource
+import com.engagehf.modules.utils.MessageNotifier
+import com.google.common.truth.Truth.assertThat
 import io.mockk.coEvery
 import io.mockk.every
 import io.mockk.mockk

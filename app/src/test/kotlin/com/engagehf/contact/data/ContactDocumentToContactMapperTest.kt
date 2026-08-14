@@ -8,10 +8,10 @@
 
 package com.engagehf.contact.data
 
-import com.google.common.truth.Truth.assertThat
-import com.google.firebase.firestore.DocumentSnapshot
 import com.engagehf.modules.ui.StringResource
 import com.engagehf.modules.ui.personalinfo.PersonNameComponents
+import com.google.common.truth.Truth.assertThat
+import com.google.firebase.firestore.DocumentSnapshot
 import io.mockk.every
 import io.mockk.mockk
 import org.junit.Test

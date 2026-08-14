@@ -8,7 +8,6 @@
 
 package com.engagehf.health.bloodpressure.bottomsheet
 
-import com.google.common.truth.Truth.assertThat
 import com.engagehf.R
 import com.engagehf.bluetooth.component.AppScreenEvents
 import com.engagehf.health.HealthRepository
@@ -16,6 +15,7 @@ import com.engagehf.health.time.TimePickerState
 import com.engagehf.health.time.TimePickerStateMapper
 import com.engagehf.modules.testing.CoroutineTestRule
 import com.engagehf.modules.utils.MessageNotifier
+import com.google.common.truth.Truth.assertThat
 import io.mockk.coEvery
 import io.mockk.coVerify
 import io.mockk.every

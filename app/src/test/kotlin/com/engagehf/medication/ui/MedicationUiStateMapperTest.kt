@@ -9,13 +9,13 @@
 package com.engagehf.medication.ui
 
 import android.content.Context
-import com.google.common.truth.Truth.assertThat
 import com.engagehf.R
 import com.engagehf.medication.data.DosageInformation
 import com.engagehf.medication.data.DoseSchedule
 import com.engagehf.medication.data.MedicationRecommendation
 import com.engagehf.medication.data.MedicationRecommendationType
 import com.engagehf.modules.ui.StringResource
+import com.google.common.truth.Truth.assertThat
 import io.mockk.every
 import io.mockk.mockk
 import org.junit.Before

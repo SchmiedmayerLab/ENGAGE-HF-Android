@@ -35,9 +35,9 @@ import androidx.hilt.navigation.compose.hiltViewModel
 import com.engagehf.modules.onboarding.R
 import com.engagehf.modules.ui.testIdentifier
 import com.engagehf.modules.ui.theme.Colors.primary
+import com.engagehf.modules.ui.theme.EngageTheme
 import com.engagehf.modules.ui.theme.Sizes
 import com.engagehf.modules.ui.theme.Spacings
-import com.engagehf.modules.ui.theme.EngageTheme
 import com.engagehf.modules.ui.theme.TextStyles.bodyLarge
 import com.engagehf.modules.ui.theme.TextStyles.bodyMedium
 import com.engagehf.modules.ui.theme.TextStyles.titleLarge

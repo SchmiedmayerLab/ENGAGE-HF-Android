@@ -14,9 +14,9 @@ import androidx.annotation.CallSuper
 import androidx.appcompat.app.AppCompatActivity
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
-import dagger.hilt.android.AndroidEntryPoint
 import com.engagehf.modules.ui.ComposableBlock
 import com.engagehf.modules.ui.theme.EngageTheme
+import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.update
 

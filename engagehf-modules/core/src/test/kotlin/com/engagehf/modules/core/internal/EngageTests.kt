@@ -10,17 +10,17 @@ package com.engagehf.modules.core.internal
 
 import android.app.Application
 import android.content.Context
-import com.google.common.truth.Truth.assertThat
 import com.engagehf.modules.core.ApplicationModule
 import com.engagehf.modules.core.Configuration
 import com.engagehf.modules.core.ConfigurationBuilder
 import com.engagehf.modules.core.DefaultInitializer
-import com.engagehf.modules.core.Module
 import com.engagehf.modules.core.EngageApplication
 import com.engagehf.modules.core.EngageError
+import com.engagehf.modules.core.Module
 import com.engagehf.modules.core.dependency
 import com.engagehf.modules.core.optionalDependency
 import com.engagehf.modules.core.plus
+import com.google.common.truth.Truth.assertThat
 import org.junit.Before
 import org.junit.Test
 

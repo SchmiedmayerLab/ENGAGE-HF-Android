@@ -9,13 +9,13 @@
 package com.engagehf.bluetooth.pairing
 
 import android.bluetooth.BluetoothDevice
-import com.google.common.truth.Truth.assertThat
 import com.engagehf.bluetooth.component.AppScreenEvents
 import com.engagehf.bluetooth.service.EngageBLEService
 import com.engagehf.bluetooth.service.EngageBLEServiceEvent
 import com.engagehf.modules.testing.CoroutineTestRule
 import com.engagehf.modules.testing.runTestUnconfined
 import com.engagehf.modules.ui.StringResource
+import com.google.common.truth.Truth.assertThat
 import io.mockk.every
 import io.mockk.mockk
 import io.mockk.verify

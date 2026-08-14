@@ -8,14 +8,14 @@
 
 package com.engagehf.onboarding
 
-import dagger.Binds
-import dagger.Module
-import dagger.hilt.InstallIn
-import dagger.hilt.components.SingletonComponent
 import com.engagehf.modules.onboarding.consent.ConsentManager
 import com.engagehf.modules.onboarding.invitation.InvitationCodeRepository
 import com.engagehf.modules.onboarding.onboarding.OnboardingRepository
 import com.engagehf.modules.onboarding.sequential.SequentialOnboardingRepository
+import dagger.Binds
+import dagger.Module
+import dagger.hilt.InstallIn
+import dagger.hilt.components.SingletonComponent
 
 /**
  *  A Dagger module that provides dependencies for the onboarding feature.

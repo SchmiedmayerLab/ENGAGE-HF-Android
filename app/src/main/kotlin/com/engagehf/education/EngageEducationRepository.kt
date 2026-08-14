@@ -8,10 +8,10 @@
 
 package com.engagehf.education
 
-import com.google.firebase.firestore.FirebaseFirestore
 import com.engagehf.modules.education.videos.Video
 import com.engagehf.modules.education.videos.VideoSection
 import com.engagehf.modules.education.videos.data.repository.EducationRepository
+import com.google.firebase.firestore.FirebaseFirestore
 import kotlinx.coroutines.tasks.await
 import javax.inject.Inject
 

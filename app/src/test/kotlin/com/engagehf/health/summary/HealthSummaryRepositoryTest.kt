@@ -8,10 +8,10 @@
 
 package com.engagehf.health.summary
 
-import com.google.common.truth.Truth.assertThat
-import com.google.firebase.functions.FirebaseFunctions
 import com.engagehf.modules.account.manager.UserSessionManager
 import com.engagehf.modules.testing.runTestUnconfined
+import com.google.common.truth.Truth.assertThat
+import com.google.firebase.functions.FirebaseFunctions
 import io.mockk.coEvery
 import io.mockk.every
 import io.mockk.mockk

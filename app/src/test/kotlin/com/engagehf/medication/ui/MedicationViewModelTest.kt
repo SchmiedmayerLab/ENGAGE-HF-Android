@@ -8,7 +8,6 @@
 
 package com.engagehf.medication.ui
 
-import com.google.common.truth.Truth.assertThat
 import com.engagehf.bluetooth.data.mapper.MessageActionMapper
 import com.engagehf.education.EngageEducationRepository
 import com.engagehf.medication.data.MedicationRecommendation
@@ -20,6 +19,7 @@ import com.engagehf.modules.navigation.Navigator
 import com.engagehf.modules.testing.CoroutineTestRule
 import com.engagehf.modules.testing.runTestUnconfined
 import com.engagehf.modules.utils.MessageNotifier
+import com.google.common.truth.Truth.assertThat
 import io.mockk.coEvery
 import io.mockk.every
 import io.mockk.mockk

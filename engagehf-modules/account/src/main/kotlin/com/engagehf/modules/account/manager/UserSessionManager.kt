@@ -8,15 +8,15 @@
 
 package com.engagehf.modules.account.manager
 
+import com.engagehf.modules.account.AccountEvents
+import com.engagehf.modules.core.coroutines.Dispatching
+import com.engagehf.modules.core.logging.engageLogger
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.DocumentReference
 import com.google.firebase.firestore.DocumentSnapshot
 import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.firestore.ListenerRegistration
 import com.google.firebase.storage.FirebaseStorage
-import com.engagehf.modules.account.AccountEvents
-import com.engagehf.modules.core.coroutines.Dispatching
-import com.engagehf.modules.core.logging.engageLogger
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.channels.awaitClose

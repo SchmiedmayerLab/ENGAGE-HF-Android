@@ -11,12 +11,12 @@ package com.engagehf
 import android.content.Intent
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import dagger.hilt.android.lifecycle.HiltViewModel
 import com.engagehf.bluetooth.data.mapper.MessageActionMapper
 import com.engagehf.messages.MessagesHandler
 import com.engagehf.modules.account.AccountEvents
 import com.engagehf.modules.account.manager.UserSessionManager
 import com.engagehf.modules.account.manager.UserState
+import com.engagehf.modules.core.logging.engageLogger
 import com.engagehf.modules.navigation.NavigationEvent
 import com.engagehf.modules.navigation.Navigator
 import com.engagehf.modules.notification.fcm.DeviceRegistrationService
@@ -26,7 +26,7 @@ import com.engagehf.modules.onboarding.OnboardingNavigationEvent
 import com.engagehf.modules.utils.MessageNotifier
 import com.engagehf.navigation.AppNavigationEvent
 import com.engagehf.navigation.Routes
-import com.engagehf.modules.core.logging.engageLogger
+import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.asStateFlow

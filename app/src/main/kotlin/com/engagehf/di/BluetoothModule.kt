@@ -8,12 +8,12 @@
 
 package com.engagehf.di
 
+import com.engagehf.bluetooth.service.mapper.MeasurementMapper
+import com.engagehf.bluetooth.service.mapper.MeasurementMapperImpl
 import dagger.Binds
 import dagger.Module
 import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
-import com.engagehf.bluetooth.service.mapper.MeasurementMapper
-import com.engagehf.bluetooth.service.mapper.MeasurementMapperImpl
 
 @Module
 @InstallIn(SingletonComponent::class)

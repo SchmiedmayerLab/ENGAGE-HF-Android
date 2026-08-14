@@ -12,6 +12,8 @@ import android.content.Context
 import android.net.Uri
 import android.text.TextUtils
 import androidx.credentials.CredentialManager
+import com.engagehf.modules.testing.mockTask
+import com.engagehf.modules.testing.runTestUnconfined
 import com.google.android.libraries.identity.googleid.GoogleIdTokenCredential
 import com.google.common.truth.Truth.assertThat
 import com.google.firebase.auth.AuthCredential
@@ -21,8 +23,6 @@ import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.auth.GoogleAuthProvider
 import com.google.firebase.firestore.DocumentReference
 import com.google.firebase.firestore.FirebaseFirestore
-import com.engagehf.modules.testing.mockTask
-import com.engagehf.modules.testing.runTestUnconfined
 import io.mockk.coEvery
 import io.mockk.coVerify
 import io.mockk.every

@@ -9,8 +9,8 @@
 package com.engagehf
 
 import android.app.Application
-import dagger.hilt.android.HiltAndroidApp
 import com.engagehf.modules.core.logging.EngageLogger
+import dagger.hilt.android.HiltAndroidApp
 
 @HiltAndroidApp
 class MainApplication : Application() {

@@ -15,10 +15,10 @@ import androidx.health.connect.client.records.HeartRateRecord
 import androidx.health.connect.client.records.Record
 import androidx.health.connect.client.records.WeightRecord
 import com.engagehf.R
+import com.engagehf.modules.ui.StringResource
 import com.engagehf.modules.utils.LocaleProvider
 import com.engagehf.modules.utils.TimeProvider
 import com.engagehf.modules.utils.extensions.roundToDecimalPlaces
-import com.engagehf.modules.ui.StringResource
 import java.time.DayOfWeek
 import java.time.LocalDate
 import java.time.ZonedDateTime

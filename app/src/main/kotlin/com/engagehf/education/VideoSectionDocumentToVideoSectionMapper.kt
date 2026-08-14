@@ -8,10 +8,10 @@
 
 package com.engagehf.education
 
-import com.google.firebase.firestore.DocumentSnapshot
 import com.engagehf.localization.LocalizedMapReader
 import com.engagehf.modules.education.videos.Video
 import com.engagehf.modules.education.videos.VideoSection
+import com.google.firebase.firestore.DocumentSnapshot
 import kotlinx.coroutines.tasks.await
 import javax.inject.Inject
 

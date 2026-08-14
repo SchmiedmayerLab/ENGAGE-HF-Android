@@ -8,7 +8,6 @@
 
 package com.engagehf.navigation.screens
 
-import com.google.common.truth.Truth.assertThat
 import com.engagehf.bluetooth.component.AppScreenEvents
 import com.engagehf.health.summary.HealthSummaryService
 import com.engagehf.health.summary.ShareHealthSummary
@@ -21,6 +20,7 @@ import com.engagehf.modules.testing.runTestUnconfined
 import com.engagehf.modules.utils.TimeProvider
 import com.engagehf.navigation.AppNavigationEvent
 import com.engagehf.phonenumber.PhoneNumberSettingsNavigationEvent
+import com.google.common.truth.Truth.assertThat
 import io.mockk.coVerify
 import io.mockk.every
 import io.mockk.mockk

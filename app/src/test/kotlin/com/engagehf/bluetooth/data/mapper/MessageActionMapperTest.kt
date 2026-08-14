@@ -8,8 +8,8 @@
 
 package com.engagehf.bluetooth.data.mapper
 
-import com.google.common.truth.Truth.assertThat
 import com.engagehf.messages.MessageAction
+import com.google.common.truth.Truth.assertThat
 import org.junit.Test
 
 class MessageActionMapperTest {

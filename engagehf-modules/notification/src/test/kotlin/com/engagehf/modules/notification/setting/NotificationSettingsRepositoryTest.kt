@@ -8,14 +8,14 @@
 
 package com.engagehf.modules.notification.setting
 
+import com.engagehf.modules.account.manager.UserSessionManager
+import com.engagehf.modules.testing.runTestUnconfined
 import com.google.common.truth.Truth.assertThat
 import com.google.firebase.firestore.DocumentReference
 import com.google.firebase.firestore.DocumentSnapshot
 import com.google.firebase.firestore.EventListener
 import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.firestore.ListenerRegistration
-import com.engagehf.modules.account.manager.UserSessionManager
-import com.engagehf.modules.testing.runTestUnconfined
 import io.mockk.coEvery
 import io.mockk.coVerify
 import io.mockk.every

@@ -12,7 +12,6 @@ import androidx.annotation.DrawableRes
 import androidx.annotation.StringRes
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import dagger.hilt.android.lifecycle.HiltViewModel
 import com.engagehf.R
 import com.engagehf.bluetooth.component.AppScreenEvents
 import com.engagehf.health.components.ShareHealthSummaryDialogUiState
@@ -22,10 +21,11 @@ import com.engagehf.modules.account.manager.UserSessionManager
 import com.engagehf.modules.navigation.Navigator
 import com.engagehf.modules.notification.NotificationNavigationEvent
 import com.engagehf.modules.notification.fcm.DeviceRegistrationService
+import com.engagehf.modules.ui.StringResource
 import com.engagehf.modules.utils.TimeProvider
 import com.engagehf.navigation.AppNavigationEvent
 import com.engagehf.phonenumber.PhoneNumberSettingsNavigationEvent
-import com.engagehf.modules.ui.StringResource
+import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.MutableStateFlow

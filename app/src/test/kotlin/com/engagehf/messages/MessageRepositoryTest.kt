@@ -8,6 +8,11 @@
 
 package com.engagehf.messages
 
+import com.engagehf.modules.account.manager.UserSessionManager
+import com.engagehf.modules.testing.EngageTestScope
+import com.engagehf.modules.testing.mockTask
+import com.engagehf.modules.testing.runTestUnconfined
+import com.engagehf.modules.testing.verifyNever
 import com.google.common.truth.Truth.assertThat
 import com.google.firebase.firestore.DocumentSnapshot
 import com.google.firebase.firestore.EventListener
@@ -16,11 +21,6 @@ import com.google.firebase.firestore.ListenerRegistration
 import com.google.firebase.firestore.QuerySnapshot
 import com.google.firebase.functions.FirebaseFunctions
 import com.google.firebase.functions.HttpsCallableReference
-import com.engagehf.modules.account.manager.UserSessionManager
-import com.engagehf.modules.testing.EngageTestScope
-import com.engagehf.modules.testing.mockTask
-import com.engagehf.modules.testing.runTestUnconfined
-import com.engagehf.modules.testing.verifyNever
 import io.mockk.every
 import io.mockk.mockk
 import io.mockk.slot

@@ -8,9 +8,9 @@
 
 package com.engagehf.observations
 
+import com.engagehf.modules.account.manager.UserSessionManager
 import com.google.firebase.firestore.CollectionReference
 import com.google.firebase.firestore.FirebaseFirestore
-import com.engagehf.modules.account.manager.UserSessionManager
 import javax.inject.Inject
 
 class ObservationCollectionProvider @Inject constructor(

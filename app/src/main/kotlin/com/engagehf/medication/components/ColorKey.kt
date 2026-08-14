@@ -28,9 +28,9 @@ import androidx.compose.ui.text.style.TextOverflow
 import com.engagehf.R
 import com.engagehf.medication.ui.MedicationColor
 import com.engagehf.modules.ui.DefaultElevatedCard
+import com.engagehf.modules.ui.theme.EngageTheme
 import com.engagehf.modules.ui.theme.Sizes
 import com.engagehf.modules.ui.theme.Spacings
-import com.engagehf.modules.ui.theme.EngageTheme
 import com.engagehf.modules.ui.theme.ThemePreviews
 
 @Composable

@@ -13,15 +13,15 @@ import android.bluetooth.BluetoothGatt
 import android.bluetooth.BluetoothGattCharacteristic
 import android.bluetooth.BluetoothGattDescriptor
 import android.bluetooth.BluetoothGattService
-import com.google.common.truth.Truth.assertThat
 import com.engagehf.bluetooth.service.mapper.MeasurementMapper
 import com.engagehf.modules.bluetooth.api.BLEService
 import com.engagehf.modules.bluetooth.model.BLEDevice
 import com.engagehf.modules.bluetooth.model.BLEServiceEvent
 import com.engagehf.modules.bluetooth.model.BLEServiceState
+import com.engagehf.modules.foundation.UUID
 import com.engagehf.modules.testing.EngageTestScope
 import com.engagehf.modules.testing.runTestUnconfined
-import com.engagehf.modules.foundation.UUID
+import com.google.common.truth.Truth.assertThat
 import io.mockk.coEvery
 import io.mockk.every
 import io.mockk.mockk

@@ -9,12 +9,12 @@
 package com.engagehf.modules.onboarding
 
 import androidx.compose.ui.test.junit4.createAndroidComposeRule
-import dagger.hilt.android.testing.HiltAndroidRule
-import dagger.hilt.android.testing.HiltAndroidTest
 import com.engagehf.modules.onboarding.fakes.FakeOnboardingRepository
 import com.engagehf.modules.onboarding.onboarding.OnboardingView
 import com.engagehf.modules.onboarding.simulator.OnboardingScreenSimulator
 import com.engagehf.modules.testing.ui.ComposeContentActivity
+import dagger.hilt.android.testing.HiltAndroidRule
+import dagger.hilt.android.testing.HiltAndroidTest
 import io.mockk.mockk
 import io.mockk.verify
 import kotlinx.coroutines.test.runTest

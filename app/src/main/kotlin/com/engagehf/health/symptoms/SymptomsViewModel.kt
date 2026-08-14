@@ -12,7 +12,6 @@ package com.engagehf.health.symptoms
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import dagger.hilt.android.lifecycle.HiltViewModel
 import com.engagehf.R
 import com.engagehf.bluetooth.component.AppScreenEvents
 import com.engagehf.health.AggregatedHealthData
@@ -20,6 +19,7 @@ import com.engagehf.health.HealthRepository
 import com.engagehf.health.TableEntryData
 import com.engagehf.modules.core.logging.engageLogger
 import com.engagehf.modules.ui.StringResource
+import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.update

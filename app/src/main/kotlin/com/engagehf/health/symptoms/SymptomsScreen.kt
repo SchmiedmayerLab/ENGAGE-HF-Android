@@ -44,6 +44,15 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
+import com.engagehf.R
+import com.engagehf.health.HealthTableItem
+import com.engagehf.modules.ui.CenteredBoxContent
+import com.engagehf.modules.ui.VerticalSpacer
+import com.engagehf.modules.ui.theme.Colors.primary
+import com.engagehf.modules.ui.theme.Colors.secondary
+import com.engagehf.modules.ui.theme.Sizes
+import com.engagehf.modules.ui.theme.Spacings
+import com.engagehf.modules.ui.theme.TextStyles
 import com.patrykandpatrick.vico.compose.cartesian.CartesianChartHost
 import com.patrykandpatrick.vico.compose.cartesian.axis.rememberAxisLabelComponent
 import com.patrykandpatrick.vico.compose.cartesian.axis.rememberBottomAxis
@@ -71,15 +80,6 @@ import com.patrykandpatrick.vico.core.cartesian.layer.LineCartesianLayer.PointPr
 import com.patrykandpatrick.vico.core.cartesian.marker.DefaultCartesianMarker
 import com.patrykandpatrick.vico.core.common.component.TextComponent
 import com.patrykandpatrick.vico.core.common.shape.Shape
-import com.engagehf.R
-import com.engagehf.health.HealthTableItem
-import com.engagehf.modules.ui.CenteredBoxContent
-import com.engagehf.modules.ui.VerticalSpacer
-import com.engagehf.modules.ui.theme.Colors.primary
-import com.engagehf.modules.ui.theme.Colors.secondary
-import com.engagehf.modules.ui.theme.Sizes
-import com.engagehf.modules.ui.theme.Spacings
-import com.engagehf.modules.ui.theme.TextStyles
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 

@@ -8,12 +8,12 @@
 
 package com.engagehf.di
 
+import com.engagehf.modules.notification.NotificationPermissions
+import com.engagehf.modules.notification.di.NotificationModule
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.components.SingletonComponent
 import dagger.hilt.testing.TestInstallIn
-import com.engagehf.modules.notification.NotificationPermissions
-import com.engagehf.modules.notification.di.NotificationModule
 
 @Module
 @TestInstallIn(

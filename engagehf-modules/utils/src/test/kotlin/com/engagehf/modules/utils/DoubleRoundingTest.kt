@@ -8,8 +8,8 @@
 
 package com.engagehf.modules.utils
 
-import com.google.common.truth.Truth.assertThat
 import com.engagehf.modules.utils.extensions.roundToDecimalPlaces
+import com.google.common.truth.Truth.assertThat
 import org.junit.Test
 
 class DoubleRoundingTest {

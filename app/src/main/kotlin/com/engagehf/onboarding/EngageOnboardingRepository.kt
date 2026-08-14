@@ -9,13 +9,13 @@
 package com.engagehf.onboarding
 
 import android.content.Context
-import dagger.hilt.android.qualifiers.ApplicationContext
 import com.engagehf.R
 import com.engagehf.modules.navigation.Navigator
 import com.engagehf.modules.onboarding.OnboardingNavigationEvent
 import com.engagehf.modules.onboarding.onboarding.Area
 import com.engagehf.modules.onboarding.onboarding.OnboardingData
 import com.engagehf.modules.onboarding.onboarding.OnboardingRepository
+import dagger.hilt.android.qualifiers.ApplicationContext
 import javax.inject.Inject
 import com.engagehf.modules.design.R as DesignR
 

@@ -11,14 +11,14 @@ package com.engagehf.modules.bluetooth.di
 import android.bluetooth.BluetoothAdapter
 import android.bluetooth.BluetoothManager
 import android.content.Context
+import com.engagehf.modules.bluetooth.api.BLEService
+import com.engagehf.modules.bluetooth.domain.BLEServiceImpl
 import dagger.Binds
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.android.qualifiers.ApplicationContext
 import dagger.hilt.components.SingletonComponent
-import com.engagehf.modules.bluetooth.api.BLEService
-import com.engagehf.modules.bluetooth.domain.BLEServiceImpl
 
 /**
  * Dagger Hilt module for providing Bluetooth-related dependencies.

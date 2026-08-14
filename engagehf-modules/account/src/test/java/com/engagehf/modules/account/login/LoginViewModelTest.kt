@@ -11,7 +11,6 @@ package com.engagehf.modules.account.login
 import android.content.Context
 import android.content.Intent
 import android.net.Uri
-import com.google.common.truth.Truth.assertThat
 import com.engagehf.modules.account.AccountEvents
 import com.engagehf.modules.account.AccountNavigationEvent
 import com.engagehf.modules.account.R
@@ -22,6 +21,7 @@ import com.engagehf.modules.testing.CoroutineTestRule
 import com.engagehf.modules.testing.coVerifyNever
 import com.engagehf.modules.testing.runTestUnconfined
 import com.engagehf.modules.utils.MessageNotifier
+import com.google.common.truth.Truth.assertThat
 import io.mockk.Runs
 import io.mockk.coEvery
 import io.mockk.coVerify

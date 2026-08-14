@@ -9,11 +9,11 @@
 package com.engagehf.modules.education.videos
 
 import androidx.compose.ui.test.junit4.createAndroidComposeRule
-import dagger.hilt.android.testing.HiltAndroidRule
-import dagger.hilt.android.testing.HiltAndroidTest
 import com.engagehf.modules.education.R
 import com.engagehf.modules.testing.ui.ComposeContentActivity
 import com.engagehf.modules.ui.StringResource
+import dagger.hilt.android.testing.HiltAndroidRule
+import dagger.hilt.android.testing.HiltAndroidTest
 import org.junit.Rule
 import org.junit.Test
 

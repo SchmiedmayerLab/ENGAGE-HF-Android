@@ -9,15 +9,15 @@
 package com.engagehf.modules.notification.setting
 
 import android.content.Context
-import com.google.common.truth.Truth.assertThat
 import com.engagehf.modules.navigation.NavigationEvent
 import com.engagehf.modules.navigation.Navigator
 import com.engagehf.modules.notification.NotificationPermissions
 import com.engagehf.modules.notification.R
 import com.engagehf.modules.notification.fcm.DeviceRegistrationService
 import com.engagehf.modules.testing.CoroutineTestRule
-import com.engagehf.modules.utils.MessageNotifier
 import com.engagehf.modules.ui.StringResource
+import com.engagehf.modules.utils.MessageNotifier
+import com.google.common.truth.Truth.assertThat
 import io.mockk.every
 import io.mockk.mockk
 import io.mockk.verify

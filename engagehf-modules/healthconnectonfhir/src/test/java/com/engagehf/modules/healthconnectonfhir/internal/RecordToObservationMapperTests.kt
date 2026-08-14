@@ -28,9 +28,9 @@ import androidx.health.connect.client.units.Mass
 import androidx.health.connect.client.units.Percentage
 import androidx.health.connect.client.units.Pressure
 import androidx.health.connect.client.units.Temperature
-import com.google.common.truth.Truth.assertThat
 import com.engagehf.modules.healthconnectonfhir.Metadata
 import com.engagehf.modules.healthconnectonfhir.R
+import com.google.common.truth.Truth.assertThat
 import io.mockk.every
 import io.mockk.mockk
 import org.hl7.fhir.r4.model.DateTimeType

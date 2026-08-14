@@ -8,9 +8,9 @@
 
 package com.engagehf.medication.data
 
-import com.google.firebase.firestore.DocumentSnapshot
 import com.engagehf.localization.LocalizedMapReader
 import com.engagehf.modules.utils.JsonMap
+import com.google.firebase.firestore.DocumentSnapshot
 import javax.inject.Inject
 
 @Suppress("UNCHECKED_CAST")

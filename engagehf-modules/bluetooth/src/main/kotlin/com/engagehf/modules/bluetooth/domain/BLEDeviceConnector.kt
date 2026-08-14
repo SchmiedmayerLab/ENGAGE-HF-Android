@@ -14,13 +14,13 @@ import android.bluetooth.BluetoothGattCallback
 import android.bluetooth.BluetoothGattCharacteristic
 import android.bluetooth.BluetoothProfile
 import android.content.Context
+import com.engagehf.modules.bluetooth.model.BLEDevice
+import com.engagehf.modules.bluetooth.model.BLEServiceEvent
+import com.engagehf.modules.core.coroutines.Dispatching
 import dagger.assisted.Assisted
 import dagger.assisted.AssistedFactory
 import dagger.assisted.AssistedInject
 import dagger.hilt.android.qualifiers.ApplicationContext
-import com.engagehf.modules.bluetooth.model.BLEDevice
-import com.engagehf.modules.bluetooth.model.BLEServiceEvent
-import com.engagehf.modules.core.coroutines.Dispatching
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.flow.MutableSharedFlow
 import kotlinx.coroutines.flow.asSharedFlow

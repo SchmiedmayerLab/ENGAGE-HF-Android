@@ -12,7 +12,6 @@ import androidx.health.connect.client.records.WeightRecord
 import androidx.health.connect.client.units.Mass
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import dagger.hilt.android.lifecycle.HiltViewModel
 import com.engagehf.R
 import com.engagehf.bluetooth.component.AppScreenEvents
 import com.engagehf.health.HealthRepository
@@ -20,6 +19,7 @@ import com.engagehf.health.time.TimePickerStateMapper
 import com.engagehf.modules.healthconnectonfhir.Metadata
 import com.engagehf.modules.utils.LocaleProvider
 import com.engagehf.modules.utils.MessageNotifier
+import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.update

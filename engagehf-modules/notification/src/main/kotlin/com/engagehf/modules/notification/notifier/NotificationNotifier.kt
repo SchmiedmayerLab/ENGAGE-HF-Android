@@ -19,10 +19,10 @@ import android.content.Intent
 import androidx.core.app.NotificationCompat
 import androidx.core.app.NotificationManagerCompat
 import androidx.core.content.PermissionChecker
-import dagger.hilt.android.qualifiers.ApplicationContext
+import com.engagehf.modules.core.logging.engageLogger
 import com.engagehf.modules.notification.R
 import com.engagehf.modules.notification.notifier.FirebaseMessage.Companion.FIREBASE_MESSAGE_KEY
-import com.engagehf.modules.core.logging.engageLogger
+import dagger.hilt.android.qualifiers.ApplicationContext
 import javax.inject.Inject
 
 /**

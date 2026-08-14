@@ -9,9 +9,9 @@
 package com.engagehf.bluetooth.pairing
 
 import android.bluetooth.BluetoothDevice
-import com.google.common.truth.Truth.assertThat
 import com.engagehf.R
 import com.engagehf.modules.ui.StringResource
+import com.google.common.truth.Truth.assertThat
 import io.mockk.every
 import io.mockk.mockk
 import org.junit.Test

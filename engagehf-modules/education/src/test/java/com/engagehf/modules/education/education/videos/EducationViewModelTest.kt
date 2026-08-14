@@ -8,7 +8,6 @@
 
 package com.engagehf.modules.education.education.videos
 
-import com.google.common.truth.Truth.assertThat
 import com.engagehf.modules.education.EducationNavigationEvent
 import com.engagehf.modules.education.videos.Action
 import com.engagehf.modules.education.videos.EducationViewModel
@@ -18,6 +17,7 @@ import com.engagehf.modules.education.videos.VideoSection
 import com.engagehf.modules.education.videos.data.repository.EducationRepository
 import com.engagehf.modules.navigation.Navigator
 import com.engagehf.modules.testing.CoroutineTestRule
+import com.google.common.truth.Truth.assertThat
 import io.mockk.coEvery
 import io.mockk.coVerify
 import io.mockk.every

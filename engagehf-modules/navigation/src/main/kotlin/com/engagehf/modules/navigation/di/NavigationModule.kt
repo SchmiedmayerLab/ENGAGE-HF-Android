@@ -8,12 +8,12 @@
 
 package com.engagehf.modules.navigation.di
 
+import com.engagehf.modules.navigation.Navigator
+import com.engagehf.modules.navigation.internal.NavigatorImpl
 import dagger.Binds
 import dagger.Module
 import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
-import com.engagehf.modules.navigation.Navigator
-import com.engagehf.modules.navigation.internal.NavigatorImpl
 
 @Module
 @InstallIn(SingletonComponent::class)

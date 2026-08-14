@@ -10,9 +10,9 @@ package com.engagehf.modules.notification
 
 import android.Manifest
 import android.os.Build
-import com.google.common.truth.Truth.assertThat
 import com.engagehf.modules.utils.BuildInfo
 import com.engagehf.modules.utils.PermissionChecker
+import com.google.common.truth.Truth.assertThat
 import io.mockk.every
 import io.mockk.mockk
 import org.junit.Test

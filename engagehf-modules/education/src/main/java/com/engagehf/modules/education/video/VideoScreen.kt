@@ -28,12 +28,12 @@ import androidx.compose.ui.tooling.preview.PreviewParameter
 import androidx.compose.ui.tooling.preview.PreviewParameterProvider
 import androidx.compose.ui.viewinterop.AndroidView
 import androidx.hilt.navigation.compose.hiltViewModel
-import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
 import com.engagehf.modules.education.videos.Video
 import com.engagehf.modules.ui.AppTopAppBar
 import com.engagehf.modules.ui.testIdentifier
 import com.engagehf.modules.ui.theme.Spacings
 import com.engagehf.modules.ui.theme.TextStyles
+import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
 
 @Composable
 fun VideoScreen() {

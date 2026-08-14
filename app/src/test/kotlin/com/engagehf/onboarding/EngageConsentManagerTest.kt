@@ -9,12 +9,12 @@
 package com.engagehf.onboarding
 
 import android.content.Context
-import com.google.common.truth.Truth.assertThat
 import com.engagehf.R
 import com.engagehf.modules.navigation.Navigator
 import com.engagehf.modules.testing.runTestUnconfined
 import com.engagehf.modules.utils.MessageNotifier
 import com.engagehf.navigation.AppNavigationEvent
+import com.google.common.truth.Truth.assertThat
 import io.mockk.Runs
 import io.mockk.every
 import io.mockk.just

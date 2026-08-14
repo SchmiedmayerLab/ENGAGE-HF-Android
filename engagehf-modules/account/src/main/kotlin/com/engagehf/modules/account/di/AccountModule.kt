@@ -10,6 +10,11 @@ package com.engagehf.modules.account.di
 
 import android.content.Context
 import androidx.credentials.CredentialManager
+import com.engagehf.modules.account.BuildConfig
+import com.engagehf.modules.account.manager.FirebaseInvitationAuthManager
+import com.engagehf.modules.account.manager.InvitationAuthManager
+import com.engagehf.modules.account.manager.UserSessionManager
+import com.engagehf.modules.account.manager.UserSessionManagerImpl
 import com.google.android.gms.auth.api.identity.Identity
 import com.google.android.gms.auth.api.identity.SignInClient
 import com.google.firebase.auth.FirebaseAuth
@@ -22,11 +27,6 @@ import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.android.qualifiers.ApplicationContext
 import dagger.hilt.components.SingletonComponent
-import com.engagehf.modules.account.BuildConfig
-import com.engagehf.modules.account.manager.FirebaseInvitationAuthManager
-import com.engagehf.modules.account.manager.InvitationAuthManager
-import com.engagehf.modules.account.manager.UserSessionManager
-import com.engagehf.modules.account.manager.UserSessionManagerImpl
 import javax.inject.Singleton
 
 @Module

@@ -15,8 +15,8 @@ import androidx.compose.foundation.lazy.LazyItemScope
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
-import com.engagehf.modules.ui.theme.Spacings
 import com.engagehf.modules.ui.theme.EngageTheme
+import com.engagehf.modules.ui.theme.Spacings
 import com.engagehf.modules.ui.theme.ThemePreviews
 
 private const val DEFAULT_REPEATING_ITEMS_COUNT = 7

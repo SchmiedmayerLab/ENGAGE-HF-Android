@@ -8,9 +8,9 @@
 
 package com.engagehf.modules.account
 
-import com.google.common.truth.Truth.assertThat
 import com.engagehf.modules.testing.EngageTestScope
 import com.engagehf.modules.testing.runTestUnconfined
+import com.google.common.truth.Truth.assertThat
 import kotlinx.coroutines.flow.first
 import org.junit.Test
 

@@ -18,11 +18,11 @@ import com.engagehf.modules.onboarding.OnboardingNavigationEvent
 import com.engagehf.modules.onboarding.invitation.InvitationCodeScreenTestIdentifier
 import com.engagehf.modules.onboarding.onboarding.OnboardingScreenTestIdentifier
 import com.engagehf.modules.onboarding.sequential.SequentialOnboardingScreenTestIdentifier
-import com.engagehf.navigation.AppNavigationEvent
-import com.engagehf.navigation.screens.AppScreenTestIdentifier
 import com.engagehf.modules.testing.ui.onAllNodes
 import com.engagehf.modules.testing.ui.onNodeWithIdentifier
 import com.engagehf.modules.ui.TestIdentifier
+import com.engagehf.navigation.AppNavigationEvent
+import com.engagehf.navigation.screens.AppScreenTestIdentifier
 
 class NavigatorSimulator(
     private val composeTestRule: ComposeTestRule,

@@ -8,10 +8,10 @@
 
 package com.engagehf.health.time
 
-import com.google.common.truth.Truth.assertThat
 import com.engagehf.modules.utils.DateFormat
 import com.engagehf.modules.utils.DateFormatter
 import com.engagehf.modules.utils.TimeProvider
+import com.google.common.truth.Truth.assertThat
 import io.mockk.every
 import io.mockk.mockk
 import org.junit.Before

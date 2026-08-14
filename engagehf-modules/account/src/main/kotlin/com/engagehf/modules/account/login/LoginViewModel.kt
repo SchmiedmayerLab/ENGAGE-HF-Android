@@ -13,8 +13,6 @@ import android.content.Intent
 import android.net.Uri
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import dagger.hilt.android.lifecycle.HiltViewModel
-import dagger.hilt.android.qualifiers.ApplicationContext
 import com.engagehf.modules.account.AccountEvents
 import com.engagehf.modules.account.AccountNavigationEvent
 import com.engagehf.modules.account.R
@@ -23,6 +21,8 @@ import com.engagehf.modules.account.register.AuthValidator
 import com.engagehf.modules.account.register.FieldState
 import com.engagehf.modules.navigation.Navigator
 import com.engagehf.modules.utils.MessageNotifier
+import dagger.hilt.android.lifecycle.HiltViewModel
+import dagger.hilt.android.qualifiers.ApplicationContext
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.update

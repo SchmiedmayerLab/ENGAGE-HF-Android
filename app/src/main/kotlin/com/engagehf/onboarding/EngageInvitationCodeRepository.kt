@@ -12,8 +12,8 @@ import com.engagehf.R
 import com.engagehf.modules.navigation.Navigator
 import com.engagehf.modules.onboarding.invitation.InvitationCodeRepository
 import com.engagehf.modules.onboarding.invitation.InvitationCodeViewData
-import com.engagehf.navigation.AppNavigationEvent
 import com.engagehf.modules.ui.StringResource
+import com.engagehf.navigation.AppNavigationEvent
 import javax.inject.Inject
 
 // TODO: Clarify / unify repositories or content provider apis

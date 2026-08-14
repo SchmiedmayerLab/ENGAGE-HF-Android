@@ -11,12 +11,12 @@ package com.engagehf.messages
 import com.engagehf.R
 import com.engagehf.bluetooth.component.AppScreenEvents
 import com.engagehf.education.EngageEducationRepository
+import com.engagehf.modules.core.logging.engageLogger
 import com.engagehf.modules.education.EducationNavigationEvent
 import com.engagehf.modules.navigation.Navigator
 import com.engagehf.modules.utils.MessageNotifier
 import com.engagehf.navigation.AppNavigationEvent
 import com.engagehf.navigation.screens.BottomBarItem
-import com.engagehf.modules.core.logging.engageLogger
 import java.util.concurrent.atomic.AtomicReference
 import javax.inject.Inject
 

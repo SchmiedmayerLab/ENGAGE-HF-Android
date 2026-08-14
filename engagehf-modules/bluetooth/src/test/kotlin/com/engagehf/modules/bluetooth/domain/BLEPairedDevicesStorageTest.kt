@@ -10,12 +10,12 @@ package com.engagehf.modules.bluetooth.domain
 
 import android.bluetooth.BluetoothAdapter
 import android.bluetooth.BluetoothDevice
-import com.google.common.truth.Truth.assertThat
 import com.engagehf.modules.bluetooth.model.BLEDevice
+import com.engagehf.modules.storage.credential.InMemoryKeyValueStorage
 import com.engagehf.modules.testing.EngageTestScope
 import com.engagehf.modules.testing.runTestUnconfined
 import com.engagehf.modules.utils.TimeProvider
-import com.engagehf.modules.storage.credential.InMemoryKeyValueStorage
+import com.google.common.truth.Truth.assertThat
 import io.mockk.every
 import io.mockk.mockk
 import io.mockk.verify

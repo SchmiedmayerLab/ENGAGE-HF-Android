@@ -9,7 +9,6 @@
 package com.engagehf
 
 import android.content.Intent
-import com.google.common.truth.Truth.assertThat
 import com.engagehf.bluetooth.data.mapper.MessageActionMapper
 import com.engagehf.messages.MessageAction
 import com.engagehf.messages.MessagesHandler
@@ -27,6 +26,7 @@ import com.engagehf.modules.testing.runTestUnconfined
 import com.engagehf.modules.utils.MessageNotifier
 import com.engagehf.navigation.AppNavigationEvent
 import com.engagehf.navigation.Routes
+import com.google.common.truth.Truth.assertThat
 import io.mockk.Called
 import io.mockk.coEvery
 import io.mockk.coVerify

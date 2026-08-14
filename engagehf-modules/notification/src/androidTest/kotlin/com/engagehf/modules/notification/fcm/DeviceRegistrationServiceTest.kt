@@ -10,6 +10,12 @@ package com.engagehf.modules.notification.fcm
 
 import android.content.ComponentName
 import androidx.test.platform.app.InstrumentationRegistry
+import com.engagehf.modules.notification.notifier.Notifications
+import com.engagehf.modules.storage.credential.InMemoryKeyValueStorage
+import com.engagehf.modules.storage.credential.putSerializable
+import com.engagehf.modules.testing.EngageTestScope
+import com.engagehf.modules.testing.mockTask
+import com.engagehf.modules.utils.BuildInfo
 import com.google.common.truth.Truth.assertThat
 import com.google.firebase.functions.FirebaseFunctions
 import com.google.firebase.messaging.FirebaseMessaging
@@ -19,12 +25,6 @@ import dagger.hilt.InstallIn
 import dagger.hilt.android.testing.HiltAndroidRule
 import dagger.hilt.android.testing.HiltAndroidTest
 import dagger.hilt.components.SingletonComponent
-import com.engagehf.modules.notification.notifier.Notifications
-import com.engagehf.modules.testing.EngageTestScope
-import com.engagehf.modules.testing.mockTask
-import com.engagehf.modules.utils.BuildInfo
-import com.engagehf.modules.storage.credential.InMemoryKeyValueStorage
-import com.engagehf.modules.storage.credential.putSerializable
 import io.mockk.coEvery
 import io.mockk.coVerify
 import io.mockk.every

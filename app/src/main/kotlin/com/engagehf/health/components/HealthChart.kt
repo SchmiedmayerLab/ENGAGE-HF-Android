@@ -14,6 +14,15 @@ import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
+import com.engagehf.health.AggregatedHealthData
+import com.engagehf.health.AverageHealthData
+import com.engagehf.health.HealthUiData
+import com.engagehf.health.HealthUiStateMapper.Companion.ADAPTIVE_Y_VALUES_FRACTION
+import com.engagehf.modules.ui.theme.Colors.onTertiary
+import com.engagehf.modules.ui.theme.Colors.primary
+import com.engagehf.modules.ui.theme.Colors.secondary
+import com.engagehf.modules.ui.theme.Colors.tertiary
+import com.engagehf.modules.ui.theme.Spacings
 import com.patrykandpatrick.vico.compose.cartesian.CartesianChartHost
 import com.patrykandpatrick.vico.compose.cartesian.axis.rememberAxisLabelComponent
 import com.patrykandpatrick.vico.compose.cartesian.axis.rememberBottomAxis
@@ -52,15 +61,6 @@ import com.patrykandpatrick.vico.core.cartesian.marker.DefaultCartesianMarker
 import com.patrykandpatrick.vico.core.common.Dimensions
 import com.patrykandpatrick.vico.core.common.component.TextComponent
 import com.patrykandpatrick.vico.core.common.shape.Shape
-import com.engagehf.health.AggregatedHealthData
-import com.engagehf.health.AverageHealthData
-import com.engagehf.health.HealthUiData
-import com.engagehf.health.HealthUiStateMapper.Companion.ADAPTIVE_Y_VALUES_FRACTION
-import com.engagehf.modules.ui.theme.Colors.onTertiary
-import com.engagehf.modules.ui.theme.Colors.primary
-import com.engagehf.modules.ui.theme.Colors.secondary
-import com.engagehf.modules.ui.theme.Colors.tertiary
-import com.engagehf.modules.ui.theme.Spacings
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 

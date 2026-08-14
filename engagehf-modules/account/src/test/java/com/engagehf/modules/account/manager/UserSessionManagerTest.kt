@@ -8,6 +8,10 @@
 
 package com.engagehf.modules.account.manager
 
+import com.engagehf.modules.account.AccountEvents
+import com.engagehf.modules.testing.EngageTestScope
+import com.engagehf.modules.testing.mockTask
+import com.engagehf.modules.testing.runTestUnconfined
 import com.google.common.truth.Truth.assertThat
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
@@ -19,10 +23,6 @@ import com.google.firebase.storage.FirebaseStorage
 import com.google.firebase.storage.StorageReference
 import com.google.firebase.storage.StorageTask
 import com.google.firebase.storage.UploadTask
-import com.engagehf.modules.account.AccountEvents
-import com.engagehf.modules.testing.EngageTestScope
-import com.engagehf.modules.testing.mockTask
-import com.engagehf.modules.testing.runTestUnconfined
 import io.mockk.Runs
 import io.mockk.every
 import io.mockk.just

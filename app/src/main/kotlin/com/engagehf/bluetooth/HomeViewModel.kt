@@ -14,8 +14,6 @@ import android.net.Uri
 import android.provider.Settings
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import dagger.hilt.android.lifecycle.HiltViewModel
-import dagger.hilt.android.qualifiers.ApplicationContext
 import com.engagehf.bluetooth.component.AppScreenEvents
 import com.engagehf.bluetooth.data.mapper.BluetoothUiStateMapper
 import com.engagehf.bluetooth.data.models.Action
@@ -27,10 +25,12 @@ import com.engagehf.bluetooth.service.EngageBLEServiceEvent
 import com.engagehf.bluetooth.service.EngageBLEServiceState
 import com.engagehf.messages.Message
 import com.engagehf.messages.MessagesHandler
+import com.engagehf.modules.core.logging.engageLogger
 import com.engagehf.modules.notification.NotificationPermissions
 import com.engagehf.modules.notification.fcm.DeviceRegistrationService
 import com.engagehf.navigation.screens.BottomBarItem
-import com.engagehf.modules.core.logging.engageLogger
+import dagger.hilt.android.lifecycle.HiltViewModel
+import dagger.hilt.android.qualifiers.ApplicationContext
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.update

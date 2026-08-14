@@ -11,15 +11,15 @@ package com.engagehf.modules.bluetooth.domain
 import android.Manifest
 import android.bluetooth.BluetoothAdapter
 import android.bluetooth.BluetoothDevice
-import com.google.common.truth.Truth.assertThat
 import com.engagehf.modules.bluetooth.model.BLEDevice
 import com.engagehf.modules.bluetooth.model.BLEServiceEvent
 import com.engagehf.modules.bluetooth.model.BLEServiceState
+import com.engagehf.modules.foundation.UUID
 import com.engagehf.modules.testing.EngageTestScope
 import com.engagehf.modules.testing.runTestUnconfined
 import com.engagehf.modules.testing.verifyNever
 import com.engagehf.modules.utils.PermissionChecker
-import com.engagehf.modules.foundation.UUID
+import com.google.common.truth.Truth.assertThat
 import io.mockk.Called
 import io.mockk.Runs
 import io.mockk.every

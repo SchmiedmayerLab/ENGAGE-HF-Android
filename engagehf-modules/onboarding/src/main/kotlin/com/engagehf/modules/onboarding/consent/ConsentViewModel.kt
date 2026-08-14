@@ -10,9 +10,9 @@ package com.engagehf.modules.onboarding.consent
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import dagger.hilt.android.lifecycle.HiltViewModel
 import com.engagehf.modules.account.manager.UserSessionManager
 import com.engagehf.modules.ui.markdown.MarkdownParser
+import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.update

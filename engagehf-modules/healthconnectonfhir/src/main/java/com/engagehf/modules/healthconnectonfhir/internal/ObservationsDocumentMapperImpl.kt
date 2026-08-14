@@ -15,12 +15,12 @@ import androidx.health.connect.client.records.WeightRecord
 import androidx.health.connect.client.units.Mass
 import androidx.health.connect.client.units.Pressure
 import ca.uhn.fhir.parser.IParser
-import com.google.firebase.firestore.DocumentSnapshot
-import com.google.gson.Gson
-import com.google.gson.reflect.TypeToken
 import com.engagehf.modules.healthconnectonfhir.Loinc
 import com.engagehf.modules.healthconnectonfhir.Metadata
 import com.engagehf.modules.healthconnectonfhir.ObservationsDocumentMapper
+import com.google.firebase.firestore.DocumentSnapshot
+import com.google.gson.Gson
+import com.google.gson.reflect.TypeToken
 import org.hl7.fhir.r4.model.Observation
 import java.time.ZoneId
 import java.time.ZoneOffset

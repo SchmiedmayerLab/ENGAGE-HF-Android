@@ -8,7 +8,6 @@
 
 package com.engagehf.messages
 
-import com.google.common.truth.Truth.assertThat
 import com.engagehf.R
 import com.engagehf.bluetooth.component.AppScreenEvents
 import com.engagehf.education.EngageEducationRepository
@@ -21,6 +20,7 @@ import com.engagehf.modules.testing.verifyNever
 import com.engagehf.modules.utils.MessageNotifier
 import com.engagehf.navigation.AppNavigationEvent
 import com.engagehf.navigation.screens.BottomBarItem
+import com.google.common.truth.Truth.assertThat
 import io.mockk.coEvery
 import io.mockk.coVerify
 import io.mockk.every

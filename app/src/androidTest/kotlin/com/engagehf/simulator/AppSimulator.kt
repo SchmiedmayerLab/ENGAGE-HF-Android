@@ -11,8 +11,8 @@ package com.engagehf.simulator
 import androidx.compose.ui.test.assertIsDisplayed
 import androidx.compose.ui.test.assertTextEquals
 import androidx.compose.ui.test.junit4.ComposeTestRule
-import com.engagehf.navigation.screens.AppScreenTestIdentifier
 import com.engagehf.modules.testing.ui.onNodeWithIdentifier
+import com.engagehf.navigation.screens.AppScreenTestIdentifier
 
 class AppSimulator(
     private val composeTestRule: ComposeTestRule,

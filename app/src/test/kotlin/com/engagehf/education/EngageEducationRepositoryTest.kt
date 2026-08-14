@@ -8,14 +8,14 @@
 
 package com.engagehf.education
 
+import com.engagehf.modules.education.videos.Video
+import com.engagehf.modules.education.videos.VideoSection
 import com.google.common.truth.Truth.assertThat
 import com.google.firebase.firestore.CollectionReference
 import com.google.firebase.firestore.DocumentReference
 import com.google.firebase.firestore.DocumentSnapshot
 import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.firestore.QueryDocumentSnapshot
-import com.engagehf.modules.education.videos.Video
-import com.engagehf.modules.education.videos.VideoSection
 import io.mockk.coEvery
 import io.mockk.every
 import io.mockk.mockk

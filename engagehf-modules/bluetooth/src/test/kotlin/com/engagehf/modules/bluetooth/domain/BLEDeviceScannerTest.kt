@@ -15,11 +15,11 @@ import android.bluetooth.le.ScanCallback
 import android.bluetooth.le.ScanFilter
 import android.bluetooth.le.ScanResult
 import android.bluetooth.le.ScanSettings
-import com.google.common.truth.Truth.assertThat
+import com.engagehf.modules.foundation.UUID
 import com.engagehf.modules.testing.EngageTestScope
 import com.engagehf.modules.testing.runTestUnconfined
 import com.engagehf.modules.testing.verifyNever
-import com.engagehf.modules.foundation.UUID
+import com.google.common.truth.Truth.assertThat
 import io.mockk.Called
 import io.mockk.Runs
 import io.mockk.every

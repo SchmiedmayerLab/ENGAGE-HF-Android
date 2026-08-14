@@ -11,13 +11,13 @@ package com.engagehf.bluetooth.pairing
 import android.bluetooth.BluetoothDevice
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import dagger.hilt.android.lifecycle.HiltViewModel
 import com.engagehf.R
 import com.engagehf.bluetooth.component.AppScreenEvents
 import com.engagehf.bluetooth.service.EngageBLEService
 import com.engagehf.bluetooth.service.EngageBLEServiceEvent
 import com.engagehf.modules.ui.PendingActions
 import com.engagehf.modules.ui.StringResource
+import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.FlowPreview
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.flow.MutableStateFlow

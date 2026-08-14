@@ -8,11 +8,11 @@
 
 package com.engagehf.messages
 
+import com.engagehf.bluetooth.data.mapper.MessageActionMapper
+import com.engagehf.localization.LocalizedMapReader
 import com.google.common.truth.Truth.assertThat
 import com.google.firebase.Timestamp
 import com.google.firebase.firestore.DocumentSnapshot
-import com.engagehf.bluetooth.data.mapper.MessageActionMapper
-import com.engagehf.localization.LocalizedMapReader
 import io.mockk.every
 import io.mockk.mockk
 import org.junit.Before

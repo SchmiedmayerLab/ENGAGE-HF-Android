@@ -8,9 +8,9 @@
 
 package com.engagehf.modules.onboarding.onboarding
 
-import com.google.common.truth.Truth.assertThat
 import com.engagehf.modules.testing.CoroutineTestRule
 import com.engagehf.modules.testing.runTestUnconfined
+import com.google.common.truth.Truth.assertThat
 import io.mockk.coEvery
 import io.mockk.mockk
 import io.mockk.verify

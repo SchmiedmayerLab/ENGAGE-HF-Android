@@ -10,13 +10,13 @@ package com.engagehf.di
 
 import android.content.ComponentName
 import android.content.Context
+import com.engagehf.MainActivity
+import com.engagehf.modules.notification.notifier.Notifications
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.android.qualifiers.ApplicationContext
 import dagger.hilt.components.SingletonComponent
-import com.engagehf.MainActivity
-import com.engagehf.modules.notification.notifier.Notifications
 import javax.inject.Singleton
 
 @Module

@@ -13,10 +13,10 @@ import com.engagehf.modules.core.Configuration
 import com.engagehf.modules.core.ConfigurationBuilder
 import com.engagehf.modules.core.ConfigurationImpl
 import com.engagehf.modules.core.DependenciesGraph
-import com.engagehf.modules.core.Module
 import com.engagehf.modules.core.EngageApplication
-import com.engagehf.modules.core.optionalDependency
+import com.engagehf.modules.core.Module
 import com.engagehf.modules.core.engageError
+import com.engagehf.modules.core.optionalDependency
 import java.util.concurrent.atomic.AtomicReference
 
 /**
@@ -42,8 +42,8 @@ internal object Engage {
         }
 
     /**
-     * Constructs the [DependenciesGraph] out of the [Configuration] of [EngageApplication], registers [ApplicationModule] module and invokes
-     * [Module.configure] on all registered modules in the graph.
+     * Constructs the [DependenciesGraph] out of the [Configuration] of [EngageApplication], registers the
+     * [ApplicationModule] module and invokes [Module.configure] on all registered modules in the graph.
      */
     fun configure(application: EngageApplication) {
         logger.i { "Configuring application $application" }
@@ -59,8 +59,8 @@ internal object Engage {
     }
 
     /**
-     * Constructs the [DependenciesGraph] out of the [Configuration] of [EngageApplication], registers [ApplicationModule] module and invokes
-     * [Module.configure] on all registered modules in the graph.
+     * Constructs the [DependenciesGraph] out of the [Configuration] of [EngageApplication], registers the
+     * [ApplicationModule] module and invokes [Module.configure] on all registered modules in the graph.
      */
     fun configure(
         scope: ConfigurationBuilder.() -> Unit,

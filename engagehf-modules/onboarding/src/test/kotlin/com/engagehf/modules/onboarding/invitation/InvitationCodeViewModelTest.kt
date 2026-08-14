@@ -8,12 +8,12 @@
 
 package com.engagehf.modules.onboarding.invitation
 
-import com.google.common.truth.Truth.assertThat
 import com.engagehf.modules.account.manager.InvitationAuthManager
 import com.engagehf.modules.onboarding.R
 import com.engagehf.modules.testing.CoroutineTestRule
 import com.engagehf.modules.testing.runTestUnconfined
 import com.engagehf.modules.ui.StringResource
+import com.google.common.truth.Truth.assertThat
 import io.mockk.coEvery
 import io.mockk.coVerify
 import io.mockk.mockk

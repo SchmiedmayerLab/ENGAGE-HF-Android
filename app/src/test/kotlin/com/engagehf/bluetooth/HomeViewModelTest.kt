@@ -12,7 +12,6 @@ import android.content.Context
 import androidx.health.connect.client.records.BloodPressureRecord
 import androidx.health.connect.client.records.HeartRateRecord
 import androidx.health.connect.client.records.WeightRecord
-import com.google.common.truth.Truth.assertThat
 import com.engagehf.bluetooth.component.AppScreenEvents
 import com.engagehf.bluetooth.data.mapper.BluetoothUiStateMapper
 import com.engagehf.bluetooth.data.models.Action
@@ -31,6 +30,7 @@ import com.engagehf.modules.notification.fcm.DeviceRegistrationService
 import com.engagehf.modules.testing.CoroutineTestRule
 import com.engagehf.modules.testing.runTestUnconfined
 import com.engagehf.navigation.screens.BottomBarItem
+import com.google.common.truth.Truth.assertThat
 import io.mockk.Runs
 import io.mockk.coEvery
 import io.mockk.coVerify

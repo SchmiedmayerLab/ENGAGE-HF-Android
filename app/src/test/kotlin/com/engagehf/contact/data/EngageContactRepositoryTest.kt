@@ -8,10 +8,10 @@
 
 package com.engagehf.contact.data
 
+import com.engagehf.modules.account.manager.UserSessionManager
 import com.google.common.truth.Truth.assertThat
 import com.google.firebase.firestore.DocumentReference
 import com.google.firebase.firestore.FirebaseFirestore
-import com.engagehf.modules.account.manager.UserSessionManager
 import io.mockk.every
 import io.mockk.mockk
 import kotlinx.coroutines.test.runTest

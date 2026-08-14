@@ -10,6 +10,10 @@ package com.engagehf.modules.notification.di
 
 import android.content.Context
 import androidx.core.app.NotificationManagerCompat
+import com.engagehf.modules.notification.NotificationPermissions
+import com.engagehf.modules.notification.NotificationPermissionsImpl
+import com.engagehf.modules.notification.fcm.DeviceRegistrationService
+import com.engagehf.modules.notification.fcm.DeviceRegistrationServiceImpl
 import com.google.firebase.messaging.FirebaseMessaging
 import dagger.Binds
 import dagger.Module
@@ -17,10 +21,6 @@ import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.android.qualifiers.ApplicationContext
 import dagger.hilt.components.SingletonComponent
-import com.engagehf.modules.notification.NotificationPermissions
-import com.engagehf.modules.notification.NotificationPermissionsImpl
-import com.engagehf.modules.notification.fcm.DeviceRegistrationService
-import com.engagehf.modules.notification.fcm.DeviceRegistrationServiceImpl
 import javax.inject.Singleton
 
 @Module

@@ -8,11 +8,11 @@
 
 package com.engagehf.modules.education
 
+import com.engagehf.modules.education.videos.data.repository.EducationRepository
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
-import com.engagehf.modules.education.videos.data.repository.EducationRepository
 import io.mockk.mockk
 
 @Module

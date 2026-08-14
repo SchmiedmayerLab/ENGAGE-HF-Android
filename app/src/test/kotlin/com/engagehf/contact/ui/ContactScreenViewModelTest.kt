@@ -8,15 +8,15 @@
 
 package com.engagehf.contact.ui
 
-import com.google.common.truth.Truth.assertThat
 import com.engagehf.R
 import com.engagehf.contact.data.EngageContactRepository
 import com.engagehf.contact.ui.ContactScreenViewModel.UiState
+import com.engagehf.modules.contact.Contact
 import com.engagehf.modules.navigation.NavigationEvent
 import com.engagehf.modules.navigation.Navigator
 import com.engagehf.modules.testing.CoroutineTestRule
-import com.engagehf.modules.contact.Contact
 import com.engagehf.modules.ui.StringResource
+import com.google.common.truth.Truth.assertThat
 import io.mockk.coEvery
 import io.mockk.mockk
 import io.mockk.verify

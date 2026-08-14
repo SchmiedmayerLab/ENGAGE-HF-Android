@@ -8,10 +8,10 @@
 
 package com.engagehf.modules.navigation.internal
 
-import com.engagehf.modules.navigation.NavigationEvent
-import com.engagehf.modules.navigation.Navigator
 import com.engagehf.modules.core.coroutines.Dispatching
 import com.engagehf.modules.core.logging.engageLogger
+import com.engagehf.modules.navigation.NavigationEvent
+import com.engagehf.modules.navigation.Navigator
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.flow.MutableSharedFlow
 import kotlinx.coroutines.flow.SharedFlow

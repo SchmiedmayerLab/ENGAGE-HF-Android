@@ -10,7 +10,6 @@ package com.engagehf.questionnaire
 
 import androidx.lifecycle.SavedStateHandle
 import ca.uhn.fhir.parser.IParser
-import com.google.common.truth.Truth.assertThat
 import com.engagehf.R
 import com.engagehf.modules.navigation.NavigationEvent
 import com.engagehf.modules.navigation.Navigator
@@ -18,8 +17,9 @@ import com.engagehf.modules.testing.CoroutineTestRule
 import com.engagehf.modules.testing.coVerifyNever
 import com.engagehf.modules.testing.runTestUnconfined
 import com.engagehf.modules.testing.verifyNever
-import com.engagehf.modules.utils.MessageNotifier
 import com.engagehf.modules.ui.StringResource
+import com.engagehf.modules.utils.MessageNotifier
+import com.google.common.truth.Truth.assertThat
 import io.mockk.Runs
 import io.mockk.coEvery
 import io.mockk.coVerify

@@ -9,12 +9,12 @@
 package com.engagehf.onboarding
 
 import android.content.Context
-import dagger.hilt.android.qualifiers.ApplicationContext
 import com.engagehf.R
 import com.engagehf.modules.navigation.Navigator
 import com.engagehf.modules.onboarding.consent.ConsentManager
 import com.engagehf.modules.utils.MessageNotifier
 import com.engagehf.navigation.AppNavigationEvent
+import dagger.hilt.android.qualifiers.ApplicationContext
 import javax.inject.Inject
 
 class EngageConsentManager @Inject internal constructor(

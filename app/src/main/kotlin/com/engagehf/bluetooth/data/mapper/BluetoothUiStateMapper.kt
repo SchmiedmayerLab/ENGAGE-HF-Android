@@ -21,8 +21,8 @@ import com.engagehf.bluetooth.data.models.MeasurementDialogUiState
 import com.engagehf.bluetooth.data.models.VitalDisplayData
 import com.engagehf.bluetooth.service.EngageBLEServiceState
 import com.engagehf.bluetooth.service.Measurement
-import com.engagehf.modules.utils.LocaleProvider
 import com.engagehf.modules.ui.StringResource
+import com.engagehf.modules.utils.LocaleProvider
 import java.time.Instant
 import java.time.ZoneId
 import java.time.ZonedDateTime

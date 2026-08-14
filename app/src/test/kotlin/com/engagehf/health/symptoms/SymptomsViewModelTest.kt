@@ -8,12 +8,12 @@
 
 package com.engagehf.health.symptoms
 
-import com.google.common.truth.Truth.assertThat
 import com.engagehf.R
 import com.engagehf.bluetooth.component.AppScreenEvents
 import com.engagehf.health.HealthRepository
 import com.engagehf.modules.testing.CoroutineTestRule
 import com.engagehf.modules.ui.StringResource
+import com.google.common.truth.Truth.assertThat
 import io.mockk.coEvery
 import io.mockk.every
 import io.mockk.mockk
