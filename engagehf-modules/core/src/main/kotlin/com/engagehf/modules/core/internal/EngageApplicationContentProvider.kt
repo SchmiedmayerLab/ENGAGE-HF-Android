@@ -12,25 +12,25 @@ import android.content.ContentProvider
 import android.content.ContentValues
 import android.database.Cursor
 import android.net.Uri
-import com.engagehf.modules.core.SpeziApplication
+import com.engagehf.modules.core.EngageApplication
 
 /**
- * A [ContentProvider] that initializes the [SpeziApplication] when the application is created.
+ * A [ContentProvider] that initializes the [EngageApplication] when the application is created.
  *
- * This is used to ensure that the SpeziApplication is configured automatically before any other components
+ * This is used to ensure that the EngageApplication is configured automatically before any other components
  * in the application.
  */
-internal class SpeziApplicationContentProvider : ContentProvider() {
-    private val logger by speziCoreLogger()
+internal class EngageApplicationContentProvider : ContentProvider() {
+    private val logger by engageCoreLogger()
 
     override fun onCreate(): Boolean {
-        logger.i { "Initializing SpeziApplicationContentProvider" }
-        val application = context?.applicationContext as? SpeziApplication
+        logger.i { "Initializing EngageApplicationContentProvider" }
+        val application = context?.applicationContext as? EngageApplication
         if (application != null) {
-            logger.i { "Spezi application available. Configuring Spezi" }
-            SpeziApplication.configure(application = application)
+            logger.i { "Engage application available. Configuring Engage" }
+            EngageApplication.configure(application = application)
         } else {
-            logger.w { "Spezi application not available. Skipping configuration for context: ${context?.packageName ?: "null"}" }
+            logger.w { "Engage application not available. Skipping configuration for context: ${context?.packageName ?: "null"}" }
         }
         return true
     }

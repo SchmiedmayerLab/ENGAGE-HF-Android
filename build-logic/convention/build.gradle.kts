@@ -50,12 +50,12 @@ fun NamedDomainObjectContainer<PluginDeclaration>.conventionPlugin(id: String, c
 gradlePlugin {
     plugins {
         // Please keep plugins sorted. Select all method calls below and in Android Studio `Edit > Sort Lines`
-        conventionPlugin(id = "application", className = "SpeziApplicationConventionPlugin")
-        conventionPlugin(id = "base", className = "SpeziBaseConfigConventionPlugin")
-        conventionPlugin(id = "compose", className = "SpeziComposeConventionPlugin")
+        conventionPlugin(id = "application", className = "EngageApplicationConventionPlugin")
+        conventionPlugin(id = "base", className = "EngageBaseConfigConventionPlugin")
+        conventionPlugin(id = "compose", className = "EngageComposeConventionPlugin")
         conventionPlugin(id = "desugaring", className = "DesugaringConventionPlugin")
         conventionPlugin(id = "hilt", className = "HiltConventionPlugin")
-        conventionPlugin(id = "library", className = "SpeziLibraryConventionPlugin")
-        conventionPlugin(id = "serialization", className = "SpeziSerializationConventionPlugin")
+        conventionPlugin(id = "library", className = "EngageLibraryConventionPlugin")
+        conventionPlugin(id = "serialization", className = "EngageSerializationConventionPlugin")
     }
 }

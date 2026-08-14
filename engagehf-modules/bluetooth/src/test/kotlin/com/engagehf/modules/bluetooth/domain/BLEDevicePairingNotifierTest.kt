@@ -14,7 +14,7 @@ import android.content.BroadcastReceiver
 import android.content.Context
 import android.content.Intent
 import android.content.IntentFilter
-import com.engagehf.modules.testing.SpeziTestScope
+import com.engagehf.modules.testing.EngageTestScope
 import com.engagehf.modules.testing.runTestUnconfined
 import com.engagehf.modules.testing.verifyNever
 import io.mockk.every
@@ -34,7 +34,7 @@ class BLEDevicePairingNotifierTest {
 
     private val notifier = BLEDevicePairingNotifier(
         context = context,
-        ioScope = SpeziTestScope()
+        ioScope = EngageTestScope()
     )
 
     @Before

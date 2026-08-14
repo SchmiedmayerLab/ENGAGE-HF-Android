@@ -15,7 +15,7 @@ import dagger.hilt.android.qualifiers.ApplicationContext
 import com.engagehf.R
 import com.engagehf.modules.account.manager.UserSessionManager
 import com.engagehf.modules.core.coroutines.Dispatching
-import com.engagehf.modules.core.logging.speziLogger
+import com.engagehf.modules.core.logging.engageLogger
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.tasks.await
 import kotlinx.coroutines.withContext
@@ -32,7 +32,7 @@ class PhoneNumberService @Inject constructor(
 ) {
     private val phoneNumberUtil by lazy { PhoneNumberUtil.getInstance() }
 
-    private val logger by speziLogger()
+    private val logger by engageLogger()
 
     suspend fun startPhoneNumberVerification(phoneNumber: String): Result<Unit> = withContext(ioDispatcher) {
         runCatching {

@@ -23,7 +23,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import com.engagehf.modules.ui.theme.Spacings
-import com.engagehf.modules.ui.theme.SpeziTheme
+import com.engagehf.modules.ui.theme.EngageTheme
 import com.engagehf.modules.ui.theme.ThemePreviews
 
 @Composable
@@ -61,7 +61,7 @@ fun DescriptionGridRow(
 @ThemePreviews
 @Composable
 private fun DescriptionGridRowPreviews() {
-    SpeziTheme {
+    EngageTheme {
         Column {
             DescriptionGridRow(description = {
                 Text("Description")

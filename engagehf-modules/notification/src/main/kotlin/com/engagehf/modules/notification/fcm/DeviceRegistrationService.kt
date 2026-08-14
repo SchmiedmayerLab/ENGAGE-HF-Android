@@ -15,7 +15,7 @@ import com.google.firebase.messaging.FirebaseMessaging
 import dagger.hilt.android.qualifiers.ApplicationContext
 import com.engagehf.modules.utils.BuildInfo
 import com.engagehf.modules.core.coroutines.Dispatching
-import com.engagehf.modules.core.logging.speziLogger
+import com.engagehf.modules.core.logging.engageLogger
 import com.engagehf.modules.storage.credential.KeyValueStorage
 import com.engagehf.modules.storage.credential.Storage
 import com.engagehf.modules.storage.credential.getSerializable
@@ -49,7 +49,7 @@ internal class DeviceRegistrationServiceImpl @Inject constructor(
     private val buildInfo: BuildInfo,
 ) : DeviceRegistrationService {
 
-    private val logger by speziLogger()
+    private val logger by engageLogger()
 
     /**
      * Registers the device with the server.

@@ -12,7 +12,7 @@ import android.content.Context
 
 /**
  * An interface for providing a default module instance to be used in the module dependency graph in case no explicit instance is
- * registered in the configuration block of the [SpeziApplication]. In case the module is not registered, Spezi will try to create
+ * registered in the configuration block of the [EngageApplication]. In case the module is not registered, Engage will try to create
  * the instance by checking whether the companion object of the Module type implements this interface.
  *
  * Example usage:

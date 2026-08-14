@@ -22,7 +22,7 @@ import androidx.compose.ui.tooling.preview.PreviewParameter
 import androidx.compose.ui.tooling.preview.PreviewParameterProvider
 import com.engagehf.modules.foundation.UUID
 import com.engagehf.modules.ui.theme.Colors
-import com.engagehf.modules.ui.theme.SpeziTheme
+import com.engagehf.modules.ui.theme.EngageTheme
 import com.engagehf.modules.ui.theme.ThemePreviews
 
 /**
@@ -84,7 +84,7 @@ sealed interface ImageResource : ComposableContent {
 private fun ImageResourceContentPreview(
     @PreviewParameter(ImageResourceProvider::class) imageResource: ImageResource,
 ) {
-    SpeziTheme {
+    EngageTheme {
         imageResource.Content()
     }
 }

@@ -62,7 +62,7 @@ import com.engagehf.modules.ui.ValidatedOutlinedTextField
 import com.engagehf.modules.ui.testIdentifier
 import com.engagehf.modules.ui.theme.Colors
 import com.engagehf.modules.ui.theme.Spacings
-import com.engagehf.modules.ui.theme.SpeziTheme
+import com.engagehf.modules.ui.theme.EngageTheme
 import com.engagehf.modules.ui.theme.TextStyles.bodyLarge
 import com.engagehf.modules.ui.theme.TextStyles.titleLarge
 import com.engagehf.modules.design.R as DesignR
@@ -243,7 +243,7 @@ internal fun LoginScreen(
 private fun LoginScreenPreview(
     @PreviewParameter(LoginScreenPreviewProvider::class) uiState: UiState,
 ) {
-    SpeziTheme {
+    EngageTheme {
         LoginScreen(uiState = uiState, onAction = { })
     }
 }

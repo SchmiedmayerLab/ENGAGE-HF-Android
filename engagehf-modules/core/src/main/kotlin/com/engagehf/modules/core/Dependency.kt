@@ -8,10 +8,10 @@
 
 package com.engagehf.modules.core
 
-import com.engagehf.modules.core.internal.Spezi
+import com.engagehf.modules.core.internal.Engage
 
 /**
- * Lazy delegate to retrieve an optional module dependency from the [SpeziApplication] dependency graph.
+ * Lazy delegate to retrieve an optional module dependency from the [EngageApplication] dependency graph.
  *
  * Example usage:
  *
@@ -26,14 +26,14 @@ import com.engagehf.modules.core.internal.Spezi
  * }
  */
 inline fun <reified M : Module> optionalDependency(identifier: String? = null) = lazy {
-    Spezi.requireGraph().optionalDependency<M>(identifier)
+    Engage.requireGraph().optionalDependency<M>(identifier)
 }
 
 /**
- * Lazy delegate to retrieve a required module dependency from the [SpeziApplication] dependency graph.
+ * Lazy delegate to retrieve a required module dependency from the [EngageApplication] dependency graph.
  *
  * This will throw an exception if the dependency is not found / have been registered beforehand
- * in the [Configuration] block of [SpeziApplication].
+ * in the [Configuration] block of [EngageApplication].
  *
  * Example usage:
  *
@@ -48,5 +48,5 @@ inline fun <reified M : Module> optionalDependency(identifier: String? = null) =
  * }
  */
 inline fun <reified M : Module> dependency(identifier: String? = null): Lazy<M> = lazy {
-    Spezi.requireGraph().dependency(identifier)
+    Engage.requireGraph().dependency(identifier)
 }

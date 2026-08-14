@@ -27,7 +27,7 @@ import com.engagehf.modules.ui.markdown.MarkdownComponent
 import com.engagehf.modules.ui.markdown.MarkdownElement
 import com.engagehf.modules.ui.testIdentifier
 import com.engagehf.modules.ui.theme.Spacings
-import com.engagehf.modules.ui.theme.SpeziTheme
+import com.engagehf.modules.ui.theme.EngageTheme
 
 @Composable
 fun ConsentScreen() {
@@ -69,7 +69,7 @@ private fun ConsentScreen(
 private fun ConsentScreenPreview(
     @PreviewParameter(ConsentScreenPreviewProvider::class) uiState: ConsentUiState,
 ) {
-    SpeziTheme {
+    EngageTheme {
         ConsentScreen(uiState = uiState, onAction = { })
     }
 }

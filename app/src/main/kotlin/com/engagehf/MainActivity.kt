@@ -56,7 +56,7 @@ import com.engagehf.phonenumber.PhoneNumberSettingsScreen
 import com.engagehf.questionnaire.QuestionnaireScreen
 import com.engagehf.modules.core.coroutines.Dispatching
 import com.engagehf.modules.ui.theme.Sizes
-import com.engagehf.modules.ui.theme.SpeziTheme
+import com.engagehf.modules.ui.theme.EngageTheme
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.launch
 import javax.inject.Inject
@@ -84,7 +84,7 @@ class MainActivity : AppCompatActivity() {
         }
         super.onCreate(savedInstanceState)
         setContent {
-            SpeziTheme {
+            EngageTheme {
                 when (val uiState = viewModel.uiState.collectAsState().value) {
                     is MainUiState.SplashScreen -> Loading()
                     is MainUiState.Content -> {
@@ -94,7 +94,7 @@ class MainActivity : AppCompatActivity() {
                             navHostController = navHostController,
                             startDestination = uiState.startDestination
                         )
-                        setTheme(R.style.Theme_Spezi_Content)
+                        setTheme(R.style.Theme_EngageHF_Content)
                     }
                 }
             }

@@ -12,7 +12,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.res.stringResource
 import com.engagehf.R
 import com.engagehf.health.components.ItemsDialog
-import com.engagehf.modules.ui.theme.SpeziTheme
+import com.engagehf.modules.ui.theme.EngageTheme
 import com.engagehf.modules.ui.theme.ThemePreviews
 
 @Composable
@@ -49,7 +49,7 @@ fun MeasurementLocationDialog(
 @ThemePreviews
 @Composable
 fun MeasurementLocationDialogPreview() {
-    SpeziTheme {
+    EngageTheme {
         MeasurementLocationDialog(
             onDismissRequest = {},
             onOptionSelected = {},

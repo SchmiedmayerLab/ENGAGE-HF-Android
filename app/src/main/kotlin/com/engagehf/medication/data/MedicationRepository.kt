@@ -12,7 +12,7 @@ import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.firestore.ListenerRegistration
 import com.engagehf.modules.account.manager.UserSessionManager
 import com.engagehf.modules.core.coroutines.Dispatching
-import com.engagehf.modules.core.logging.speziLogger
+import com.engagehf.modules.core.logging.engageLogger
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.channels.awaitClose
 import kotlinx.coroutines.flow.Flow
@@ -26,7 +26,7 @@ internal class MedicationRepository @Inject constructor(
     private val firestore: FirebaseFirestore,
     private val medicationRecommendationMapper: MedicationRecommendationMapper,
 ) {
-    private val logger by speziLogger()
+    private val logger by engageLogger()
 
     suspend fun observeMedicationRecommendations(): Flow<Result<List<MedicationRecommendation>>> =
         callbackFlow {

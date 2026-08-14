@@ -20,7 +20,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import com.engagehf.modules.ui.theme.SpeziTheme
+import com.engagehf.modules.ui.theme.EngageTheme
 import com.engagehf.modules.ui.theme.TextStyles
 import com.engagehf.modules.ui.theme.ThemePreviews
 
@@ -53,7 +53,7 @@ fun SectionHeader(
 @ThemePreviews
 @Composable
 private fun SectionHeaderPreview() {
-    SpeziTheme {
+    EngageTheme {
         SectionHeader(
             title = "Section Header",
             isExpanded = true,

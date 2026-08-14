@@ -33,7 +33,7 @@ import com.engagehf.health.components.TimePicker
 import com.engagehf.health.time.TimePickerState
 import com.engagehf.modules.ui.VerticalSpacer
 import com.engagehf.modules.ui.theme.Spacings
-import com.engagehf.modules.ui.theme.SpeziTheme
+import com.engagehf.modules.ui.theme.EngageTheme
 import com.engagehf.modules.ui.theme.TextStyles
 import com.engagehf.modules.ui.theme.ThemePreviews
 import java.time.Instant
@@ -132,7 +132,7 @@ private class AddWeightBottomSheetStepProvider :
 fun AddWeightBottomSheetPreview(
     @PreviewParameter(AddWeightBottomSheetStepProvider::class) uiState: AddWeightBottomSheetUiState,
 ) {
-    SpeziTheme {
+    EngageTheme {
         AddWeightBottomSheet(uiState = uiState, onAction = {})
     }
 }

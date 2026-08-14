@@ -18,7 +18,7 @@ import com.engagehf.bluetooth.component.AppScreenEvents
 import com.engagehf.health.AggregatedHealthData
 import com.engagehf.health.HealthRepository
 import com.engagehf.health.TableEntryData
-import com.engagehf.modules.core.logging.speziLogger
+import com.engagehf.modules.core.logging.engageLogger
 import com.engagehf.modules.ui.StringResource
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.asStateFlow
@@ -36,7 +36,7 @@ class SymptomsViewModel @Inject internal constructor(
     private val healthRepository: HealthRepository,
     private val appScreenEvents: AppScreenEvents,
 ) : ViewModel() {
-    private val logger by speziLogger()
+    private val logger by engageLogger()
 
     private val _uiState = MutableStateFlow<SymptomsUiState>(SymptomsUiState.Loading)
     val uiState = _uiState.asStateFlow()

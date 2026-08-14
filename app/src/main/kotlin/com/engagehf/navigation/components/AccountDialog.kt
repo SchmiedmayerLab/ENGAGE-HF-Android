@@ -52,7 +52,7 @@ import com.engagehf.modules.ui.theme.Colors.secondary
 import com.engagehf.modules.ui.theme.Colors.surface
 import com.engagehf.modules.ui.theme.Sizes
 import com.engagehf.modules.ui.theme.Spacings
-import com.engagehf.modules.ui.theme.SpeziTheme
+import com.engagehf.modules.ui.theme.EngageTheme
 import com.engagehf.modules.ui.theme.TextStyles
 import com.engagehf.modules.ui.theme.TextStyles.bodyMedium
 import com.engagehf.modules.ui.theme.TextStyles.bodySmall
@@ -269,7 +269,7 @@ class AppTopBarProvider : PreviewParameterProvider<AccountUiState> {
 fun AccountDialogPreview(
     @PreviewParameter(AppTopBarProvider::class) accountUiState: AccountUiState,
 ) {
-    SpeziTheme {
+    EngageTheme {
         AccountDialog(
             accountUiState = accountUiState,
             onAction = {}

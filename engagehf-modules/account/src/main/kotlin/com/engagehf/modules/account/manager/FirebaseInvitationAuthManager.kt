@@ -9,7 +9,7 @@
 package com.engagehf.modules.account.manager
 
 import com.google.firebase.functions.FirebaseFunctions
-import com.engagehf.modules.core.logging.speziLogger
+import com.engagehf.modules.core.logging.engageLogger
 import kotlinx.coroutines.tasks.await
 import javax.inject.Inject
 
@@ -18,7 +18,7 @@ internal class FirebaseInvitationAuthManager @Inject constructor(
     private val userSessionManager: UserSessionManager,
 ) : InvitationAuthManager {
 
-    private val logger by speziLogger()
+    private val logger by engageLogger()
 
     override suspend fun checkInvitationCode(invitationCode: String): Result<Unit> {
         return runCatching {

@@ -18,7 +18,7 @@ import com.engagehf.modules.navigation.NavigationEvent
 import com.engagehf.modules.navigation.Navigator
 import com.engagehf.modules.utils.MessageNotifier
 import com.engagehf.modules.utils.extensions.decode
-import com.engagehf.modules.core.logging.speziLogger
+import com.engagehf.modules.core.logging.engageLogger
 import com.engagehf.modules.ui.StringResource
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.asStateFlow
@@ -36,7 +36,7 @@ class QuestionnaireViewModel @Inject internal constructor(
     private val notifier: MessageNotifier,
     private val jsonParser: IParser,
 ) : ViewModel() {
-    private val logger by speziLogger()
+    private val logger by engageLogger()
 
     private val _uiState = MutableStateFlow<State>(State.Loading)
     val uiState = _uiState.asStateFlow()

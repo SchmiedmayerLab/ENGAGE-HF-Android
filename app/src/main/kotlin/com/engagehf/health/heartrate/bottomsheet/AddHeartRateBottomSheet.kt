@@ -33,7 +33,7 @@ import com.engagehf.health.components.TimePicker
 import com.engagehf.health.time.TimePickerState
 import com.engagehf.modules.ui.VerticalSpacer
 import com.engagehf.modules.ui.theme.Spacings
-import com.engagehf.modules.ui.theme.SpeziTheme
+import com.engagehf.modules.ui.theme.EngageTheme
 import com.engagehf.modules.ui.theme.TextStyles
 import com.engagehf.modules.ui.theme.ThemePreviews
 import java.time.Instant
@@ -128,7 +128,7 @@ private class AddHeartRateBottomSheetUiStateProvider :
 private fun AddHeartRateBottomSheetPreview(
     @PreviewParameter(AddHeartRateBottomSheetUiStateProvider::class) uiState: AddHeartRateBottomSheetUiState,
 ) {
-    SpeziTheme {
+    EngageTheme {
         AddHeartRateBottomSheet(
             uiState = uiState,
             onAction = {}

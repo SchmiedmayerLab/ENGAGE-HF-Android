@@ -11,7 +11,7 @@ package com.engagehf.modules.navigation.internal
 import com.engagehf.modules.navigation.NavigationEvent
 import com.engagehf.modules.navigation.Navigator
 import com.engagehf.modules.core.coroutines.Dispatching
-import com.engagehf.modules.core.logging.speziLogger
+import com.engagehf.modules.core.logging.engageLogger
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.flow.MutableSharedFlow
 import kotlinx.coroutines.flow.SharedFlow
@@ -23,7 +23,7 @@ import javax.inject.Singleton
 internal class NavigatorImpl @Inject constructor(
     @Dispatching.IO private val scope: CoroutineScope,
 ) : Navigator {
-    private val logger by speziLogger()
+    private val logger by engageLogger()
 
     private val _events = MutableSharedFlow<NavigationEvent>(replay = 10)
     override val events: SharedFlow<NavigationEvent> = _events

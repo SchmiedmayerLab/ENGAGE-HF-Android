@@ -19,7 +19,7 @@ import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.alpha
-import com.engagehf.modules.ui.theme.SpeziTheme
+import com.engagehf.modules.ui.theme.EngageTheme
 import com.engagehf.modules.ui.theme.ThemePreviews
 
 @Composable
@@ -67,7 +67,7 @@ fun ProcessingOverlay(
 @ThemePreviews
 @Composable
 private fun ProcessingOverlayPreview() {
-    SpeziTheme {
+    EngageTheme {
         ProcessingOverlay(true) {
             SuspendButton("Do something") {
                 println("Did something")

@@ -11,6 +11,6 @@ package com.engagehf.modules.core.internal
 import com.engagehf.modules.core.logging.groupLogger
 
 /**
- * Spezi core logger with tag "SpeziCoreLogger".
+ * Engage core logger with tag "EngageCoreLogger".
  */
-internal fun speziCoreLogger() = groupLogger(tag = "SpeziCoreLogger")
+internal fun engageCoreLogger() = groupLogger(tag = "EngageCoreLogger")

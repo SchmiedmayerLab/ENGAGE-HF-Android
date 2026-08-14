@@ -16,8 +16,8 @@ SPDX-License-Identifier: MIT
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
     <application>
         <provider
-            android:name="com.engagehf.modules.core.internal.SpeziApplicationContentProvider"
-            android:authorities="${applicationId}.spezi.configuration"
+            android:name="com.engagehf.modules.core.internal.EngageApplicationContentProvider"
+            android:authorities="${applicationId}.engage.configuration"
             android:exported="false"
             android:initOrder="100" />
     </application>

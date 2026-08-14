@@ -32,7 +32,7 @@ import com.engagehf.modules.ui.VerticalSpacer
 import com.engagehf.modules.ui.testIdentifier
 import com.engagehf.modules.ui.theme.Colors
 import com.engagehf.modules.ui.theme.Colors.primary
-import com.engagehf.modules.ui.theme.SpeziTheme
+import com.engagehf.modules.ui.theme.EngageTheme
 import com.engagehf.modules.ui.theme.ThemePreviews
 
 @Composable
@@ -149,7 +149,7 @@ private class QuestionnaireScreenPreviewProvider :
 private fun PreviewQuestionnaireScreen(
     @PreviewParameter(QuestionnaireScreenPreviewProvider::class) uiState: QuestionnaireViewModel.State,
 ) {
-    SpeziTheme {
+    EngageTheme {
         QuestionnaireScreen(
             uiState = uiState,
             onAction = {}

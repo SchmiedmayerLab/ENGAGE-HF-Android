@@ -16,7 +16,7 @@ import com.engagehf.modules.bluetooth.model.BLEDevice
 import com.engagehf.modules.bluetooth.model.BLEServiceEvent
 import com.engagehf.modules.bluetooth.model.BLEServiceState
 import com.engagehf.modules.core.coroutines.Dispatching
-import com.engagehf.modules.core.logging.speziLogger
+import com.engagehf.modules.core.logging.engageLogger
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.flow.Flow
@@ -33,7 +33,7 @@ class EngageBLEService @Inject constructor(
     @Dispatching.IO private val ioScope: CoroutineScope,
     private val measurementMapper: MeasurementMapper,
 ) {
-    private val logger by speziLogger()
+    private val logger by engageLogger()
     private val _events =
         MutableSharedFlow<EngageBLEServiceEvent>(replay = 1, extraBufferCapacity = 1)
     private var eventsJob: Job? = null

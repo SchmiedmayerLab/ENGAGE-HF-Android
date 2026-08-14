@@ -13,7 +13,7 @@ import com.google.firebase.messaging.RemoteMessage
 import dagger.hilt.android.AndroidEntryPoint
 import com.engagehf.modules.notification.notifier.FirebaseMessage
 import com.engagehf.modules.notification.notifier.NotificationNotifier
-import com.engagehf.modules.core.logging.speziLogger
+import com.engagehf.modules.core.logging.engageLogger
 import javax.inject.Inject
 
 /*
@@ -23,7 +23,7 @@ import javax.inject.Inject
 @AndroidEntryPoint
 internal class FCMNotificationService : FirebaseMessagingService() {
 
-    private val logger by speziLogger()
+    private val logger by engageLogger()
 
     @Inject
     lateinit var deviceRegistrationService: DeviceRegistrationService

@@ -13,7 +13,7 @@ import com.google.firebase.firestore.ListenerRegistration
 import com.google.firebase.functions.FirebaseFunctions
 import com.engagehf.modules.account.manager.UserSessionManager
 import com.engagehf.modules.core.coroutines.Dispatching
-import com.engagehf.modules.core.logging.speziLogger
+import com.engagehf.modules.core.logging.engageLogger
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.channels.awaitClose
@@ -32,7 +32,7 @@ class MessageRepository @Inject constructor(
     @Dispatching.IO private val ioScope: CoroutineScope,
     @Dispatching.IO private val ioDispatcher: CoroutineDispatcher,
 ) {
-    private val logger by speziLogger()
+    private val logger by engageLogger()
 
     fun observeUserMessages(): Flow<List<Message>> = callbackFlow {
         var listenerRegistration: ListenerRegistration? = null

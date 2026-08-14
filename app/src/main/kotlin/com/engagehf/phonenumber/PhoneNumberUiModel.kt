@@ -31,7 +31,7 @@ import com.engagehf.modules.ui.AsyncButton
 import com.engagehf.modules.ui.ComposableContent
 import com.engagehf.modules.ui.ComposeValue
 import com.engagehf.modules.ui.theme.Colors
-import com.engagehf.modules.ui.theme.SpeziTheme
+import com.engagehf.modules.ui.theme.EngageTheme
 import com.engagehf.modules.ui.theme.ThemePreviews
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.launch
@@ -78,7 +78,7 @@ data class PhoneNumberUiModel(
 @ThemePreviews
 @Composable
 private fun Preview() {
-    SpeziTheme {
+    EngageTheme {
         PhoneNumberUiModel(
             phoneNumber = "+1 234 567 8900",
             onDeleteClicked = {}

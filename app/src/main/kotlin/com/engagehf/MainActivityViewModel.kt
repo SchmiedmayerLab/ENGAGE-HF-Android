@@ -26,7 +26,7 @@ import com.engagehf.modules.onboarding.OnboardingNavigationEvent
 import com.engagehf.modules.utils.MessageNotifier
 import com.engagehf.navigation.AppNavigationEvent
 import com.engagehf.navigation.Routes
-import com.engagehf.modules.core.logging.speziLogger
+import com.engagehf.modules.core.logging.engageLogger
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.asStateFlow
@@ -45,7 +45,7 @@ class MainActivityViewModel @Inject constructor(
     private val messagesHandler: MessagesHandler,
     private val deviceRegistrationService: DeviceRegistrationService,
 ) : ViewModel() {
-    private val logger by speziLogger()
+    private val logger by engageLogger()
     private val _uiState = MutableStateFlow<MainUiState>(MainUiState.SplashScreen)
     val uiState = _uiState.asStateFlow()
 

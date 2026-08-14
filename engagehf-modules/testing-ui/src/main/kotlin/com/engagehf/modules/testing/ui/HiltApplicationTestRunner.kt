@@ -16,7 +16,7 @@ import dagger.hilt.android.testing.HiltTestApplication
 /**
  * A custom runner used to set up a hilt instrumented test application.
  *
- * Do not delete!!! It is referenced via fully qualified name in `SpeziAbstractConfigPlugin`
+ * Do not delete!!! It is referenced via fully qualified name in `EngageAbstractConfigPlugin`
  * which is the base convention plugin used by all the modules of the project
  */
 @Suppress("Unused")

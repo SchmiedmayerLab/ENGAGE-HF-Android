@@ -10,7 +10,7 @@ package com.engagehf
 
 import android.app.Application
 import dagger.hilt.android.HiltAndroidApp
-import com.engagehf.modules.core.logging.SpeziLogger
+import com.engagehf.modules.core.logging.EngageLogger
 
 @HiltAndroidApp
 class MainApplication : Application() {
@@ -18,6 +18,6 @@ class MainApplication : Application() {
     override fun onCreate() {
         super.onCreate()
 
-        SpeziLogger.setLoggingEnabled(enabled = BuildConfig.DEBUG)
+        EngageLogger.setLoggingEnabled(enabled = BuildConfig.DEBUG)
     }
 }

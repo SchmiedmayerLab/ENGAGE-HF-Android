@@ -40,7 +40,7 @@ import com.engagehf.modules.ui.StringResource
 import com.engagehf.modules.ui.personalinfo.PersonNameComponents
 import com.engagehf.modules.ui.theme.Colors.primary
 import com.engagehf.modules.ui.theme.Spacings
-import com.engagehf.modules.ui.theme.SpeziTheme
+import com.engagehf.modules.ui.theme.EngageTheme
 import com.engagehf.modules.ui.theme.TextStyles
 import com.engagehf.modules.ui.theme.ThemePreviews
 import java.util.Locale
@@ -145,7 +145,7 @@ private class ContactUiStateProvider : PreviewParameterProvider<ContactScreenVie
 private fun ContactScreenPreview(
     @PreviewParameter(ContactUiStateProvider::class) uiState: ContactScreenViewModel.UiState,
 ) {
-    SpeziTheme {
+    EngageTheme {
         ContactScreen(
             onAction = {},
             uiState = uiState

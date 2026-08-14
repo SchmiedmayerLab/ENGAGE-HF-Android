@@ -131,7 +131,7 @@ internal val typography = Typography(
 @Preview(showBackground = true)
 @Composable
 private fun TypographyPreview() {
-    SpeziTheme {
+    EngageTheme {
         Column(verticalArrangement = Arrangement.spacedBy(Spacings.small)) {
             Text(
                 text = "headlineLarge",

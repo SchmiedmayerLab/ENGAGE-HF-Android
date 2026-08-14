@@ -14,19 +14,19 @@ import com.engagehf.modules.core.ConfigurationBuilder
 import com.engagehf.modules.core.ConfigurationImpl
 import com.engagehf.modules.core.DependenciesGraph
 import com.engagehf.modules.core.Module
-import com.engagehf.modules.core.SpeziApplication
+import com.engagehf.modules.core.EngageApplication
 import com.engagehf.modules.core.optionalDependency
-import com.engagehf.modules.core.speziError
+import com.engagehf.modules.core.engageError
 import java.util.concurrent.atomic.AtomicReference
 
 /**
- * Singleton instance that holds the constructed [DependenciesGraph] via [Configuration] of [SpeziApplication]s. There is no direct need to
- * interact with this object, as the configuration is done via [SpeziApplicationContentProvider] on app start up time for applications that
- * conform to [SpeziApplication].
+ * Singleton instance that holds the constructed [DependenciesGraph] via [Configuration] of [EngageApplication]s. There is no direct need to
+ * interact with this object, as the configuration is done via [EngageApplicationContentProvider] on app start up time for applications that
+ * conform to [EngageApplication].
  */
 @PublishedApi
-internal object Spezi {
-    val logger by speziCoreLogger()
+internal object Engage {
+    val logger by engageCoreLogger()
 
     @PublishedApi
     internal val graph = AtomicReference<DependenciesGraph>(null)
@@ -35,18 +35,18 @@ internal object Spezi {
     internal fun requireGraph(): DependenciesGraph = graph.get()
         ?: run {
             val message = """
-                Spezi is not configured configured yet. Please make sure your main application conforms to [SpeziApplication],
+                Engage is not configured configured yet. Please make sure your main application conforms to [EngageApplication],
                 and you did not request dependencies in the configuration block outside of module factories.
             """.trimMargin()
-            speziError(message)
+            engageError(message)
         }
 
     /**
-     * Constructs the [DependenciesGraph] out of the [Configuration] of [SpeziApplication], registers [ApplicationModule] module and invokes
+     * Constructs the [DependenciesGraph] out of the [Configuration] of [EngageApplication], registers [ApplicationModule] module and invokes
      * [Module.configure] on all registered modules in the graph.
      */
-    fun configure(application: SpeziApplication) {
-        logger.i { "Configuring spezi application $application" }
+    fun configure(application: EngageApplication) {
+        logger.i { "Configuring application $application" }
         val configuration = application.configuration as ConfigurationImpl
         val registry = configuration.registry
         registry.register(
@@ -59,7 +59,7 @@ internal object Spezi {
     }
 
     /**
-     * Constructs the [DependenciesGraph] out of the [Configuration] of [SpeziApplication], registers [ApplicationModule] module and invokes
+     * Constructs the [DependenciesGraph] out of the [Configuration] of [EngageApplication], registers [ApplicationModule] module and invokes
      * [Module.configure] on all registered modules in the graph.
      */
     fun configure(

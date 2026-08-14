@@ -34,7 +34,7 @@ import com.engagehf.modules.ui.height
 import com.engagehf.modules.ui.testIdentifier
 import com.engagehf.modules.ui.theme.Colors
 import com.engagehf.modules.ui.theme.Spacings
-import com.engagehf.modules.ui.theme.SpeziTheme
+import com.engagehf.modules.ui.theme.EngageTheme
 import com.engagehf.modules.ui.theme.TextStyles
 import com.engagehf.modules.ui.theme.ThemePreviews
 import java.text.SimpleDateFormat
@@ -184,7 +184,7 @@ private class VitalDisplayDataProvider : PreviewParameterProvider<VitalDisplayDa
 @Composable
 @Suppress("UnusedPrivateMember")
 private fun VitalDisplayPreview(@PreviewParameter(VitalDisplayDataProvider::class) state: VitalDisplayData) {
-    SpeziTheme {
+    EngageTheme {
         VitalDisplay(
             vitalDisplayUiState = state
         )

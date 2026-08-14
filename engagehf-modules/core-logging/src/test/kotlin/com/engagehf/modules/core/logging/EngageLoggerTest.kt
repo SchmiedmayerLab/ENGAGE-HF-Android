@@ -11,10 +11,10 @@ package com.engagehf.modules.core.logging
 import com.google.common.truth.Truth.assertThat
 import org.junit.Test
 
-class SpeziLoggerTest {
+class EngageLoggerTest {
 
     @Test
     fun `GLOBAL_CONFIG must be set to null`() {
-        assertThat(SpeziLogger.GLOBAL_CONFIG).isNull()
+        assertThat(EngageLogger.GLOBAL_CONFIG).isNull()
     }
 }

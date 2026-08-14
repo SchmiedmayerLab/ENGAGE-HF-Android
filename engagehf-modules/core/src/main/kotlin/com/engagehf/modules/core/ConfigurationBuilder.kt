@@ -12,7 +12,7 @@ import com.engagehf.modules.core.internal.ModuleKey
 import com.engagehf.modules.core.internal.ModuleRegistry
 
 /**
- * Builder for creating a [Configuration] for a [SpeziApplication].
+ * Builder for creating a [Configuration] for a [EngageApplication].
  */
 class ConfigurationBuilder internal constructor() {
     @PublishedApi

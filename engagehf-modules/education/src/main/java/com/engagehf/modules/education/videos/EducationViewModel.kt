@@ -15,7 +15,7 @@ import com.engagehf.modules.education.EducationNavigationEvent
 import com.engagehf.modules.education.R
 import com.engagehf.modules.education.videos.data.repository.EducationRepository
 import com.engagehf.modules.navigation.Navigator
-import com.engagehf.modules.core.logging.speziLogger
+import com.engagehf.modules.core.logging.engageLogger
 import com.engagehf.modules.ui.StringResource
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.asStateFlow
@@ -27,7 +27,7 @@ internal class EducationViewModel @Inject constructor(
     private val educationRepository: EducationRepository,
     private val navigator: Navigator,
 ) : ViewModel() {
-    private val logger by speziLogger()
+    private val logger by engageLogger()
     private val _uiState = MutableStateFlow<UiState>(UiState.Loading)
     val uiState = _uiState.asStateFlow()
 

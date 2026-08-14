@@ -16,7 +16,7 @@ import androidx.compose.runtime.MutableState
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
-import com.engagehf.modules.ui.theme.SpeziTheme
+import com.engagehf.modules.ui.theme.EngageTheme
 import com.engagehf.modules.ui.theme.ThemePreviews
 
 @Composable
@@ -61,7 +61,7 @@ fun ViewStateAlert(
 private fun ViewStateAlertPreview() {
     val state = remember { mutableStateOf<ViewState>(ViewState.Error(NotImplementedError())) }
 
-    SpeziTheme {
+    EngageTheme {
         ViewStateAlert(state)
     }
 }

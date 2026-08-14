@@ -12,7 +12,7 @@ import com.google.firebase.functions.FirebaseFunctions
 import com.engagehf.modules.account.manager.UserSessionManager
 import com.engagehf.modules.utils.JsonMap
 import com.engagehf.modules.core.coroutines.Dispatching
-import com.engagehf.modules.core.logging.speziLogger
+import com.engagehf.modules.core.logging.engageLogger
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.tasks.await
 import kotlinx.coroutines.withContext
@@ -24,7 +24,7 @@ class HealthSummaryRepository @Inject constructor(
     private val firebaseFunctions: FirebaseFunctions,
     @Dispatching.IO private val ioDispatcher: CoroutineDispatcher,
 ) {
-    private val logger by speziLogger()
+    private val logger by engageLogger()
 
     suspend fun getHealthSummary(): Result<ByteArray> = withContext(ioDispatcher) {
         runCatching {

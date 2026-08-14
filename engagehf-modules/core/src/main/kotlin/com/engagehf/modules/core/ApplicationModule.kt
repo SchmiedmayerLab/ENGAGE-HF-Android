@@ -9,9 +9,9 @@
 package com.engagehf.modules.core
 
 /**
- * An automatically registered module during app start up that provides access to the spezi application instance.
+ * An automatically registered module during app start up that provides access to the application instance.
  */
-class ApplicationModule internal constructor(val application: SpeziApplication) : Module {
+class ApplicationModule internal constructor(val application: EngageApplication) : Module {
     override fun equals(other: Any?): Boolean {
         return other is ApplicationModule && other.application == application
     }

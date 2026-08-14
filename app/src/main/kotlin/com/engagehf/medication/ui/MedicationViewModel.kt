@@ -18,7 +18,7 @@ import com.engagehf.medication.data.MedicationRepository
 import com.engagehf.modules.education.EducationNavigationEvent
 import com.engagehf.modules.navigation.Navigator
 import com.engagehf.modules.utils.MessageNotifier
-import com.engagehf.modules.core.logging.speziLogger
+import com.engagehf.modules.core.logging.engageLogger
 import com.engagehf.modules.ui.StringResource
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.asStateFlow
@@ -36,7 +36,7 @@ class MedicationViewModel @Inject internal constructor(
     private val messageNotifier: MessageNotifier,
 ) : ViewModel() {
 
-    private val logger by speziLogger()
+    private val logger by engageLogger()
 
     private val _uiState = MutableStateFlow<MedicationUiState>(MedicationUiState.Loading)
 

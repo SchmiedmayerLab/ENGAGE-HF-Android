@@ -22,7 +22,7 @@ import androidx.compose.ui.Modifier
 import com.engagehf.modules.ui.VerticalSpacer
 import com.engagehf.modules.ui.theme.Colors
 import com.engagehf.modules.ui.theme.Spacings
-import com.engagehf.modules.ui.theme.SpeziTheme
+import com.engagehf.modules.ui.theme.EngageTheme
 import com.engagehf.modules.ui.theme.TextStyles
 import com.engagehf.modules.ui.theme.ThemePreviews
 
@@ -67,7 +67,7 @@ fun ItemsDialog(
 @ThemePreviews
 @Composable
 private fun BodyPositionsDialogPreview() {
-    SpeziTheme {
+    EngageTheme {
         ItemsDialog(
             title = "Title",
             items = listOf("Item 1", "Item 2", "Item 3"),

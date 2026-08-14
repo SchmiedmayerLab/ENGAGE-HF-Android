@@ -15,7 +15,7 @@ import com.google.common.truth.Truth.assertThat
 import com.engagehf.modules.bluetooth.model.BLEDevice
 import com.engagehf.modules.bluetooth.model.BLEServiceEvent
 import com.engagehf.modules.bluetooth.model.BLEServiceState
-import com.engagehf.modules.testing.SpeziTestScope
+import com.engagehf.modules.testing.EngageTestScope
 import com.engagehf.modules.testing.runTestUnconfined
 import com.engagehf.modules.testing.verifyNever
 import com.engagehf.modules.utils.PermissionChecker
@@ -59,7 +59,7 @@ class BLEServiceTest {
             bluetoothAdapter = bluetoothAdapter,
             permissionChecker = permissionChecker,
             deviceScanner = deviceScanner,
-            scope = SpeziTestScope(),
+            scope = EngageTestScope(),
             deviceConnectorFactory = deviceConnectorFactory,
             pairedDevicesStorage = pairedDevicesStorage,
             bleDevicePairingNotifier = bleDevicePairingNotifier,

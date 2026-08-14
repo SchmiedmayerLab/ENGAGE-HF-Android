@@ -19,7 +19,7 @@ import com.engagehf.modules.bluetooth.api.BLEService
 import com.engagehf.modules.bluetooth.model.BLEDevice
 import com.engagehf.modules.bluetooth.model.BLEServiceEvent
 import com.engagehf.modules.bluetooth.model.BLEServiceState
-import com.engagehf.modules.testing.SpeziTestScope
+import com.engagehf.modules.testing.EngageTestScope
 import com.engagehf.modules.testing.runTestUnconfined
 import com.engagehf.modules.foundation.UUID
 import io.mockk.coEvery
@@ -45,7 +45,7 @@ class EngageBLEServiceTest {
         EngageBLEService(
             bleService = bleService,
             measurementMapper = measurementMapper,
-            ioScope = SpeziTestScope()
+            ioScope = EngageTestScope()
         )
     }
 

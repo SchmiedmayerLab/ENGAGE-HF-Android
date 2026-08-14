@@ -28,7 +28,7 @@ import androidx.fragment.compose.AndroidFragment
 import androidx.fragment.compose.rememberFragmentState
 import ca.uhn.fhir.context.FhirContext
 import com.google.android.fhir.datacapture.QuestionnaireFragment
-import com.engagehf.modules.core.logging.SpeziLogger
+import com.engagehf.modules.core.logging.EngageLogger
 import com.engagehf.modules.ui.testIdentifier
 import kotlinx.coroutines.launch
 import org.hl7.fhir.r4.model.Questionnaire
@@ -144,7 +144,7 @@ private fun QuestionnaireFragment.adjustBottomNavButtonSizesIfNeeded() {
     val view = view ?: return
     val fontScale = Resources.getSystem().configuration.fontScale
     val displayScale = view.context.resources.displayMetrics.density
-    SpeziLogger.tag(TAG).i { "System font scale: $fontScale, display scale: $displayScale" }
+    EngageLogger.tag(TAG).i { "System font scale: $fontScale, display scale: $displayScale" }
 
     if (fontScale >= MAX_FONT_SCALE && displayScale >= MAX_DISPLAY_SCALE) {
         // Iterating through the res ids of the buttons defined in questionnaire_fragment.xml of
@@ -157,7 +157,7 @@ private fun QuestionnaireFragment.adjustBottomNavButtonSizesIfNeeded() {
             DataCaptureR.id.submit_questionnaire
         ).forEach { buttonId ->
             view.findViewById<Button>(buttonId)?.let { button ->
-                SpeziLogger.tag(TAG).i { "Reducing button $buttonId size" }
+                EngageLogger.tag(TAG).i { "Reducing button $buttonId size" }
                 button.textSize = REDUCED_BUTTON_TEXT_SIZE
                 val layoutParams = button.layoutParams as? ViewGroup.MarginLayoutParams
                 layoutParams?.setMargins(

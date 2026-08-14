@@ -15,7 +15,7 @@ import androidx.compose.runtime.MutableState
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.rememberCoroutineScope
-import com.engagehf.modules.ui.theme.SpeziTheme
+import com.engagehf.modules.ui.theme.EngageTheme
 import com.engagehf.modules.ui.theme.ThemePreviews
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
@@ -92,7 +92,7 @@ fun SuspendButton(
 @Composable
 private fun SuspendButtonPreview() {
     val state = remember { mutableStateOf<ViewState>(ViewState.Idle) }
-    SpeziTheme {
+    EngageTheme {
         SuspendButton("Test Button", state) {
             throw NotImplementedError()
         }

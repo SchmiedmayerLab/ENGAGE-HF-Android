@@ -27,7 +27,7 @@ import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.input.VisualTransformation
 import androidx.compose.ui.unit.dp
 import com.engagehf.modules.ui.DescriptionGridRow
-import com.engagehf.modules.ui.theme.SpeziTheme
+import com.engagehf.modules.ui.theme.EngageTheme
 import com.engagehf.modules.ui.theme.ThemePreviews
 import kotlin.reflect.KMutableProperty1
 
@@ -156,7 +156,7 @@ fun NameFieldRow(
 private fun NameFieldRowPreview() {
     val nameBuilder = remember { PersonNameComponents.Builder() }
 
-    SpeziTheme {
+    EngageTheme {
         Column {
             NameFieldRow(
                 nameBuilder,

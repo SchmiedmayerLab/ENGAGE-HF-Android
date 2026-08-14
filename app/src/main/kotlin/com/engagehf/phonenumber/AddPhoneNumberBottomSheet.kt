@@ -35,7 +35,7 @@ import com.engagehf.modules.ui.theme.Colors.onBackground
 import com.engagehf.modules.ui.theme.Colors.primary
 import com.engagehf.modules.ui.theme.Sizes
 import com.engagehf.modules.ui.theme.Spacings
-import com.engagehf.modules.ui.theme.SpeziTheme
+import com.engagehf.modules.ui.theme.EngageTheme
 import com.engagehf.modules.ui.theme.TextStyles
 import com.engagehf.modules.ui.theme.ThemePreviews
 
@@ -114,5 +114,5 @@ private class AddPhoneNumberBottomSheetParamProvider : PreviewParameterProvider<
 fun AddPhoneNumberBottomSheetPreview(
     @PreviewParameter(AddPhoneNumberBottomSheetParamProvider::class) state: AddPhoneNumberBottomSheet,
 ) {
-    SpeziTheme { state.Content() }
+    EngageTheme { state.Content() }
 }

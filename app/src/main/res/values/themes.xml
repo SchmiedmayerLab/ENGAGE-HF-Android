@@ -15,15 +15,15 @@ SPDX-License-Identifier: MIT
 
 <resources>
 
-    <style name="Theme.Spezi.SplashScreen" parent="Theme.SplashScreen">
+    <style name="Theme.EngageHF.SplashScreen" parent="Theme.SplashScreen">
         <item name="windowSplashScreenBackground">@color/white</item>
         <item name="windowSplashScreenAnimatedIcon">@mipmap/ic_launcher_round</item>
-        <item name="postSplashScreenTheme">@style/Theme.Spezi</item>
+        <item name="postSplashScreenTheme">@style/Theme.EngageHF</item>
     </style>
 
-    <style name="Theme.Spezi" parent="Theme.AppCompat.Light.NoActionBar" />
+    <style name="Theme.EngageHF" parent="Theme.AppCompat.Light.NoActionBar" />
 
-    <style name="Theme.Spezi.Content" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="Theme.EngageHF.Content" parent="Theme.AppCompat.Light.DarkActionBar">
         <item name="colorSurface">@color/white</item>
     </style>
 </resources>

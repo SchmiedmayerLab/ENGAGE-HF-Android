@@ -20,7 +20,7 @@ import org.gradle.api.Plugin
 import org.gradle.api.Project
 import org.gradle.kotlin.dsl.dependencies
 
-class SpeziComposeConventionPlugin : Plugin<Project> {
+class EngageComposeConventionPlugin : Plugin<Project> {
     override fun apply(project: Project) = with(project) {
         apply(PluginId.COMPOSE_COMPILER)
 

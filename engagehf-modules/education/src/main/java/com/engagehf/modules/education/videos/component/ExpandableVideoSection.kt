@@ -54,7 +54,7 @@ import com.engagehf.modules.ui.lighten
 import com.engagehf.modules.ui.theme.Colors
 import com.engagehf.modules.ui.theme.Sizes
 import com.engagehf.modules.ui.theme.Spacings
-import com.engagehf.modules.ui.theme.SpeziTheme
+import com.engagehf.modules.ui.theme.EngageTheme
 import com.engagehf.modules.ui.theme.TextStyles.bodyMedium
 import com.engagehf.modules.ui.theme.TextStyles.titleLarge
 import com.engagehf.modules.ui.theme.ThemePreviews
@@ -251,7 +251,7 @@ private class ExpandableSectionPreviewProvider : PreviewParameterProvider<Expand
 private fun ExpandableVideoSectionPreview(
     @PreviewParameter(ExpandableSectionPreviewProvider::class) params: ExpandableVideoSectionParams,
 ) {
-    SpeziTheme {
+    EngageTheme {
         Column {
             ExpandableVideoSection(
                 title = params.title,

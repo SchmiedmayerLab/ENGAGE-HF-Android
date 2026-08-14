@@ -10,4 +10,4 @@ package com.engagehf.buildlogic.convention.plugins
 
 import com.engagehf.buildlogic.convention.model.PluginId
 
-class SpeziLibraryConventionPlugin : SpeziAbstractConfigPlugin(modulePlugin = PluginId.ANDROID_LIBRARY)
+class EngageLibraryConventionPlugin : EngageAbstractConfigPlugin(modulePlugin = PluginId.ANDROID_LIBRARY)

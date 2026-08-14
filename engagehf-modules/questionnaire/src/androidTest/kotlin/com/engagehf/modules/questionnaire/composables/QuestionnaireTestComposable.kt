@@ -57,10 +57,10 @@ const val testQuestionnaireJson = """
   "resourceType": "Questionnaire",
   "language": "en-US",
   "status": "draft",
-  "publisher": "Stanford Biodesign Digital Health",
+  "publisher": "Schmiedmayer Lab",
   "meta": {
     "profile": [
-      "http://spezi.health/fhir/StructureDefinition/sdf-Questionnaire"
+      "https://www.engage-hf.com/fhir/StructureDefinition/sdf-Questionnaire"
     ],
     "tag": [
       {
@@ -89,13 +89,13 @@ const val testQuestionnaireJson = """
   ],
   "contact": [
     {
-      "name": "http://spezi.health"
+      "name": "https://www.engage-hf.com"
     }
   ],
   "subjectType": [
     "Patient"
   ],
-  "url": "http://spezi.health/fhir/questionnaire/9528ccc2-d1be-4c4c-9c3c-19f78e51ec19",
+  "url": "https://www.engage-hf.com/fhir/questionnaire/9528ccc2-d1be-4c4c-9c3c-19f78e51ec19",
   "item": [
     {
       "linkId": "73490535-203f-44b2-d1b7-7c0a786c16f9",

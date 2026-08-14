@@ -16,7 +16,7 @@ import com.engagehf.R
 import com.engagehf.modules.utils.MessageNotifier
 import com.engagehf.modules.utils.TimeProvider
 import com.engagehf.modules.core.coroutines.Dispatching
-import com.engagehf.modules.core.logging.speziLogger
+import com.engagehf.modules.core.logging.engageLogger
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.Flow
@@ -36,7 +36,7 @@ class HealthSummaryService @Inject constructor(
     private val qrCodeImageBitmapGenerator: QRCodeImageBitmapGenerator,
     private val timeProvider: TimeProvider,
 ) {
-    private val logger by speziLogger()
+    private val logger by engageLogger()
 
     suspend fun generateHealthSummaryPdf(): Result<Unit> = withContext(ioDispatcher) {
         healthSummaryRepository.getHealthSummary()

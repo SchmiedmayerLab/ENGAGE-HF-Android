@@ -33,7 +33,7 @@ class CredentialStorageTests {
     )
 
     private val nonServerCredential = Credential(
-        username = "@Spezi",
+        username = "@Engage",
         password = "123456",
     )
 
@@ -98,7 +98,7 @@ class CredentialStorageTests {
     @Test
     fun `it should update credentials correctly`() {
         // given
-        val updatedUserName = serverCredential.username + "- @Spezi"
+        val updatedUserName = serverCredential.username + "- @Engage"
         val newPassword = serverCredential.password.plus(UUID().toString())
         credentialStorage.store(serverCredential)
         val updatedCredential = serverCredential.copy(

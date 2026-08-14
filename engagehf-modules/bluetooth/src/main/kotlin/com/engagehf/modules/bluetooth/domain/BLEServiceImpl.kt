@@ -16,7 +16,7 @@ import com.engagehf.modules.bluetooth.model.BLEServiceEvent
 import com.engagehf.modules.bluetooth.model.BLEServiceState
 import com.engagehf.modules.utils.PermissionChecker
 import com.engagehf.modules.core.coroutines.Dispatching
-import com.engagehf.modules.core.logging.speziLogger
+import com.engagehf.modules.core.logging.engageLogger
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.MutableSharedFlow
@@ -55,7 +55,7 @@ internal class BLEServiceImpl @Inject constructor(
     private val deviceConnectorFactory: BLEDeviceConnector.Factory,
 ) : BLEService {
 
-    private val logger by speziLogger()
+    private val logger by engageLogger()
 
     private val connectedDevices = ConcurrentHashMap<String, BLEDeviceConnector>()
     private val _state = MutableStateFlow<BLEServiceState>(BLEServiceState.Idle)

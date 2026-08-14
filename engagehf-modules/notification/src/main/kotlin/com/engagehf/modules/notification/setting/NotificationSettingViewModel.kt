@@ -22,7 +22,7 @@ import com.engagehf.modules.notification.NotificationPermissions
 import com.engagehf.modules.notification.R
 import com.engagehf.modules.notification.fcm.DeviceRegistrationService
 import com.engagehf.modules.utils.MessageNotifier
-import com.engagehf.modules.core.logging.speziLogger
+import com.engagehf.modules.core.logging.engageLogger
 import com.engagehf.modules.ui.PendingActions
 import com.engagehf.modules.ui.StringResource
 import kotlinx.coroutines.flow.MutableStateFlow
@@ -45,7 +45,7 @@ internal class NotificationSettingViewModel @Inject constructor(
     @ApplicationContext private val context: Context,
     private val deviceRegistrationService: DeviceRegistrationService,
 ) : ViewModel() {
-    private val logger by speziLogger()
+    private val logger by engageLogger()
     private val _uiState = MutableStateFlow<UiState>(UiState.Loading)
 
     val uiState = _uiState.asStateFlow()

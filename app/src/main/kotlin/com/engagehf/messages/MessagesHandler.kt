@@ -16,7 +16,7 @@ import com.engagehf.modules.navigation.Navigator
 import com.engagehf.modules.utils.MessageNotifier
 import com.engagehf.navigation.AppNavigationEvent
 import com.engagehf.navigation.screens.BottomBarItem
-import com.engagehf.modules.core.logging.speziLogger
+import com.engagehf.modules.core.logging.engageLogger
 import java.util.concurrent.atomic.AtomicReference
 import javax.inject.Inject
 
@@ -27,7 +27,7 @@ class MessagesHandler @Inject constructor(
     private val messageRepository: MessageRepository,
     private val messageNotifier: MessageNotifier,
 ) {
-    private val logger by speziLogger()
+    private val logger by engageLogger()
     private val pendingMessageId = AtomicReference<String?>(null)
 
     fun observeUserMessages() = messageRepository.observeUserMessages()

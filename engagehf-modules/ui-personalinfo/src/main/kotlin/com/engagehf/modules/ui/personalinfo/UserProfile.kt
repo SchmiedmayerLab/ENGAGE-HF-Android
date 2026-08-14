@@ -37,7 +37,7 @@ import com.engagehf.modules.ui.ImageResource
 import com.engagehf.modules.ui.StringResource
 import com.engagehf.modules.ui.lighten
 import com.engagehf.modules.ui.theme.Colors
-import com.engagehf.modules.ui.theme.SpeziTheme
+import com.engagehf.modules.ui.theme.EngageTheme
 import com.engagehf.modules.ui.theme.ThemePreviews
 import kotlin.math.min
 
@@ -131,7 +131,7 @@ private class UserProfileProvider : PreviewParameterProvider<UserProfilePreviewD
 private fun UserProfilePreview(
     @PreviewParameter(UserProfileProvider::class) profileData: UserProfilePreviewData,
 ) {
-    SpeziTheme {
+    EngageTheme {
         UserProfile(
             name = profileData.first,
             imageUrl = null,

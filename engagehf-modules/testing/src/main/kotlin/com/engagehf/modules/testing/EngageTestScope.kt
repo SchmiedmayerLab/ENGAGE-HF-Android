@@ -23,11 +23,11 @@ import kotlin.coroutines.CoroutineContext
  *
  * Example usage:
  * ```
- * val testScope = SpeziTestScope()
+ * val testScope = EngageTestScope()
  * testScope.launch {
  *     // Coroutine code to test
  * }
  * ```
  */
 @Suppress("FunctionNaming")
-fun SpeziTestScope(context: CoroutineContext = UnconfinedTestDispatcher()): TestScope = TestScope(context = context)
+fun EngageTestScope(context: CoroutineContext = UnconfinedTestDispatcher()): TestScope = TestScope(context = context)

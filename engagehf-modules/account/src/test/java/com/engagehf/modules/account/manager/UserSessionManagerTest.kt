@@ -20,7 +20,7 @@ import com.google.firebase.storage.StorageReference
 import com.google.firebase.storage.StorageTask
 import com.google.firebase.storage.UploadTask
 import com.engagehf.modules.account.AccountEvents
-import com.engagehf.modules.testing.SpeziTestScope
+import com.engagehf.modules.testing.EngageTestScope
 import com.engagehf.modules.testing.mockTask
 import com.engagehf.modules.testing.runTestUnconfined
 import io.mockk.Runs
@@ -406,7 +406,7 @@ class UserSessionManagerTest {
             firebaseStorage = firebaseStorage,
             firebaseAuth = firebaseAuth,
             ioDispatcher = UnconfinedTestDispatcher(),
-            coroutineScope = SpeziTestScope(),
+            coroutineScope = EngageTestScope(),
             firestore = firestore,
             accountEvents = accountEvents,
         )

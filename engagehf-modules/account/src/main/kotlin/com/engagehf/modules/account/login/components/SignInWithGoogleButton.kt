@@ -22,7 +22,7 @@ import com.engagehf.modules.design.R
 import com.engagehf.modules.ui.AsyncButton
 import com.engagehf.modules.ui.theme.Sizes
 import com.engagehf.modules.ui.theme.Spacings
-import com.engagehf.modules.ui.theme.SpeziTheme
+import com.engagehf.modules.ui.theme.EngageTheme
 import com.engagehf.modules.ui.theme.ThemePreviews
 
 @Composable
@@ -51,7 +51,7 @@ fun SignInWithGoogleButton(
 @ThemePreviews
 @Composable
 fun SignInWithGoogleButtonPreview() {
-    SpeziTheme {
+    EngageTheme {
         SignInWithGoogleButton(onButtonClick = {})
     }
 }

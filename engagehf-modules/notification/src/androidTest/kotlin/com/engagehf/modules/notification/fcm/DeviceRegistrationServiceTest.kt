@@ -20,7 +20,7 @@ import dagger.hilt.android.testing.HiltAndroidRule
 import dagger.hilt.android.testing.HiltAndroidTest
 import dagger.hilt.components.SingletonComponent
 import com.engagehf.modules.notification.notifier.Notifications
-import com.engagehf.modules.testing.SpeziTestScope
+import com.engagehf.modules.testing.EngageTestScope
 import com.engagehf.modules.testing.mockTask
 import com.engagehf.modules.utils.BuildInfo
 import com.engagehf.modules.storage.credential.InMemoryKeyValueStorage
@@ -67,7 +67,7 @@ class DeviceRegistrationServiceTest {
             context = context,
             functions = functions,
             firebaseMessaging = firebaseMessaging,
-            coroutineScope = SpeziTestScope(),
+            coroutineScope = EngageTestScope(),
             storage = storage,
             buildInfo = buildInfo,
         )

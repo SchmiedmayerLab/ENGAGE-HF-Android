@@ -11,12 +11,12 @@ package com.engagehf.modules.core
 import android.content.Context
 import com.engagehf.modules.core.internal.ModuleKey
 import com.engagehf.modules.core.internal.ModuleRegistry
-import com.engagehf.modules.core.internal.speziCoreLogger
+import com.engagehf.modules.core.internal.engageCoreLogger
 import com.engagehf.modules.foundation.simpleTypeName
 import kotlin.reflect.full.companionObjectInstance
 
 /**
- * A graph of dependencies built at app start up via the configuration of the [SpeziApplication].
+ * A graph of dependencies built at app start up via the configuration of the [EngageApplication].
  *
  * @param registry The [ModuleRegistry] containing the registered modules and factories.
  */
@@ -24,7 +24,7 @@ class DependenciesGraph internal constructor(
     @PublishedApi internal val registry: ModuleRegistry,
 ) {
     @PublishedApi
-    internal val logger by speziCoreLogger()
+    internal val logger by engageCoreLogger()
 
     @PublishedApi
     internal val currentlyResolvingKeys = ThreadLocal.withInitial { mutableSetOf<ModuleKey<*>>() }
@@ -70,7 +70,7 @@ class DependenciesGraph internal constructor(
             constructors.find { it.parameters.isEmpty() }?.call()
                 ?: constructors.find { it.parameters.size == 1 && it.parameters[0].type.classifier == Context::class }?.call(appContext)
                 ?: run { appContext?.let { (clazz.companionObjectInstance as? DefaultInitializer<M>)?.create(it) } }
-                ?: speziError("No suitable constructor found for $typeKey")
+                ?: engageError("No suitable constructor found for $typeKey")
         }
         val instance = result.getOrNull()
         return if (instance != null) {
@@ -78,7 +78,7 @@ class DependenciesGraph internal constructor(
             logger.w { "Instantiated module $typeKey manually via fallback mechanism. Consider registering it explicitly." }
             instance
         } else {
-            speziError(
+            engageError(
                 message = "$typeKey not found. Please make sure to register via in the configuration block of your app component",
                 cause = result.exceptionOrNull()
             )
@@ -137,10 +137,10 @@ class DependenciesGraph internal constructor(
     internal inline fun <R> keyResolvingScope(key: ModuleKey<*>, block: () -> R): R {
         logger.i { "Started resolving dependency for $key" }
         if (currentlyResolvingKeys.get()?.add(key) == false) {
-            logger.e { "Circular dependency detected for $key. Avoiding StackOverflow and throwing ${SpeziError::class.simpleName}" }
+            logger.e { "Circular dependency detected for $key. Avoiding StackOverflow and throwing ${EngageError::class.simpleName}" }
             val keysPath = (currentlyResolvingKeys.get()?.toList() ?: emptyList()) + key
             val path = keysPath.joinToString(separator = " => ") { it.type.simpleTypeName }
-            speziError("Circular dependency detected while resolving: $key: $path")
+            engageError("Circular dependency detected while resolving: $key: $path")
         }
         return try {
             logger.i { "Executing resolving of $key" }

@@ -38,7 +38,7 @@ import com.engagehf.modules.ui.theme.Colors.onPrimary
 import com.engagehf.modules.ui.theme.Colors.primary
 import com.engagehf.modules.ui.theme.Sizes
 import com.engagehf.modules.ui.theme.Spacings
-import com.engagehf.modules.ui.theme.SpeziTheme
+import com.engagehf.modules.ui.theme.EngageTheme
 import com.engagehf.modules.ui.theme.TextStyles.titleLarge
 
 @Composable
@@ -128,7 +128,7 @@ private class InvitationCodeScreenProvider : PreviewParameterProvider<Invitation
 private fun InvitationCodeScreenPreview(
     @PreviewParameter(InvitationCodeScreenProvider::class) uiState: InvitationCodeUiState,
 ) {
-    SpeziTheme {
+    EngageTheme {
         InvitationCodeView(
             uiState = uiState,
             onAction = { }

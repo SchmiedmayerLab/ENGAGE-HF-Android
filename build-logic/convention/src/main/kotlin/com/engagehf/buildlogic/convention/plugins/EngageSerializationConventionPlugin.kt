@@ -16,7 +16,7 @@ import org.gradle.api.Plugin
 import org.gradle.api.Project
 import org.gradle.kotlin.dsl.dependencies
 
-class SpeziSerializationConventionPlugin : Plugin<Project> {
+class EngageSerializationConventionPlugin : Plugin<Project> {
 
     override fun apply(target: Project) = with(target) {
         apply(PluginId.SERIALIZATION)

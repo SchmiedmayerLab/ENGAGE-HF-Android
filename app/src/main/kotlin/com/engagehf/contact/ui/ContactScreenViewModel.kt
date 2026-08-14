@@ -16,7 +16,7 @@ import com.engagehf.contact.data.EngageContactRepository
 import com.engagehf.modules.navigation.NavigationEvent
 import com.engagehf.modules.navigation.Navigator
 import com.engagehf.modules.contact.Contact
-import com.engagehf.modules.core.logging.speziLogger
+import com.engagehf.modules.core.logging.engageLogger
 import com.engagehf.modules.ui.StringResource
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.asStateFlow
@@ -28,7 +28,7 @@ internal class ContactScreenViewModel @Inject constructor(
     private val engageContactRepository: EngageContactRepository,
     private val navigator: Navigator,
 ) : ViewModel() {
-    private val logger by speziLogger()
+    private val logger by engageLogger()
 
     private val _uiState = MutableStateFlow<UiState>(UiState.Loading)
     val uiState = _uiState.asStateFlow()

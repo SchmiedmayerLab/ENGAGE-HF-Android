@@ -19,8 +19,8 @@ import org.gradle.api.Project
 import org.gradle.kotlin.dsl.dependencies
 import org.gradle.kotlin.dsl.provideDelegate
 
-abstract class SpeziAbstractConfigPlugin(private val modulePlugin: PluginId) : Plugin<Project> {
-    private val defaultConfig by lazy { SpeziBaseConfigConventionPlugin() }
+abstract class EngageAbstractConfigPlugin(private val modulePlugin: PluginId) : Plugin<Project> {
+    private val defaultConfig by lazy { EngageBaseConfigConventionPlugin() }
 
     override fun apply(project: Project) = with(project) {
         apply(modulePlugin)

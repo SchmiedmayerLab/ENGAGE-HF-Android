@@ -17,7 +17,7 @@ import com.google.firebase.firestore.QuerySnapshot
 import com.google.firebase.functions.FirebaseFunctions
 import com.google.firebase.functions.HttpsCallableReference
 import com.engagehf.modules.account.manager.UserSessionManager
-import com.engagehf.modules.testing.SpeziTestScope
+import com.engagehf.modules.testing.EngageTestScope
 import com.engagehf.modules.testing.mockTask
 import com.engagehf.modules.testing.runTestUnconfined
 import com.engagehf.modules.testing.verifyNever
@@ -42,7 +42,7 @@ class MessageRepositoryTest {
         firebaseFunctions = firebaseFunctions,
         userSessionManager = userSessionManager,
         firestoreMessageMapper = firestoreMessageMapper,
-        ioScope = SpeziTestScope(),
+        ioScope = EngageTestScope(),
         ioDispatcher = UnconfinedTestDispatcher(),
     )
 

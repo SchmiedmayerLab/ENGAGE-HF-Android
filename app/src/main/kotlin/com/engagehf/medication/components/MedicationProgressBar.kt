@@ -28,7 +28,7 @@ import com.engagehf.R
 import com.engagehf.modules.ui.VerticalSpacer
 import com.engagehf.modules.ui.theme.Sizes
 import com.engagehf.modules.ui.theme.Spacings
-import com.engagehf.modules.ui.theme.SpeziTheme
+import com.engagehf.modules.ui.theme.EngageTheme
 import com.engagehf.modules.ui.theme.ThemePreviews
 
 private const val PROGRESS_GREEN_HEX = 0xFF00796B
@@ -82,7 +82,7 @@ private class MedicationProgressBarProvider : PreviewParameterProvider<Float> {
 private fun MedicationProgressBarPreview(
     @PreviewParameter(MedicationProgressBarProvider::class) progress: Float,
 ) {
-    SpeziTheme {
+    EngageTheme {
         MedicationProgressBar(progress = progress)
     }
 }

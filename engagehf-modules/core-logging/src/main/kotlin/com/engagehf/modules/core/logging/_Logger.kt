@@ -14,8 +14,8 @@ package com.engagehf.modules.core.logging
  * This interface defines the basic contract for logging operations such as info, warning, and error messages.
  *
  * Note, that this interface should be ideally marked internal, however, it is not possible due to its usage inside inline functions
- * of [SpeziLogger] which requires it to be visible outside of the component for the inline function to access it.
- * @see [SpeziLogger] for the reasoning behind inline functions.
+ * of [EngageLogger] which requires it to be visible outside of the component for the inline function to access it.
+ * @see [EngageLogger] for the reasoning behind inline functions.
  */
 @Suppress("ClassNaming")
 @PublishedApi

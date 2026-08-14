@@ -18,7 +18,7 @@ import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.GoogleAuthProvider
 import dagger.hilt.android.qualifiers.ApplicationContext
 import com.engagehf.modules.account.R
-import com.engagehf.modules.core.logging.speziLogger
+import com.engagehf.modules.core.logging.engageLogger
 import kotlinx.coroutines.tasks.await
 import javax.inject.Inject
 
@@ -27,7 +27,7 @@ internal class AuthenticationManager @Inject constructor(
     private val credentialManager: CredentialManager,
     @ApplicationContext private val context: Context,
 ) {
-    private val logger by speziLogger()
+    private val logger by engageLogger()
 
     suspend fun signUpWithEmailAndPassword(
         email: String,

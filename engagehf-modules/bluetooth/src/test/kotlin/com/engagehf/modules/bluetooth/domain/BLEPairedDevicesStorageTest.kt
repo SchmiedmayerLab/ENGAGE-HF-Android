@@ -12,7 +12,7 @@ import android.bluetooth.BluetoothAdapter
 import android.bluetooth.BluetoothDevice
 import com.google.common.truth.Truth.assertThat
 import com.engagehf.modules.bluetooth.model.BLEDevice
-import com.engagehf.modules.testing.SpeziTestScope
+import com.engagehf.modules.testing.EngageTestScope
 import com.engagehf.modules.testing.runTestUnconfined
 import com.engagehf.modules.utils.TimeProvider
 import com.engagehf.modules.storage.credential.InMemoryKeyValueStorage
@@ -42,7 +42,7 @@ class BLEPairedDevicesStorageTest {
         BLEPairedDevicesStorage(
             bluetoothAdapter = adapter,
             storage = storage,
-            ioScope = SpeziTestScope(),
+            ioScope = EngageTestScope(),
             bleDevicePairingNotifier = bleDevicePairingNotifier,
             timeProvider = timeProvider,
         )

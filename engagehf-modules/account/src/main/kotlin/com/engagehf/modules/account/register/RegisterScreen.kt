@@ -51,7 +51,7 @@ import com.engagehf.modules.ui.testIdentifier
 import com.engagehf.modules.ui.theme.Colors.primary
 import com.engagehf.modules.ui.theme.Sizes
 import com.engagehf.modules.ui.theme.Spacings
-import com.engagehf.modules.ui.theme.SpeziTheme
+import com.engagehf.modules.ui.theme.EngageTheme
 import com.engagehf.modules.ui.theme.TextStyles.titleLarge
 import com.engagehf.modules.ui.theme.TextStyles.titleSmall
 
@@ -184,7 +184,7 @@ fun RegisterScreen(
 private fun RegisterScreenPreview(
     @PreviewParameter(RegisterScreenProvider::class) uiState: RegisterUiState,
 ) {
-    SpeziTheme {
+    EngageTheme {
         RegisterScreen(
             uiState = uiState,
             onAction = { }

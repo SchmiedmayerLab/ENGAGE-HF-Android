@@ -17,14 +17,14 @@ import kotlin.reflect.KProperty
  *
  * @param config Configuration to be applied on the logger
  */
-fun speziLogger(config: LoggerConfig.() -> Unit = {}) = object : ReadOnlyProperty<Any, SpeziLogger> {
-    private var field: SpeziLogger? = null
+fun engageLogger(config: LoggerConfig.() -> Unit = {}) = object : ReadOnlyProperty<Any, EngageLogger> {
+    private var field: EngageLogger? = null
 
     override fun getValue(thisRef: Any, property: KProperty<*>) = field ?: synchronized(this) {
         val ownerName by lazy { with(thisRef.javaClass) { if (isAnonymousClass) name else simpleName } }
         val loggerConfig = LoggerConfig().apply(config)
         val logTag = loggerConfig.tag ?: ownerName
-        SpeziLogger(logTag, loggerConfig).also { field = it }
+        EngageLogger(logTag, loggerConfig).also { field = it }
     }
 }
 
@@ -36,22 +36,22 @@ fun speziLogger(config: LoggerConfig.() -> Unit = {}) = object : ReadOnlyPropert
  * @param tag Tag of the logger
  * @param config Configuration to be applied on the logger
  */
-fun groupLogger(tag: String, config: LoggerConfig.() -> Unit = {}) = object : ReadOnlyProperty<Any, SpeziLogger> {
-    private var field: SpeziLogger? = null
+fun groupLogger(tag: String, config: LoggerConfig.() -> Unit = {}) = object : ReadOnlyProperty<Any, EngageLogger> {
+    private var field: EngageLogger? = null
 
     override fun getValue(thisRef: Any, property: KProperty<*>) = field ?: synchronized(this) {
         val loggerConfig = LoggerConfig().apply {
             messagePrefix = with(thisRef.javaClass) { if (isAnonymousClass) name else simpleName }
             config()
         }
-        SpeziLogger(tag, loggerConfig).also { field = it }
+        EngageLogger(tag, loggerConfig).also { field = it }
     }
 }
 
 /**
  * A global function that returns a kotlin.Lazy logger with the given tag
  */
-fun speziLogger(
+fun engageLogger(
     tag: String,
     config: LoggerConfig.() -> Unit = {},
-) = lazy { SpeziLogger(tag, LoggerConfig().apply(config)) }
+) = lazy { EngageLogger(tag, LoggerConfig().apply(config)) }

@@ -36,7 +36,7 @@ import com.engagehf.modules.ui.VerticalSpacer
 import com.engagehf.modules.ui.testIdentifier
 import com.engagehf.modules.ui.theme.Colors
 import com.engagehf.modules.ui.theme.Spacings
-import com.engagehf.modules.ui.theme.SpeziTheme
+import com.engagehf.modules.ui.theme.EngageTheme
 import com.engagehf.modules.ui.theme.ThemePreviews
 
 @Composable
@@ -149,7 +149,7 @@ private class EducationUiStatePreviewProvider :
 private fun EducationScreenPreview(
     @PreviewParameter(EducationUiStatePreviewProvider::class) params: Pair<UiState, (Action) -> Unit>,
 ) {
-    SpeziTheme {
+    EngageTheme {
         EducationScreen(
             uiState = params.first,
             onAction = params.second

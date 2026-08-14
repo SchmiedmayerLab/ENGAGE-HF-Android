@@ -24,14 +24,14 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.dp
-import com.engagehf.modules.core.logging.speziLogger
+import com.engagehf.modules.core.logging.engageLogger
 import com.engagehf.modules.foundation.UUID
 import com.engagehf.modules.ui.ComposableContent
 import com.engagehf.modules.ui.DefaultElevatedCard
 import com.engagehf.modules.ui.StringResource
 import com.engagehf.modules.ui.theme.Colors
 import com.engagehf.modules.ui.theme.Spacings
-import com.engagehf.modules.ui.theme.SpeziTheme
+import com.engagehf.modules.ui.theme.EngageTheme
 import com.engagehf.modules.ui.theme.ThemePreviews
 import java.util.UUID
 
@@ -81,14 +81,14 @@ data class ContactOption(
     }
 
     companion object {
-        internal val logger by speziLogger()
+        internal val logger by engageLogger()
     }
 }
 
 @Composable
 @ThemePreviews
 private fun ContactOptionCardPreview() {
-    SpeziTheme {
+    EngageTheme {
         val option = ContactOption.text(
             number = "+1 (650) 723-2300"
         )

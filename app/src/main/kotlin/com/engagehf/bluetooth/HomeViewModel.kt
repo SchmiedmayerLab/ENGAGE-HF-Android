@@ -30,7 +30,7 @@ import com.engagehf.messages.MessagesHandler
 import com.engagehf.modules.notification.NotificationPermissions
 import com.engagehf.modules.notification.fcm.DeviceRegistrationService
 import com.engagehf.navigation.screens.BottomBarItem
-import com.engagehf.modules.core.logging.speziLogger
+import com.engagehf.modules.core.logging.engageLogger
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.update
@@ -49,7 +49,7 @@ class HomeViewModel @Inject internal constructor(
     private val notificationPermissions: NotificationPermissions,
     private val deviceRegistrationService: DeviceRegistrationService,
 ) : ViewModel() {
-    private val logger by speziLogger()
+    private val logger by engageLogger()
 
     private val _uiState = MutableStateFlow(
         UiState(

@@ -21,7 +21,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import com.engagehf.modules.ui.theme.Spacings
-import com.engagehf.modules.ui.theme.SpeziTheme
+import com.engagehf.modules.ui.theme.EngageTheme
 import com.engagehf.modules.ui.theme.ThemePreviews
 
 @Composable
@@ -64,7 +64,7 @@ fun CommonScaffold(
 @ThemePreviews
 @Composable
 private fun CommonScaffoldPreview() {
-    SpeziTheme {
+    EngageTheme {
         CommonScaffold(
             title = "Common Scaffold",
             content = {}

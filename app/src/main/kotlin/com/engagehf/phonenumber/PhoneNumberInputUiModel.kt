@@ -49,7 +49,7 @@ import com.engagehf.modules.ui.theme.Colors
 import com.engagehf.modules.ui.theme.Colors.primary
 import com.engagehf.modules.ui.theme.Sizes
 import com.engagehf.modules.ui.theme.Spacings
-import com.engagehf.modules.ui.theme.SpeziTheme
+import com.engagehf.modules.ui.theme.EngageTheme
 import com.engagehf.modules.ui.theme.TextStyles.bodyMedium
 import com.engagehf.modules.ui.theme.TextStyles.bodySmall
 import com.engagehf.modules.ui.theme.ThemePreviews
@@ -166,7 +166,7 @@ class PhoneNumberInputUiModelPreviewParamProvider : PreviewParameterProvider<Pho
 private fun Preview(
     @PreviewParameter(PhoneNumberInputUiModelPreviewParamProvider::class) model: PhoneNumberInputUiModel,
 ) {
-    SpeziTheme {
+    EngageTheme {
         model.Content(modifier = Modifier.fillMaxWidth())
     }
 }

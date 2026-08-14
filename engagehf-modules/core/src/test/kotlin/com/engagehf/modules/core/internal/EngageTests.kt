@@ -16,19 +16,19 @@ import com.engagehf.modules.core.Configuration
 import com.engagehf.modules.core.ConfigurationBuilder
 import com.engagehf.modules.core.DefaultInitializer
 import com.engagehf.modules.core.Module
-import com.engagehf.modules.core.SpeziApplication
-import com.engagehf.modules.core.SpeziError
+import com.engagehf.modules.core.EngageApplication
+import com.engagehf.modules.core.EngageError
 import com.engagehf.modules.core.dependency
 import com.engagehf.modules.core.optionalDependency
 import com.engagehf.modules.core.plus
 import org.junit.Before
 import org.junit.Test
 
-class SpeziTests {
+class EngageTests {
 
     @Before
     fun setup() {
-        SpeziApplication.clear()
+        EngageApplication.clear()
     }
 
     @Test
@@ -92,7 +92,7 @@ class SpeziTests {
     fun `it should keep formerly registered application module reconfiguration`() {
         // given
         val application = testApplication { }
-        SpeziApplication.configure { }
+        EngageApplication.configure { }
 
         // when
         val dependency by dependency<ApplicationModule>()
@@ -131,19 +131,19 @@ class SpeziTests {
     }
 
     @Test
-    fun `it should throw a spezi error in case application is not configured yet`() {
+    fun `it should throw an engage error in case application is not configured yet`() {
         // when
         val applicationModule by dependency<ApplicationModule>()
         val expectedMessage = """
-                Spezi is not configured configured yet. Please make sure your main application conforms to [SpeziApplication],
+                Engage is not configured configured yet. Please make sure your main application conforms to [EngageApplication],
                 and you did not request dependencies in the configuration block outside of module factories.
         """.trimMargin()
 
         // when
-        val speziError = runCatching { applicationModule.application }.exceptionOrNull() as SpeziError
+        val engageError = runCatching { applicationModule.application }.exceptionOrNull() as EngageError
 
         // then
-        assertThat(speziError.message).isEqualTo(expectedMessage)
+        assertThat(engageError.message).isEqualTo(expectedMessage)
     }
 
     @Test
@@ -198,7 +198,7 @@ class SpeziTests {
     }
 
     @Test
-    fun `it should throw spezi error in case the dependency is not registered and return null on optionalDependency`() {
+    fun `it should throw an engage error in case the dependency is not registered and return null on optionalDependency`() {
         // given
         testApplication {
             // no dependencies registered
@@ -209,11 +209,11 @@ class SpeziTests {
         // when
         val optionalDependency by optionalDependency<Module1>()
         val dependency by dependency<Module1>()
-        val speziError = runCatching { dependency.name }.exceptionOrNull() as SpeziError
+        val engageError = runCatching { dependency.name }.exceptionOrNull() as EngageError
 
         // then
         assertThat(optionalDependency).isNull()
-        assertThat(speziError.message).isEqualTo(expectedMessage)
+        assertThat(engageError.message).isEqualTo(expectedMessage)
     }
 
     @Test
@@ -348,7 +348,7 @@ class SpeziTests {
         }.exceptionOrNull()
 
         // then
-        assertThat(result).isInstanceOf(SpeziError::class.java)
+        assertThat(result).isInstanceOf(EngageError::class.java)
         assertThat(result?.message).contains("Circular dependency detected while resolving:")
     }
 
@@ -378,7 +378,7 @@ class SpeziTests {
         scope: ConfigurationBuilder.() -> Unit = {},
     ): TestApplication {
         val application = object : TestApplication(scope) {}
-        SpeziApplication.configure(application)
+        EngageApplication.configure(application)
         return application
     }
 }
@@ -388,7 +388,7 @@ class CircularDep2(val circularDep1: CircularDep1) : Module
 
 private abstract class TestApplication(
     scope: ConfigurationBuilder.() -> Unit = {},
-) : Application(), SpeziApplication {
+) : Application(), EngageApplication {
     override val configuration: Configuration = Configuration(scope = scope)
 }
 

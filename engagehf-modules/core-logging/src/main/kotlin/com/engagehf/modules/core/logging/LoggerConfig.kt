@@ -41,6 +41,6 @@ class LoggerConfig internal constructor() {
      * @return The current logger configuration with applied global configurations.
      */
     internal fun get() = apply {
-        SpeziLogger.GLOBAL_CONFIG?.invoke(this)
+        EngageLogger.GLOBAL_CONFIG?.invoke(this)
     }
 }

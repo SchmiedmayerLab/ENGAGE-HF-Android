@@ -16,7 +16,7 @@ import com.google.firebase.firestore.ListenerRegistration
 import com.google.firebase.storage.FirebaseStorage
 import com.engagehf.modules.account.AccountEvents
 import com.engagehf.modules.core.coroutines.Dispatching
-import com.engagehf.modules.core.logging.speziLogger
+import com.engagehf.modules.core.logging.engageLogger
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.channels.awaitClose
@@ -49,7 +49,7 @@ internal class UserSessionManagerImpl @Inject constructor(
     @Dispatching.IO private val ioDispatcher: CoroutineDispatcher,
     @Dispatching.IO private val coroutineScope: CoroutineScope,
 ) : UserSessionManager {
-    private val logger by speziLogger()
+    private val logger by engageLogger()
 
     override fun signOut() {
         runCatching {

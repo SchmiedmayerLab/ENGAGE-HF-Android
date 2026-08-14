@@ -12,7 +12,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.res.stringResource
 import com.engagehf.R
 import com.engagehf.health.components.ItemsDialog
-import com.engagehf.modules.ui.theme.SpeziTheme
+import com.engagehf.modules.ui.theme.EngageTheme
 import com.engagehf.modules.ui.theme.ThemePreviews
 
 @Composable
@@ -41,7 +41,7 @@ fun BodyPositionsDialog(
 @ThemePreviews
 @Composable
 fun BodyPositionsDialogPreview() {
-    SpeziTheme {
+    EngageTheme {
         BodyPositionsDialog(
             onDismissRequest = {},
             onOptionSelected = {},

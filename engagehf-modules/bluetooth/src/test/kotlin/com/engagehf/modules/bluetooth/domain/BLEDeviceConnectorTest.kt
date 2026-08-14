@@ -17,7 +17,7 @@ import android.content.Context
 import com.google.common.truth.Truth.assertThat
 import com.engagehf.modules.bluetooth.model.BLEDevice
 import com.engagehf.modules.bluetooth.model.BLEServiceEvent
-import com.engagehf.modules.testing.SpeziTestScope
+import com.engagehf.modules.testing.EngageTestScope
 import com.engagehf.modules.testing.runTestUnconfined
 import io.mockk.Called
 import io.mockk.Runs
@@ -47,7 +47,7 @@ class BLEDeviceConnectorTest {
     private val bleDeviceConnector by lazy {
         BLEDeviceConnector(
             device = device,
-            scope = SpeziTestScope(),
+            scope = EngageTestScope(),
             context = context,
         )
     }

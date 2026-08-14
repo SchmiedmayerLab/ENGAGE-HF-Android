@@ -59,7 +59,7 @@ targetSdk = "35"
 testCoreVersion = "1.7.0"
 timberVersion = "5.0.1"
 truth = "1.4.5"
-vico = "2.0.0-alpha.26" # todo: https://github.com/StanfordBDHG/ENGAGE-HF-Android/issues/14
+vico = "2.0.0-alpha.26" # todo: https://github.com/SchmiedmayerLab/ENGAGE-HF-Android/issues/14
 zxingVersion = "3.5.3"
 
 # Please keep [libraries] block sorted. Select all items and in Android Studio `Edit > Sort Lines`

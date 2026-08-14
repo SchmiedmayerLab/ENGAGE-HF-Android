@@ -28,7 +28,7 @@ import androidx.compose.ui.unit.DpSize
 import androidx.compose.ui.unit.dp
 import com.engagehf.modules.ui.theme.Colors
 import com.engagehf.modules.ui.theme.Spacings
-import com.engagehf.modules.ui.theme.SpeziTheme
+import com.engagehf.modules.ui.theme.EngageTheme
 import com.engagehf.modules.ui.theme.TextStyles
 import com.engagehf.modules.ui.theme.ThemePreviews
 import kotlinx.coroutines.launch
@@ -81,7 +81,7 @@ fun NumberPicker(
 @ThemePreviews
 @Composable
 fun NumberPickerPreview() {
-    SpeziTheme {
+    EngageTheme {
         NumberPicker(
             value = 5,
             onValueChange = {},

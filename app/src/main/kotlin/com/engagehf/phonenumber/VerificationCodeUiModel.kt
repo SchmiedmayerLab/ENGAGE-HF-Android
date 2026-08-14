@@ -38,7 +38,7 @@ import com.engagehf.R
 import com.engagehf.modules.ui.StringResource
 import com.engagehf.modules.ui.theme.Colors
 import com.engagehf.modules.ui.theme.Spacings
-import com.engagehf.modules.ui.theme.SpeziTheme
+import com.engagehf.modules.ui.theme.EngageTheme
 import com.engagehf.modules.ui.theme.TextStyles
 import com.engagehf.modules.ui.theme.ThemePreviews
 
@@ -127,7 +127,7 @@ class VerificationCodeUiModelPreviewParamProvider : PreviewParameterProvider<Ver
 private fun Preview(
     @PreviewParameter(VerificationCodeUiModelPreviewParamProvider::class) item: VerificationCodeUiModel,
 ) {
-    SpeziTheme {
+    EngageTheme {
         item.Content(modifier = Modifier.fillMaxWidth())
     }
 }

@@ -20,7 +20,7 @@ import androidx.compose.ui.tooling.preview.PreviewParameterProvider
 import com.engagehf.medication.ui.DosageInformationUiModel
 import com.engagehf.medication.ui.DosageRowInfoData
 import com.engagehf.modules.ui.VerticalSpacer
-import com.engagehf.modules.ui.theme.SpeziTheme
+import com.engagehf.modules.ui.theme.EngageTheme
 import com.engagehf.modules.ui.theme.TextStyles
 import com.engagehf.modules.ui.theme.ThemePreviews
 
@@ -79,7 +79,7 @@ private class DosageInformationProvider : PreviewParameterProvider<DosageInforma
 private fun DoseInformationPreview(
     @PreviewParameter(DosageInformationProvider::class) dosageInformation: DosageInformationUiModel,
 ) {
-    SpeziTheme {
+    EngageTheme {
         DosageInformation(dosageInformationUiModel = dosageInformation)
     }
 }

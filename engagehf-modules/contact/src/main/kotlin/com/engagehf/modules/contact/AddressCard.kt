@@ -27,11 +27,11 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
-import com.engagehf.modules.core.logging.SpeziLogger
+import com.engagehf.modules.core.logging.EngageLogger
 import com.engagehf.modules.ui.DefaultElevatedCard
 import com.engagehf.modules.ui.theme.Colors
 import com.engagehf.modules.ui.theme.Spacings
-import com.engagehf.modules.ui.theme.SpeziTheme
+import com.engagehf.modules.ui.theme.EngageTheme
 import com.engagehf.modules.ui.theme.TextStyles
 import com.engagehf.modules.ui.theme.ThemePreviews
 import java.net.URLEncoder
@@ -68,7 +68,7 @@ internal fun AddressCard(address: Address, modifier: Modifier = Modifier) {
                         mapIntent.setPackage("com.google.android.apps.maps")
                         context.startActivity(mapIntent)
                     }.onFailure {
-                        SpeziLogger.e(it) { "Failed to open intent for address `$addressText`." }
+                        EngageLogger.e(it) { "Failed to open intent for address `$addressText`." }
                     }
                 },
                 modifier = Modifier.align(Alignment.Top)
@@ -86,7 +86,7 @@ internal fun AddressCard(address: Address, modifier: Modifier = Modifier) {
 @Composable
 @ThemePreviews
 private fun AddressCardPreview() {
-    SpeziTheme {
+    EngageTheme {
         AddressCard(Address(Locale.US).apply {
             setAddressLine(0, "1234 Main Street")
             postalCode = "12345"

@@ -27,7 +27,7 @@ import com.engagehf.R
 import com.engagehf.modules.ui.CommonScaffold
 import com.engagehf.modules.ui.ComposableContent
 import com.engagehf.modules.ui.theme.Spacings
-import com.engagehf.modules.ui.theme.SpeziTheme
+import com.engagehf.modules.ui.theme.EngageTheme
 import com.engagehf.modules.ui.theme.TextStyles
 import com.engagehf.modules.ui.theme.ThemePreviews
 
@@ -110,5 +110,5 @@ class PhoneNumberSettingsUiStatePreviewParamProvider : PreviewParameterProvider<
 private fun Preview(
     @PreviewParameter(PhoneNumberSettingsUiStatePreviewParamProvider::class) model: PhoneNumberSettingsUiState,
 ) {
-    SpeziTheme { model.Content() }
+    EngageTheme { model.Content() }
 }

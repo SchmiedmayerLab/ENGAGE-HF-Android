@@ -51,6 +51,6 @@ class BluetoothModule {
          * @return An instance of [BLEService].
          */
         @Binds
-        internal abstract fun bindSpeziBLEService(impl: BLEServiceImpl): BLEService
+        internal abstract fun bindBLEService(impl: BLEServiceImpl): BLEService
     }
 }

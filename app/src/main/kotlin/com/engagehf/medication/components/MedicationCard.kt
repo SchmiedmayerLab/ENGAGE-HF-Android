@@ -44,7 +44,7 @@ import com.engagehf.modules.ui.testIdentifier
 import com.engagehf.modules.ui.theme.Colors
 import com.engagehf.modules.ui.theme.Sizes
 import com.engagehf.modules.ui.theme.Spacings
-import com.engagehf.modules.ui.theme.SpeziTheme
+import com.engagehf.modules.ui.theme.EngageTheme
 import com.engagehf.modules.ui.theme.TextStyles
 import com.engagehf.modules.ui.theme.ThemePreviews
 
@@ -196,7 +196,7 @@ fun LoadingMedicationSection() {
 @ThemePreviews
 @Composable
 private fun LoadingMedicationSectionPreview() {
-    SpeziTheme {
+    EngageTheme {
         LoadingMedicationSection()
     }
 }
@@ -206,7 +206,7 @@ private fun LoadingMedicationSectionPreview() {
 private fun MedicationCardPreview(
     @PreviewParameter(MedicationCardModelsProvider::class) model: MedicationCardUiModel,
 ) {
-    SpeziTheme {
+    EngageTheme {
         MedicationCard(
             model = model,
             onAction = {}

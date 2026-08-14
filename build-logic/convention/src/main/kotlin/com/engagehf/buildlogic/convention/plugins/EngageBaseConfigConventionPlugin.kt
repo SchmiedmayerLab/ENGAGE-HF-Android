@@ -22,7 +22,7 @@ import org.jetbrains.kotlin.gradle.dsl.KotlinVersion
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompilationTask
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
-class SpeziBaseConfigConventionPlugin : Plugin<Project> {
+class EngageBaseConfigConventionPlugin : Plugin<Project> {
     private val java = JavaVersion.VERSION_17
 
     override fun apply(target: Project) = with(target) {

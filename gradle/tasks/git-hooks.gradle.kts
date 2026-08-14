@@ -12,7 +12,7 @@ import org.gradle.api.tasks.Copy
  * A gradle task that registers the git hooks from internal/git-hooks to the .git folder
  */
 val installGitHooks by tasks.registering(Copy::class) {
-    group = "spezi"
+    group = "engagehf"
     description = "Copies and installs the git hooks from internal/git-hooks to the .git folder."
 
     val gitHooksDir = file("$rootDir/.git/hooks")

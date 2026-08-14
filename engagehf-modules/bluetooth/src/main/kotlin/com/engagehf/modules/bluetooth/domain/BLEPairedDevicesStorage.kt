@@ -13,7 +13,7 @@ import android.bluetooth.BluetoothDevice
 import com.engagehf.modules.bluetooth.model.BLEDevice
 import com.engagehf.modules.utils.TimeProvider
 import com.engagehf.modules.core.coroutines.Dispatching
-import com.engagehf.modules.core.logging.speziLogger
+import com.engagehf.modules.core.logging.engageLogger
 import com.engagehf.modules.storage.credential.KeyValueStorage
 import com.engagehf.modules.storage.credential.Storage
 import com.engagehf.modules.storage.credential.getSerializableList
@@ -35,7 +35,7 @@ internal class BLEPairedDevicesStorage @Inject constructor(
     private val timeProvider: TimeProvider,
     @Dispatching.IO private val ioScope: CoroutineScope,
 ) {
-    private val logger by speziLogger()
+    private val logger by engageLogger()
 
     private val _pairedDevices = MutableStateFlow(emptyList<BLEDevice>())
 

@@ -30,7 +30,7 @@ import com.engagehf.medication.ui.MedicationColor
 import com.engagehf.modules.ui.DefaultElevatedCard
 import com.engagehf.modules.ui.theme.Sizes
 import com.engagehf.modules.ui.theme.Spacings
-import com.engagehf.modules.ui.theme.SpeziTheme
+import com.engagehf.modules.ui.theme.EngageTheme
 import com.engagehf.modules.ui.theme.ThemePreviews
 
 @Composable
@@ -84,7 +84,7 @@ fun ColorKeyRow(color: MedicationColor) {
 @ThemePreviews
 @Composable
 private fun ColorKeyPreview() {
-    SpeziTheme {
+    EngageTheme {
         ColorKey()
     }
 }

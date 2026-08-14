@@ -25,7 +25,7 @@ import androidx.compose.ui.text.TextLayoutResult
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.input.VisualTransformation
 import com.engagehf.modules.ui.testIdentifier
-import com.engagehf.modules.ui.theme.SpeziTheme
+import com.engagehf.modules.ui.theme.EngageTheme
 import com.engagehf.modules.ui.theme.ThemePreviews
 import kotlin.reflect.KMutableProperty1
 
@@ -125,7 +125,7 @@ fun BasicNameTextField(
 private fun BasicNameTextFieldPreview() {
     val name = remember { PersonNameComponents.Builder() }
 
-    SpeziTheme {
+    EngageTheme {
         BasicNameTextField(
             builder = name,
             property = PersonNameComponents.Builder::givenName,

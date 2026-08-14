@@ -21,7 +21,7 @@ import com.engagehf.modules.healthconnectonfhir.RecordToObservationMapper
 import com.engagehf.observations.ObservationCollection
 import com.engagehf.observations.ObservationCollectionProvider
 import com.engagehf.modules.core.coroutines.Dispatching
-import com.engagehf.modules.core.logging.speziLogger
+import com.engagehf.modules.core.logging.engageLogger
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.channels.awaitClose
 import kotlinx.coroutines.flow.Flow
@@ -40,7 +40,7 @@ class HealthRepository @Inject constructor(
     private val recordToObservationMapper: RecordToObservationMapper,
     @Dispatching.IO private val ioDispatcher: CoroutineDispatcher,
 ) {
-    private val logger by speziLogger()
+    private val logger by engageLogger()
 
     private fun <T : Record> observe(
         collection: ObservationCollection,

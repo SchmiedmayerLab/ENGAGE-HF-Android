@@ -37,7 +37,7 @@ import com.engagehf.modules.ui.testIdentifier
 import com.engagehf.modules.ui.theme.Colors.primary
 import com.engagehf.modules.ui.theme.Sizes
 import com.engagehf.modules.ui.theme.Spacings
-import com.engagehf.modules.ui.theme.SpeziTheme
+import com.engagehf.modules.ui.theme.EngageTheme
 import com.engagehf.modules.ui.theme.TextStyles.bodyLarge
 import com.engagehf.modules.ui.theme.TextStyles.bodyMedium
 import com.engagehf.modules.ui.theme.TextStyles.titleLarge
@@ -155,7 +155,7 @@ private class OnboardingUiStateProvider : PreviewParameterProvider<OnboardingUiS
                 ),
                 Area(
                     title = "Area 3 title",
-                    description = "The colors on the screen are from the Spezi theme and if " +
+                    description = "The colors on the screen are from the Engage theme and if " +
                         "the user has dark mode or dynamic colors enabled, the colors will change accordingly.",
                     iconId = com.engagehf.modules.design.R.drawable.ic_vital_signs
                 ),
@@ -170,7 +170,7 @@ private class OnboardingUiStateProvider : PreviewParameterProvider<OnboardingUiS
 private fun OnboardingScreenPreview(
     @PreviewParameter(OnboardingUiStateProvider::class) uiState: OnboardingUiState,
 ) {
-    SpeziTheme {
+    EngageTheme {
         OnboardingView(
             uiState = uiState,
             onAction = { }

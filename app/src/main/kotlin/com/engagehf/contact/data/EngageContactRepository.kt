@@ -11,7 +11,7 @@ package com.engagehf.contact.data
 import com.google.firebase.firestore.FirebaseFirestore
 import com.engagehf.modules.account.manager.UserSessionManager
 import com.engagehf.modules.contact.Contact
-import com.engagehf.modules.core.logging.speziLogger
+import com.engagehf.modules.core.logging.engageLogger
 import kotlinx.coroutines.tasks.await
 import javax.inject.Inject
 
@@ -20,7 +20,7 @@ class EngageContactRepository @Inject constructor(
     private val userSessionManager: UserSessionManager,
     private val contactDocumentToContactMapper: ContactDocumentToContactMapper,
 ) {
-    private val logger by speziLogger()
+    private val logger by engageLogger()
 
     suspend fun getContact(): Result<Contact> = runCatching {
         val uid = userSessionManager.getUserUid() ?: error("User not available")

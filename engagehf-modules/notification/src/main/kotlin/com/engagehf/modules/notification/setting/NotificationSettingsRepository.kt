@@ -12,7 +12,7 @@ import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.firestore.ListenerRegistration
 import com.engagehf.modules.account.manager.UserSessionManager
 import com.engagehf.modules.core.coroutines.Dispatching
-import com.engagehf.modules.core.logging.speziLogger
+import com.engagehf.modules.core.logging.engageLogger
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.channels.awaitClose
 import kotlinx.coroutines.flow.Flow
@@ -29,7 +29,7 @@ internal class NotificationSettingsRepository @Inject constructor(
     private val userSessionManager: UserSessionManager,
     @Dispatching.IO private val ioDispatcher: CoroutineDispatcher,
 ) {
-    private val logger by speziLogger()
+    private val logger by engageLogger()
 
     fun observeNotificationSettings(): Flow<Result<NotificationSettings>> =
         callbackFlow {

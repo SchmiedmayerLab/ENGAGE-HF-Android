@@ -20,7 +20,7 @@ import com.engagehf.medication.ui.MedicationCardUiModel
 import com.engagehf.medication.ui.MedicationUiState
 import com.engagehf.medication.ui.MedicationViewModel
 import com.engagehf.medication.ui.Medications
-import com.engagehf.modules.ui.theme.SpeziTheme
+import com.engagehf.modules.ui.theme.EngageTheme
 import com.engagehf.modules.ui.theme.ThemePreviews
 
 @Composable
@@ -92,7 +92,7 @@ private fun MedicationListPreview(
         medicationsThatMayHelp = Medications(emptyList(), true),
         colorKeyExpanded = true,
     )
-    SpeziTheme {
+    EngageTheme {
         MedicationList(uiState = uiState, onAction = { })
     }
 }

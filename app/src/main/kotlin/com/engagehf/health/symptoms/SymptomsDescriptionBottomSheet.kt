@@ -21,7 +21,7 @@ import androidx.compose.ui.text.style.TextAlign
 import com.engagehf.R
 import com.engagehf.modules.ui.VerticalSpacer
 import com.engagehf.modules.ui.theme.Spacings
-import com.engagehf.modules.ui.theme.SpeziTheme
+import com.engagehf.modules.ui.theme.EngageTheme
 import com.engagehf.modules.ui.theme.TextStyles
 import com.engagehf.modules.ui.theme.ThemePreviews
 
@@ -91,7 +91,7 @@ fun TitleDescriptionItem(title: String, description: String) {
 @ThemePreviews
 @Composable
 fun SymptomsDescriptionBottomSheetPreview() {
-    SpeziTheme {
+    EngageTheme {
         SymptomsDescriptionBottomSheet()
     }
 }

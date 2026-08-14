@@ -17,24 +17,24 @@ class ObjectIdentifierTest {
     @Test
     fun `it should handle same object equality correctly`() {
         // given
-        val speziInstance = TestClass("Spezi")
-        val otherSpeziInstance = TestClass("Spezi")
+        val firstInstance = TestClass("Engage")
+        val secondInstance = TestClass("Engage")
         val apodiniInstance = TestClass("Apodini")
         val otherApodiniInstance = TestClass("Apodini")
-        val spezi = ObjectIdentifier(speziInstance)
-        val otherSpezi = ObjectIdentifier(otherSpeziInstance)
+        val identifier = ObjectIdentifier(firstInstance)
+        val otherIdentifier = ObjectIdentifier(secondInstance)
         val apodini = ObjectIdentifier(apodiniInstance)
         val otherApodini = ObjectIdentifier(otherApodiniInstance)
 
         // then
-        assertThat(speziInstance).isEqualTo(otherSpeziInstance)
-        assertThat(speziInstance).isEqualTo(spezi.ref)
+        assertThat(firstInstance).isEqualTo(secondInstance)
+        assertThat(firstInstance).isEqualTo(identifier.ref)
         assertThat(apodiniInstance).isEqualTo(otherApodiniInstance)
         assertThat(apodiniInstance).isEqualTo(apodini.ref)
-        assertThat(spezi).isEqualTo(ObjectIdentifier(speziInstance))
+        assertThat(identifier).isEqualTo(ObjectIdentifier(firstInstance))
         assertThat(apodini).isEqualTo(ObjectIdentifier(apodiniInstance))
-        assertThat(spezi).isNotEqualTo(apodini)
-        assertThat(spezi).isNotEqualTo(otherSpezi)
+        assertThat(identifier).isNotEqualTo(apodini)
+        assertThat(identifier).isNotEqualTo(otherIdentifier)
         assertThat(apodini).isNotEqualTo(otherApodini)
     }
 }

@@ -17,7 +17,7 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import com.engagehf.modules.ui.ViewState
-import com.engagehf.modules.ui.theme.SpeziTheme
+import com.engagehf.modules.ui.theme.EngageTheme
 import com.engagehf.modules.ui.theme.ThemePreviews
 import java.nio.charset.StandardCharsets
 
@@ -91,7 +91,7 @@ fun Markdown(
 @ThemePreviews
 @Composable
 private fun MarkdownPreview() {
-    SpeziTheme {
+    EngageTheme {
         MarkdownString("This is a markdown **example**!")
     }
 }

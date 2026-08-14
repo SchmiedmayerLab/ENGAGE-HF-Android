@@ -46,7 +46,7 @@ import com.engagehf.modules.ui.theme.Colors.onBackground
 import com.engagehf.modules.ui.theme.Colors.primary
 import com.engagehf.modules.ui.theme.Sizes
 import com.engagehf.modules.ui.theme.Spacings
-import com.engagehf.modules.ui.theme.SpeziTheme
+import com.engagehf.modules.ui.theme.EngageTheme
 import com.engagehf.modules.ui.theme.TextStyles
 import com.engagehf.modules.ui.theme.ThemePreviews
 
@@ -169,7 +169,7 @@ private class ShareHealthSummaryUiStatePreviewParamProvider : PreviewParameterPr
 private fun Preview(
     @PreviewParameter(ShareHealthSummaryUiStatePreviewParamProvider::class) state: ShareHealthSummaryDialogUiState,
 ) {
-    SpeziTheme {
+    EngageTheme {
         Box(modifier = Modifier.fillMaxSize()) {
             state.DialogContent()
         }

@@ -20,7 +20,7 @@ import androidx.compose.ui.tooling.preview.PreviewParameter
 import androidx.compose.ui.tooling.preview.PreviewParameterProvider
 import com.engagehf.modules.ui.theme.Colors
 import com.engagehf.modules.ui.theme.Sizes
-import com.engagehf.modules.ui.theme.SpeziTheme
+import com.engagehf.modules.ui.theme.EngageTheme
 import com.engagehf.modules.ui.theme.ThemePreviews
 
 @Composable
@@ -72,7 +72,7 @@ private data class AsyncSwitchState(
 private fun AsyncSwitchPreview(
     @PreviewParameter(AsyncSwitchPreviewParameterProvider::class) state: AsyncSwitchState,
 ) {
-    SpeziTheme {
+    EngageTheme {
         AsyncSwitch(
             isLoading = state.isLoading,
             checked = state.checked,

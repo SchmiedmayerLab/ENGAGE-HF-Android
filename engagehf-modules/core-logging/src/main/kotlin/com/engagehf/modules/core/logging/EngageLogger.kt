@@ -20,10 +20,10 @@ import java.util.concurrent.atomic.AtomicBoolean
  * @property tag The tag to be used for logging.
  * @property config The configuration for logger settings.
  *
- * @see [speziLogger] and [groupLogger] for configuration options and how to create [SpeziLogger] instances.
+ * @see [engageLogger] and [groupLogger] for configuration options and how to create [EngageLogger] instances.
  *
  */
-class SpeziLogger internal constructor(private val tag: String, private val config: LoggerConfig) {
+class EngageLogger internal constructor(private val tag: String, private val config: LoggerConfig) {
 
     /**
      * Gets the status of logging based on the global flag and logger configuration.
@@ -93,19 +93,19 @@ class SpeziLogger internal constructor(private val tag: String, private val conf
      * Sets the next tag for logging.
      *
      * @param tag The next tag to be used for logging.
-     * @return This [SpeziLogger] instance with the next tag set.
+     * @return This [EngageLogger] instance with the next tag set.
      */
     fun tag(tag: String) = apply {
         logger?.nextTag = tag
     }
 
     /**
-     * Creates a new [SpeziLogger] instance with the specified message prefix.
+     * Creates a new [EngageLogger] instance with the specified message prefix.
      *
      * @param prefix The message prefix to be added to log messages.
-     * @return A new [SpeziLogger] instance with the specified message prefix.
+     * @return A new [EngageLogger] instance with the specified message prefix.
      */
-    fun withMessagePrefix(prefix: String): SpeziLogger = SpeziLogger(
+    fun withMessagePrefix(prefix: String): EngageLogger = EngageLogger(
         tag = tag,
         config = config.apply { messagePrefix = prefix }
     )
@@ -134,7 +134,7 @@ class SpeziLogger internal constructor(private val tag: String, private val conf
          * methods below.
          */
         @PublishedApi
-        internal val LOGGER by speziLogger {
+        internal val LOGGER by engageLogger {
             tag = "com.engagehf.modules.logger"
             messagePrefix = null
             loggingStrategy = LoggingStrategy.TIMBER
@@ -175,7 +175,7 @@ class SpeziLogger internal constructor(private val tag: String, private val conf
          * Sets the next tag for logging.
          *
          * @param tag The next tag to be used for logging.
-         * @return This [SpeziLogger] instance with the next tag set.
+         * @return This [EngageLogger] instance with the next tag set.
          */
         fun tag(tag: String) = LOGGER.tag(tag)
 

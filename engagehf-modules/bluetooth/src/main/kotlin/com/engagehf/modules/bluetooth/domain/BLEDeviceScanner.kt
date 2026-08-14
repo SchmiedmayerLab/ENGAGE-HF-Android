@@ -17,7 +17,7 @@ import android.bluetooth.le.ScanResult
 import android.bluetooth.le.ScanSettings
 import android.os.ParcelUuid
 import com.engagehf.modules.core.coroutines.Dispatching
-import com.engagehf.modules.core.logging.speziLogger
+import com.engagehf.modules.core.logging.engageLogger
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.flow.MutableSharedFlow
 import kotlinx.coroutines.flow.asSharedFlow
@@ -38,7 +38,7 @@ internal class BLEDeviceScanner @Inject constructor(
     @Dispatching.IO private val scope: CoroutineScope,
 ) {
 
-    private val logger by speziLogger()
+    private val logger by engageLogger()
 
     private val _isScanning = AtomicBoolean(false)
 

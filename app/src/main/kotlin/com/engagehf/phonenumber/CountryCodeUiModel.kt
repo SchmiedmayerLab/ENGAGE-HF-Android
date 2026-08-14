@@ -21,7 +21,7 @@ import com.engagehf.modules.ui.ComposableContent
 import com.engagehf.modules.ui.noRippleClickable
 import com.engagehf.modules.ui.theme.Colors
 import com.engagehf.modules.ui.theme.Spacings
-import com.engagehf.modules.ui.theme.SpeziTheme
+import com.engagehf.modules.ui.theme.EngageTheme
 import com.engagehf.modules.ui.theme.TextStyles
 import com.engagehf.modules.ui.theme.ThemePreviews
 
@@ -64,7 +64,7 @@ private fun Preview() {
         number = "+1",
         onClick = {},
     )
-    SpeziTheme {
+    EngageTheme {
         item.Content(modifier = Modifier.fillMaxWidth())
     }
 }

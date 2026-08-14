@@ -10,7 +10,7 @@ package com.engagehf.modules.storage.local
 
 import android.security.keystore.KeyGenParameterSpec
 import android.security.keystore.KeyProperties
-import com.engagehf.modules.core.logging.speziLogger
+import com.engagehf.modules.core.logging.engageLogger
 import java.security.KeyPair
 import java.security.KeyPairGenerator
 import java.security.KeyStore
@@ -36,7 +36,7 @@ interface KeyStorage {
 }
 
 internal class KeyStorageImpl @Inject constructor() : KeyStorage {
-    private val logger by speziLogger()
+    private val logger by engageLogger()
 
     private val keyStore: KeyStore by lazy {
         KeyStore.getInstance(KeyStorage.PROVIDER).apply { load(null) }

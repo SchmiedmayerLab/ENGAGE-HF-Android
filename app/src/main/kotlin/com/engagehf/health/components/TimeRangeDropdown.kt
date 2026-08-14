@@ -26,7 +26,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.stringResource
 import com.engagehf.R
 import com.engagehf.health.TimeRange
-import com.engagehf.modules.ui.theme.SpeziTheme
+import com.engagehf.modules.ui.theme.EngageTheme
 import com.engagehf.modules.ui.theme.ThemePreviews
 
 @Composable
@@ -80,7 +80,7 @@ fun TimeRangeDropdown(
 @ThemePreviews
 @Composable
 fun MenuSamplePreview() {
-    SpeziTheme {
+    EngageTheme {
         TimeRangeDropdown(
             modifier = Modifier.fillMaxWidth(),
             isSelectedTimeRangeDropdownExpanded = true,

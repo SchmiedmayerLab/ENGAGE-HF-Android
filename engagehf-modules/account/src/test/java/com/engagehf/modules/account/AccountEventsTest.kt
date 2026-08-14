@@ -9,14 +9,14 @@
 package com.engagehf.modules.account
 
 import com.google.common.truth.Truth.assertThat
-import com.engagehf.modules.testing.SpeziTestScope
+import com.engagehf.modules.testing.EngageTestScope
 import com.engagehf.modules.testing.runTestUnconfined
 import kotlinx.coroutines.flow.first
 import org.junit.Test
 
 class AccountEventsTest {
 
-    private val accountEvents = AccountEvents(scope = SpeziTestScope())
+    private val accountEvents = AccountEvents(scope = EngageTestScope())
 
     @Test
     fun `given SignInSuccess event when emit is called then events should emit SignInSuccess`() =

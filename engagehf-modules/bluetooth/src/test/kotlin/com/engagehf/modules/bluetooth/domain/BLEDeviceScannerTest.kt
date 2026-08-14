@@ -16,7 +16,7 @@ import android.bluetooth.le.ScanFilter
 import android.bluetooth.le.ScanResult
 import android.bluetooth.le.ScanSettings
 import com.google.common.truth.Truth.assertThat
-import com.engagehf.modules.testing.SpeziTestScope
+import com.engagehf.modules.testing.EngageTestScope
 import com.engagehf.modules.testing.runTestUnconfined
 import com.engagehf.modules.testing.verifyNever
 import com.engagehf.modules.foundation.UUID
@@ -46,7 +46,7 @@ class BLEDeviceScannerTest {
     private val bleDeviceScanner by lazy {
         BLEDeviceScanner(
             bluetoothAdapter = bluetoothAdapter,
-            scope = SpeziTestScope(),
+            scope = EngageTestScope(),
         )
     }
 

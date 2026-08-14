@@ -41,7 +41,7 @@ import com.engagehf.modules.ui.ComposableBlock
 import com.engagehf.modules.ui.disabledAlpha
 import com.engagehf.modules.ui.theme.Colors
 import com.engagehf.modules.ui.theme.Spacings
-import com.engagehf.modules.ui.theme.SpeziTheme
+import com.engagehf.modules.ui.theme.EngageTheme
 import com.engagehf.modules.ui.theme.ThemePreviews
 
 @OptIn(ExperimentalMaterial3Api::class)
@@ -148,5 +148,5 @@ class CountryCodePreviewParamProvider : PreviewParameterProvider<CountryCodeSele
 @ThemePreviews
 @Composable
 private fun Preview(@PreviewParameter(CountryCodePreviewParamProvider::class) model: CountryCodeSelectionUiModel) {
-    SpeziTheme { model.Content() }
+    EngageTheme { model.Content() }
 }

@@ -11,7 +11,7 @@ package com.engagehf.modules.core
 import com.engagehf.modules.core.internal.ModuleRegistry
 
 /**
- * A configuration for the Spezi framework, which allows you to define and register modules and their dependencies.
+ * A configuration for the Engage framework, which allows you to define and register modules and their dependencies.
  */
 sealed interface Configuration {
 
@@ -25,7 +25,7 @@ sealed interface Configuration {
          *
          * ```kotlin
          *
-         * class MyApplication : Application(), SpeziApplication {
+         * class MyApplication : Application(), EngageApplication {
          *     override val configuration: Configuration = Configuration {
          *          module { AudioModule() }
          *          module<Onboarding> { OnboardingImpl() }
