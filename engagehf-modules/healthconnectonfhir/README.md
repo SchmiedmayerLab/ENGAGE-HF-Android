@@ -23,7 +23,7 @@ For more information, please refer to the API documentation.
 
 ## Installation
 
-HealthConnectOnFHIR can be installed into your Android Studio project [via Jitpack](https://jitpack.io/#StanfordSpezi/SpeziKt/healthconnectonfhir-maven).
+HealthConnectOnFHIR is part of this repository and included as the `engagehf-modules:healthconnectonfhir` module.
 
 ## Usage
 
@@ -76,7 +76,7 @@ This project is licensed under the MIT license.
 
 ## Contributors
 
-This project is developed as a part of the Stanford Biodesign for Digital Health projects at Stanford. See CONTRIBUTORS.md for a full list of all HealthConnectOnFHIR contributors.
+This project is developed as a part of the Schmiedmayer Lab projects at Stanford. See CONTRIBUTORS.md for a full list of all HealthConnectOnFHIR contributors.
 
 ## Notices
 

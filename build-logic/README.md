@@ -2,7 +2,7 @@
 
 ## Overview
 
-The `build-logic` folder contains Spezi specific convention plugins that are used for common
+The `build-logic` folder contains ENGAGE-HF specific convention plugins that are used for common
 module configurations.
 
 ## Features
@@ -33,8 +33,8 @@ To apply a convention plugin, add the following to your `build.gradle.kts`:
 
 ```kotlin
 plugins {
-  alias(libs.plugins.spezi.application)
-  alias(libs.plugins.spezi.compose)
+  alias(libs.plugins.engagehf.application)
+  alias(libs.plugins.engagehf.compose)
 }
 ```
 
@@ -42,14 +42,14 @@ plugins {
 
 Current list of convention plugins:
 
-- [`spezi.application`](convention/src/main/kotlin/edu/stanford/spezi/build/logic/convention/plugins/SpeziApplicationConventionPlugin.kt)
-  - Convention plugin that applies by default `com.android.application` and `org.jetbrains.kotlin.android`. Additionally it applies the default project configuration of `spezi.base` plugin.
-- [`spezi.compose`](convention/src/main/kotlin/edu/stanford/spezi/build/logic/convention/plugins/SpeziComposeConventionPlugin.kt)
-  - - Convention plugin that applies the required configuration and dependencies needed for `Compose`. Note that you need to additionally apply either `spezi.application` or `spezi.library` plugins.
-- [`spezi.base`](convention/src/main/kotlin/edu/stanford/spezi/build/logic/convention/plugins/SpeziBaseConfigConventionPlugin.kt)
-  - Base convention plugin used by all modules of the project. It makes sure to configure consistently versions and compile options. This plugin is advisable to be used, for modules that are added as a dependency in one of the `spezi.application` or `spezi.library` plugins.
-- [`spezi.hilt`](convention/src/main/kotlin/edu/stanford/spezi/build/logic/convention/plugins/HiltConventionPlugin.kt)
+- [`engagehf.application`](convention/src/main/kotlin/com/engagehf/buildlogic/convention/plugins/EngageApplicationConventionPlugin.kt)
+  - Convention plugin that applies by default `com.android.application` and `org.jetbrains.kotlin.android`. Additionally it applies the default project configuration of `engagehf.base` plugin.
+- [`engagehf.compose`](convention/src/main/kotlin/com/engagehf/buildlogic/convention/plugins/EngageComposeConventionPlugin.kt)
+  - - Convention plugin that applies the required configuration and dependencies needed for `Compose`. Note that you need to additionally apply either `engagehf.application` or `engagehf.library` plugins.
+- [`engagehf.base`](convention/src/main/kotlin/com/engagehf/buildlogic/convention/plugins/EngageBaseConfigConventionPlugin.kt)
+  - Base convention plugin used by all modules of the project. It makes sure to configure consistently versions and compile options. This plugin is advisable to be used, for modules that are added as a dependency in one of the `engagehf.application` or `engagehf.library` plugins.
+- [`engagehf.hilt`](convention/src/main/kotlin/com/engagehf/buildlogic/convention/plugins/HiltConventionPlugin.kt)
   - Convention plugin that applies all the dependency needed to use Hilt DI.
-- [`spezi.library`](convention/src/main/kotlin/edu/stanford/spezi/build/logic/convention/plugins/SpeziLibraryConventionPlugin.kt)
-  - Convention plugin that applies by default `com.android.library` and `org.jetbrains.kotlin.android`. Additionally it applies the default project configuration of `spezi.base` plugin.
+- [`engagehf.library`](convention/src/main/kotlin/com/engagehf/buildlogic/convention/plugins/EngageLibraryConventionPlugin.kt)
+  - Convention plugin that applies by default `com.android.library` and `org.jetbrains.kotlin.android`. Additionally it applies the default project configuration of `engagehf.base` plugin.
 

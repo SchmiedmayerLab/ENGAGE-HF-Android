@@ -7,13 +7,13 @@
 //
 
 plugins {
-    alias(libs.plugins.spezi.library)
-    alias(libs.plugins.spezi.compose)
-    alias(libs.plugins.spezi.hilt)
+    alias(libs.plugins.engagehf.library)
+    alias(libs.plugins.engagehf.compose)
+    alias(libs.plugins.engagehf.hilt)
 }
 
 android {
-    namespace = "edu.stanford.bdh.engagehf.modules.account"
+    namespace = "com.engagehf.modules.account"
 
     buildFeatures {
         buildConfig = true
@@ -31,11 +31,11 @@ dependencies {
     implementation(project(":engagehf-modules:navigation"))
     implementation(project(":engagehf-modules:utils"))
 
-    implementation(project(":spezi:foundation"))
-    implementation(project(":spezi:core"))
-    implementation(project(":spezi:core-coroutines"))
-    implementation(project(":spezi:core-logging"))
-    implementation(project(":spezi:ui"))
+    implementation(project(":engagehf-modules:foundation"))
+    implementation(project(":engagehf-modules:core"))
+    implementation(project(":engagehf-modules:core-coroutines"))
+    implementation(project(":engagehf-modules:core-logging"))
+    implementation(project(":engagehf-modules:ui"))
 
     implementation(libs.hilt.navigation.compose)
 
@@ -50,5 +50,5 @@ dependencies {
 
     testImplementation(libs.bundles.unit.testing)
     androidTestImplementation(libs.bundles.compose.androidTest)
-    androidTestImplementation(project(":spezi:testing-ui"))
+    androidTestImplementation(project(":engagehf-modules:testing-ui"))
 }

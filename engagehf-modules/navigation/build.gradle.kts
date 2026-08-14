@@ -7,19 +7,19 @@
 //
 
 plugins {
-    alias(libs.plugins.spezi.library)
-    alias(libs.plugins.spezi.hilt)
+    alias(libs.plugins.engagehf.library)
+    alias(libs.plugins.engagehf.hilt)
 }
 
 android {
-    namespace = "edu.stanford.bdh.engagehf.modules.navigation"
+    namespace = "com.engagehf.modules.navigation"
 }
 
 dependencies {
-    implementation(project(":spezi:foundation"))
-    implementation(project(":spezi:core"))
-    implementation(project(":spezi:core-coroutines"))
-    implementation(project(":spezi:core-logging"))
+    implementation(project(":engagehf-modules:foundation"))
+    implementation(project(":engagehf-modules:core"))
+    implementation(project(":engagehf-modules:core-coroutines"))
+    implementation(project(":engagehf-modules:core-logging"))
 
     implementation(libs.androidx.core.ktx)
 }

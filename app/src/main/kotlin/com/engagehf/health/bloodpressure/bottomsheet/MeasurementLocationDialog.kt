@@ -1,0 +1,59 @@
+//
+// This source file is part of the ENGAGE-HF Android open-source project
+//
+// SPDX-FileCopyrightText: 2025 Stanford University and the project authors (see CONTRIBUTORS.md)
+//
+// SPDX-License-Identifier: MIT
+//
+
+package com.engagehf.health.bloodpressure.bottomsheet
+
+import androidx.compose.runtime.Composable
+import androidx.compose.ui.res.stringResource
+import com.engagehf.R
+import com.engagehf.health.components.ItemsDialog
+import com.engagehf.modules.ui.theme.EngageTheme
+import com.engagehf.modules.ui.theme.ThemePreviews
+
+@Composable
+fun MeasurementLocationDialog(
+    onDismissRequest: () -> Unit,
+    onOptionSelected: (MeasurementLocations) -> Unit,
+    measurementLocations: List<MeasurementLocations>,
+) {
+    val items = measurementLocations.map {
+        when (it) {
+            MeasurementLocations.MEASUREMENT_LOCATION_UNKNOWN -> stringResource(R.string.not_set)
+            MeasurementLocations.MEASUREMENT_LOCATION_LEFT_WRIST -> stringResource(R.string.left_wrist)
+            MeasurementLocations.MEASUREMENT_LOCATION_RIGHT_WRIST -> stringResource(
+                R.string.right_wrist
+            )
+
+            MeasurementLocations.MEASUREMENT_LOCATION_LEFT_UPPER_ARM -> stringResource(
+                R.string.left_upper_arm
+            )
+
+            MeasurementLocations.MEASUREMENT_LOCATION_RIGHT_UPPER_ARM -> stringResource(
+                R.string.right_upper_arm
+            )
+        }
+    }
+    ItemsDialog(
+        title = stringResource(id = R.string.measurement_location),
+        items = items,
+        onDismissRequest = onDismissRequest,
+        onOptionSelected = { onOptionSelected(measurementLocations[it]) }
+    )
+}
+
+@ThemePreviews
+@Composable
+fun MeasurementLocationDialogPreview() {
+    EngageTheme {
+        MeasurementLocationDialog(
+            onDismissRequest = {},
+            onOptionSelected = {},
+            measurementLocations = MeasurementLocations.entries
+        )
+    }
+}

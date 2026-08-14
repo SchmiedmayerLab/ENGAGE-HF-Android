@@ -7,12 +7,12 @@
 //
 
 plugins {
-    alias(libs.plugins.spezi.library)
-    alias(libs.plugins.spezi.hilt)
+    alias(libs.plugins.engagehf.library)
+    alias(libs.plugins.engagehf.hilt)
 }
 
 android {
-    namespace = "edu.stanford.bdh.engagehf.modules.healthconnectonfhir"
+    namespace = "com.engagehf.modules.healthconnectonfhir"
 }
 
 dependencies {

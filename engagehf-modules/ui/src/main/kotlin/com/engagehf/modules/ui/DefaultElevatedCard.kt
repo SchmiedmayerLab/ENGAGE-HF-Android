@@ -1,0 +1,44 @@
+//
+// This source file is part of the ENGAGE-HF Android open-source project
+//
+// SPDX-FileCopyrightText: 2025 Stanford University and the project authors (see CONTRIBUTORS.md)
+//
+// SPDX-License-Identifier: MIT
+//
+
+package com.engagehf.modules.ui
+
+import androidx.compose.foundation.layout.ColumnScope
+import androidx.compose.material3.CardDefaults
+import androidx.compose.material3.ElevatedCard
+import androidx.compose.runtime.Composable
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Shape
+import com.engagehf.modules.ui.theme.Colors
+import com.engagehf.modules.ui.theme.Sizes
+
+/**
+ * Default Material Design elevated card.
+ *
+ * @param modifier Modifier to be applied
+ * @param shape card shape
+ * @param content content of the card
+ */
+@Composable
+fun DefaultElevatedCard(
+    modifier: Modifier = Modifier,
+    shape: Shape = CardDefaults.shape,
+    content: @Composable (ColumnScope.() -> Unit),
+) {
+    ElevatedCard(
+        modifier = modifier,
+        elevation = CardDefaults.elevatedCardElevation(
+            defaultElevation = Sizes.Elevation.medium,
+        ),
+        shape = shape,
+        colors = CardDefaults.cardColors(
+            containerColor = Colors.surface.lighten(),
+        ),
+        content = content,
+    )
+}

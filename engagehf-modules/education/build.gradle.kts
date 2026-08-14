@@ -7,14 +7,14 @@
 //
 
 plugins {
-    alias(libs.plugins.spezi.library)
-    alias(libs.plugins.spezi.compose)
-    alias(libs.plugins.spezi.hilt)
-    alias(libs.plugins.spezi.serialization)
+    alias(libs.plugins.engagehf.library)
+    alias(libs.plugins.engagehf.compose)
+    alias(libs.plugins.engagehf.hilt)
+    alias(libs.plugins.engagehf.serialization)
 }
 
 android {
-    namespace = "edu.stanford.bdh.engagehf.modules.education"
+    namespace = "com.engagehf.modules.education"
 }
 
 dependencies {
@@ -25,9 +25,9 @@ dependencies {
     implementation(project(":engagehf-modules:design"))
     implementation(project(":engagehf-modules:navigation"))
 
-    implementation(project(":spezi:foundation"))
-    implementation(project(":spezi:core"))
-    implementation(project(":spezi:core-logging"))
-    implementation(project(":spezi:ui"))
-    androidTestImplementation(project(":spezi:testing-ui"))
+    implementation(project(":engagehf-modules:foundation"))
+    implementation(project(":engagehf-modules:core"))
+    implementation(project(":engagehf-modules:core-logging"))
+    implementation(project(":engagehf-modules:ui"))
+    androidTestImplementation(project(":engagehf-modules:testing-ui"))
 }

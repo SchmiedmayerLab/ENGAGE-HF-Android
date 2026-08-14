@@ -1,4 +1,4 @@
 # Module app
 
-The Template App is an integral part of the Stanford Spezi Framework and is intended to show how
-to use the Framework. The simple app shows the use of the Spezi modules and the core elements.
+The app module contains the ENGAGE-HF application: navigation, the main activity, and the
+feature screens that build on the modules in `engagehf-modules`.

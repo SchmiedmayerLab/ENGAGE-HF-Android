@@ -1,0 +1,51 @@
+//
+// This source file is part of the ENGAGE-HF Android open-source project
+//
+// SPDX-FileCopyrightText: 2025 Stanford University and the project authors (see CONTRIBUTORS.md)
+//
+// SPDX-License-Identifier: MIT
+//
+
+package com.engagehf.modules.ui
+
+import androidx.compose.material3.Text
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.test.assertCountEquals
+import androidx.compose.ui.test.assertIsDisplayed
+import androidx.compose.ui.test.junit4.createComposeRule
+import com.engagehf.modules.testing.ui.onAllNodes
+import com.engagehf.modules.testing.ui.onNodeWithIdentifier
+import org.junit.Rule
+import org.junit.Test
+
+class RepeatingLazyColumnTest {
+    @get:Rule
+    val composeTestRule = createComposeRule()
+
+    @Test
+    fun testRepeatingLazyColumn() {
+        val title = "#same"
+        val count = 3
+        val root = Identifier.ROOT
+        composeTestRule.setContent {
+            RepeatingLazyColumn(
+                modifier = Modifier.testIdentifier(root),
+                itemCount = count,
+                content = {
+                    Text(
+                        modifier = Modifier
+                            .testIdentifier(Identifier.CONTENT),
+                        text = title
+                    )
+                }
+            )
+        }
+
+        composeTestRule.onNodeWithIdentifier(root).assertIsDisplayed()
+        composeTestRule.onAllNodes(Identifier.CONTENT).assertCountEquals(count)
+    }
+
+    private enum class Identifier {
+        ROOT, CONTENT
+    }
+}

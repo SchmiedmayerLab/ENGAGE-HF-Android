@@ -2,7 +2,7 @@
 
 ## Overview
 
-The Design System Module is part of the Spezi framework, designed to provide
+The Design System Module is designed to provide
 a cohesive user interface and user experience components. It ensures consistent aesthetics and
 functionality across different parts of the application, enhancing both developer efficiency and
 user satisfaction.
@@ -36,7 +36,7 @@ module or look at the example usage below:
 ### Theming
 
 ```kotlin
-SpeziTheme {
+EngageTheme {
     Text(text = "Text")
 }
 ```
@@ -44,7 +44,7 @@ SpeziTheme {
 ### Components
 
 ```kotlin
-SpeziButton(
+AsyncButton(
     onClick = { },
     content = { Text(text = "Text") }
 )
@@ -62,7 +62,7 @@ Text(text = "Text", style = TextStyles.bodyLarge)
 ImageVector.vectorResource(R.drawable.ic_medications)
 ```
 
-# package edu.stanford.bdh.engagehf.modules.design.theme
+# package com.engagehf.modules.design.theme
 
 The `theme` package contains the theme configuration for the Design System Module. It includes:
 Color, Theme and Typography.

@@ -20,7 +20,7 @@ SPDX-License-Identifier: MIT
 
     <application>
         <service
-            android:name="edu.stanford.bdh.engagehf.modules.notification.fcm.FCMNotificationService"
+            android:name="com.engagehf.modules.notification.fcm.FCMNotificationService"
             android:exported="false">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />

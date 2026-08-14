@@ -7,21 +7,21 @@
 //
 
 plugins {
-    alias(libs.plugins.spezi.library)
-    alias(libs.plugins.spezi.hilt)
-    alias(libs.plugins.spezi.serialization)
+    alias(libs.plugins.engagehf.library)
+    alias(libs.plugins.engagehf.hilt)
+    alias(libs.plugins.engagehf.serialization)
 }
 
 android {
-    namespace = "edu.stanford.bdh.engagehf.modules.bluetooth"
+    namespace = "com.engagehf.modules.bluetooth"
 }
 
 dependencies {
     implementation(project(":engagehf-modules:utils"))
 
-    implementation(project(":spezi:foundation"))
-    implementation(project(":spezi:core"))
-    implementation(project(":spezi:core-coroutines"))
-    implementation(project(":spezi:core-logging"))
-    implementation(project(":spezi:storage-credential"))
+    implementation(project(":engagehf-modules:foundation"))
+    implementation(project(":engagehf-modules:core"))
+    implementation(project(":engagehf-modules:core-coroutines"))
+    implementation(project(":engagehf-modules:core-logging"))
+    implementation(project(":engagehf-modules:storage-credential"))
 }
