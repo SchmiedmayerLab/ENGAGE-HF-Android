@@ -13,7 +13,7 @@ plugins {
 }
 
 android {
-    namespace = "edu.stanford.bdh.engagehf.modules.account"
+    namespace = "com.engagehf.modules.account"
 
     buildFeatures {
         buildConfig = true

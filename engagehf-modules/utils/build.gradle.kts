@@ -14,7 +14,7 @@ plugins {
 }
 
 android {
-    namespace = "edu.stanford.bdh.engagehf.modules.utils"
+    namespace = "com.engagehf.modules.utils"
 
     defaultConfig {
         testInstrumentationRunner = "edu.stanford.spezi.testing.ui.HiltApplicationTestRunner"

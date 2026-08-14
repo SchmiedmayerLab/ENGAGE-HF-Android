@@ -12,7 +12,7 @@ import androidx.test.platform.app.InstrumentationRegistry
 import com.google.common.truth.Truth.assertThat
 import dagger.hilt.android.testing.HiltAndroidRule
 import dagger.hilt.android.testing.HiltAndroidTest
-import edu.stanford.bdh.engagehf.modules.testing.runTestUnconfined
+import com.engagehf.modules.testing.runTestUnconfined
 import edu.stanford.spezi.foundation.UUID
 import kotlinx.serialization.Serializable
 import kotlinx.serialization.builtins.ListSerializer

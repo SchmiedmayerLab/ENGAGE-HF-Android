@@ -17,7 +17,7 @@ plugins {
 }
 
 android {
-    namespace = "edu.stanford.bdh.engagehf"
+    namespace = "com.engagehf"
     compileSdk = libs.versions.compileSdk.get().toInt()
 
     defaultConfig {

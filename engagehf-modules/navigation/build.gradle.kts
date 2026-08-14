@@ -12,7 +12,7 @@ plugins {
 }
 
 android {
-    namespace = "edu.stanford.bdh.engagehf.modules.navigation"
+    namespace = "com.engagehf.modules.navigation"
 }
 
 dependencies {

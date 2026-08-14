@@ -2,13 +2,13 @@
 
 This module provides Account management components.
 
-# package edu.stanford.bdh.engagehf.modules.account.login
+# package com.engagehf.modules.account.login
 
 The LoginScreen is a key component of the account module. It is responsible for handling user
 authentication in Spezi Framework. This screen provides an interface for users to enter their email
 and password to log into their account.
 
-# package edu.stanford.bdh.engagehf.modules.account.register
+# package com.engagehf.modules.account.register
 
 The RegisterScreen is a key component of the account module. It is responsible for handling user
 registration in the Spezi Framework. This screen provides an interface for users to create a new

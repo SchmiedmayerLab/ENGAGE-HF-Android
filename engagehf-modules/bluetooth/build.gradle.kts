@@ -13,7 +13,7 @@ plugins {
 }
 
 android {
-    namespace = "edu.stanford.bdh.engagehf.modules.bluetooth"
+    namespace = "com.engagehf.modules.bluetooth"
 }
 
 dependencies {

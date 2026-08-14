@@ -1,0 +1,114 @@
+//
+// This source file is part of the ENGAGE-HF Android open-source project
+//
+// SPDX-FileCopyrightText: 2025 Stanford University and the project authors (see CONTRIBUTORS.md)
+//
+// SPDX-License-Identifier: MIT
+//
+
+package com.engagehf.health.heartrate.bottomsheet
+
+import androidx.health.connect.client.records.HeartRateRecord
+import androidx.lifecycle.ViewModel
+import androidx.lifecycle.viewModelScope
+import dagger.hilt.android.lifecycle.HiltViewModel
+import com.engagehf.R
+import com.engagehf.bluetooth.component.AppScreenEvents
+import com.engagehf.health.HealthRepository
+import com.engagehf.health.time.TimePickerStateMapper
+import com.engagehf.modules.healthconnectonfhir.Metadata
+import com.engagehf.modules.utils.MessageNotifier
+import kotlinx.coroutines.flow.MutableStateFlow
+import kotlinx.coroutines.flow.asStateFlow
+import kotlinx.coroutines.flow.update
+import kotlinx.coroutines.launch
+import java.time.Instant
+import java.time.LocalTime
+import javax.inject.Inject
+
+@HiltViewModel
+internal class AddHeartRateBottomSheetViewModel @Inject constructor(
+    private val appScreenEvents: AppScreenEvents,
+    private val healthRepository: HealthRepository,
+    private val timePickerStateMapper: TimePickerStateMapper,
+    private val notifier: MessageNotifier,
+) : ViewModel() {
+
+    private val _uiState = MutableStateFlow(AddHeartRateBottomSheetUiState(timePickerState = timePickerStateMapper.mapNow()))
+    val uiState = _uiState.asStateFlow()
+
+    fun onAction(action: Action) {
+        when (action) {
+            Action.CloseSheet -> {
+                appScreenEvents.emit(AppScreenEvents.Event.CloseBottomSheet)
+            }
+
+            Action.SaveHeartRate -> {
+                handleSaveHeartRateAction()
+            }
+
+            is Action.UpdateDate -> {
+                _uiState.update {
+                    it.copy(
+                        timePickerState = timePickerStateMapper.mapDate(
+                            date = action.date,
+                            timePickerState = it.timePickerState
+                        )
+                    )
+                }
+            }
+
+            is Action.UpdateTime -> {
+                _uiState.update {
+                    it.copy(
+                        timePickerState = timePickerStateMapper.mapTime(
+                            localTime = action.time,
+                            timePickerState = it.timePickerState,
+                        )
+                    )
+                }
+            }
+
+            is Action.UpdateHeartRate -> {
+                _uiState.update {
+                    it.copy(heartRate = action.heartRate)
+                }
+            }
+        }
+    }
+
+    private fun handleSaveHeartRateAction() {
+        with(uiState.value) {
+            val dateTime = timePickerStateMapper.mapInstant(timePickerState)
+            HeartRateRecord(
+                startTime = dateTime,
+                startZoneOffset = null,
+                endTime = dateTime,
+                endZoneOffset = null,
+                samples = listOf(
+                    HeartRateRecord.Sample(
+                        dateTime,
+                        heartRate.toLong()
+                    )
+                ),
+                metadata = Metadata()
+            ).also { heartRate ->
+                viewModelScope.launch {
+                    healthRepository.saveRecord(heartRate).onFailure {
+                        notifier.notify(R.string.heart_rate_record_save_failure_message)
+                    }.onSuccess {
+                        appScreenEvents.emit(AppScreenEvents.Event.CloseBottomSheet)
+                    }
+                }
+            }
+        }
+    }
+
+    sealed interface Action {
+        data object CloseSheet : Action
+        data object SaveHeartRate : Action
+        data class UpdateDate(val date: Instant) : Action
+        data class UpdateTime(val time: LocalTime) : Action
+        data class UpdateHeartRate(val heartRate: Int) : Action
+    }
+}

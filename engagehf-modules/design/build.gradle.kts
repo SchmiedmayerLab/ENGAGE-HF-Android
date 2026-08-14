@@ -13,7 +13,7 @@ plugins {
 }
 
 android {
-    namespace = "edu.stanford.bdh.engagehf.modules.design"
+    namespace = "com.engagehf.modules.design"
 
     buildFeatures {
         compose = true

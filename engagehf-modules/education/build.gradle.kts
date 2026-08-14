@@ -14,7 +14,7 @@ plugins {
 }
 
 android {
-    namespace = "edu.stanford.bdh.engagehf.modules.education"
+    namespace = "com.engagehf.modules.education"
 }
 
 dependencies {

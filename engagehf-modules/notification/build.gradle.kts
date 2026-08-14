@@ -15,7 +15,7 @@ plugins {
 }
 
 android {
-    namespace = "edu.stanford.bdh.engagehf.modules.notification"
+    namespace = "com.engagehf.modules.notification"
 }
 
 dependencies {

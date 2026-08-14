@@ -12,7 +12,7 @@ plugins {
 }
 
 android {
-    namespace = "edu.stanford.bdh.engagehf.modules.healthconnectonfhir"
+    namespace = "com.engagehf.modules.healthconnectonfhir"
 }
 
 dependencies {

@@ -62,7 +62,7 @@ Text(text = "Text", style = TextStyles.bodyLarge)
 ImageVector.vectorResource(R.drawable.ic_medications)
 ```
 
-# package edu.stanford.bdh.engagehf.modules.design.theme
+# package com.engagehf.modules.design.theme
 
 The `theme` package contains the theme configuration for the Design System Module. It includes:
 Color, Theme and Typography.

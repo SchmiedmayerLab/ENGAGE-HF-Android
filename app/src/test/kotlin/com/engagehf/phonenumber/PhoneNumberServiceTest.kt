@@ -1,0 +1,141 @@
+//
+// This source file is part of the ENGAGE-HF Android open-source project
+//
+// SPDX-FileCopyrightText: 2025 Stanford University and the project authors (see CONTRIBUTORS.md)
+//
+// SPDX-License-Identifier: MIT
+//
+
+package com.engagehf.phonenumber
+
+import android.content.Context
+import android.content.res.Resources
+import com.google.common.truth.Truth.assertThat
+import com.google.firebase.functions.FirebaseFunctions
+import com.engagehf.R
+import com.engagehf.modules.account.manager.UserSessionManager
+import io.mockk.every
+import io.mockk.mockk
+import kotlinx.coroutines.test.UnconfinedTestDispatcher
+import kotlinx.coroutines.test.runTest
+import org.junit.Before
+import org.junit.Test
+
+class PhoneNumberServiceTest {
+    private val userId = "some-uid"
+    private val phoneNumber = "+12345678"
+    private val firebaseFunctions: FirebaseFunctions = mockk()
+    private val userSessionManager: UserSessionManager = mockk {
+        every { getUserUid() } returns userId
+    }
+    private val context: Context = mockk()
+    private val json =
+        """
+        {
+          "emojis": { "US": "🇺🇸" }
+        }
+        """.trimIndent()
+
+    private val service = PhoneNumberService(
+        context = context,
+        firebaseFunctions = firebaseFunctions,
+        userSessionManager = userSessionManager,
+        ioDispatcher = UnconfinedTestDispatcher(),
+    )
+
+    @Before
+    fun setUp() {
+        val resources: Resources = mockk()
+        every { context.resources } returns resources
+        every { resources.openRawResource(R.raw.country_emojis) } returns json.byteInputStream()
+    }
+
+    @Test
+    fun `it should handle start number verification failure correctly`() = runTest {
+        // given
+        val exception = Exception("Function call failed")
+        every {
+            firebaseFunctions.getHttpsCallable("startPhoneNumberVerification")
+        } throws exception
+
+        // when
+        val result = service.startPhoneNumberVerification(phoneNumber)
+
+        // then
+        assertThat(result.isFailure).isTrue()
+        assertThat(result.exceptionOrNull()).isEqualTo(exception)
+    }
+
+    @Test
+    fun `it should handle check number verification failure correctly`() = runTest {
+        // given
+        val exception = Exception("Function call failed")
+        every {
+            firebaseFunctions.getHttpsCallable("checkPhoneNumberVerification")
+        } throws exception
+
+        // when
+        val result = service.checkPhoneNumberVerification("", phoneNumber)
+
+        // then
+        assertThat(result.isFailure).isTrue()
+        assertThat(result.exceptionOrNull()).isEqualTo(exception)
+    }
+
+    @Test
+    fun `it should handle delete phone number failure correctly`() = runTest {
+        // given
+        val exception = Exception("Function call failed")
+        every {
+            firebaseFunctions.getHttpsCallable("deletePhoneNumber")
+        } throws exception
+
+        // when
+        val result = service.deletePhoneNumber(phoneNumber)
+
+        // then
+        assertThat(result.isFailure).isTrue()
+        assertThat(result.exceptionOrNull()).isEqualTo(exception)
+    }
+
+    @Test
+    fun `it should return country codes with emoji from JSON and globe for unknown`() = runTest {
+        // when
+        val result = service.getAllCountryCodes()
+
+        // then
+        val unitedStates = result.firstOrNull { it.iso == "US" }
+        assertThat(unitedStates).isNotNull()
+        assertThat(unitedStates?.emoji).isEqualTo("🇺🇸")
+
+        val other = result.firstOrNull { it.iso != "US" }
+        assertThat(other).isNotNull()
+        assertThat(other?.emoji).isEqualTo("🌐")
+    }
+
+    @Test
+    fun `it should format a valid phone number correctly`() {
+        // given
+        val rawPhoneNumber = "+14155552671"
+        val expectedFormatted = "+1 415-555-2671"
+
+        // when
+        val formatted = service.format(rawPhoneNumber)
+
+        // then
+        assertThat(formatted).isEqualTo(expectedFormatted)
+    }
+
+    @Test
+    fun `it should validate a correct phone number`() {
+        // given
+        val validNumber = "+491734758775"
+        val iso = "DE"
+
+        // when
+        val isValid = service.isPhoneNumberValid(validNumber, iso)
+
+        // then
+        assertThat(isValid).isTrue()
+    }
+}

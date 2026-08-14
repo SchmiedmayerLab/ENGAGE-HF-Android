@@ -12,13 +12,13 @@ This module provides multiple onboarding screens:
 
 <img src="screens/sequential_step_2.jpg" width="300" alt="Sequential Onboarding Screen Step 2"/>
 
-# Package edu.stanford.bdh.engagehf.modules.onboarding
+# Package com.engagehf.modules.onboarding
 
 The `onboarding` package provides the `OnboardingNavigationEvent` sealed class, which defines the
 possible navigation events for the onboarding module. The `OnboardingNavigationEvent` class is used
 to navigate between the different onboarding screens.
 
-# Package edu.stanford.bdh.engagehf.modules.onboarding.consent
+# Package com.engagehf.modules.onboarding.consent
 
 The `consent` package handles user consent screens, ensuring that users agree to the necessary terms
 and conditions before proceeding. The consent document gets build by a Markdown Text. The text can
@@ -53,7 +53,7 @@ class EngageConsentManager @Inject internal constructor(
 }
 ```
 
-# Package edu.stanford.bdh.engagehf.modules.onboarding.invitation
+# Package com.engagehf.modules.onboarding.invitation
 
 The `invitation` package manages the invitation process, allowing users to join an app.
 The `InvitationCodeScreenData` provides all necessary data for the view like the title, the
@@ -77,7 +77,7 @@ class EngageInvitationCodeRepository @Inject constructor(
 }
 ```
 
-# Package edu.stanford.bdh.engagehf.modules.onboarding.onboarding
+# Package com.engagehf.modules.onboarding.onboarding
 
 The `onboarding` package contains the main onboarding screens, guiding users through the initial
 setup and introduction to the app. The Screen can be used anywhere after providing
@@ -119,7 +119,7 @@ class EngageOnboardingRepository @Inject constructor(
 
 ```
 
-# Package edu.stanford.bdh.engagehf.modules.onboarding.sequential
+# Package com.engagehf.modules.onboarding.sequential
 
 The `sequential` package ensures that the onboarding steps are followed in a specific sequence,
 providing a smooth and logical flow for the user. The Screen can be used anywhere after providing

@@ -13,7 +13,7 @@ plugins {
 }
 
 android {
-    namespace = "edu.stanford.bdh.engagehf.modules.onboarding"
+    namespace = "com.engagehf.modules.onboarding"
 }
 
 dependencies {
