@@ -25,13 +25,21 @@ class KeyValueStorageFactoryTest {
 
     private val appDataDir = Files.createTempDirectory("data").toFile()
     private val legacyPreferences = FakeSharedPreferences().apply {
-        edit().putString("token", "legacy").putBoolean("enabled", true).apply()
+        edit()
+            .putString("token", "legacy")
+            .putBoolean("enabled", true)
+            .putInt("count", 7)
+            .putLong("timestamp", 42L)
+            .putFloat("ratio", 0.5f)
+            .putStringSet("tags", mutableSetOf("a", "b"))
+            .apply()
     }
     private val targetPreferences = FakeSharedPreferences()
     private val context: Context = mockk {
         every { dataDir } returns appDataDir
         every { getSharedPreferences(fileName, Context.MODE_PRIVATE) } returns targetPreferences
         every { getSharedPreferences(legacyFileName, Context.MODE_PRIVATE) } returns legacyPreferences
+        every { getSharedPreferences("unrelated-storage", Context.MODE_PRIVATE) } returns targetPreferences
         every { deleteSharedPreferences(legacyFileName) } returns true
     }
     private val factory = KeyValueStorageFactoryImpl(
@@ -41,14 +49,56 @@ class KeyValueStorageFactoryTest {
 
     @Test
     fun `it should migrate entries installs stored under the previous file name`() {
-        File(appDataDir, "shared_prefs").mkdirs()
-        File(File(appDataDir, "shared_prefs"), "$legacyFileName.xml").createNewFile()
+        givenALegacyFile()
 
         factory.create(fileName, KeyValueStorageType.UNENCRYPTED)
 
         assertThat(targetPreferences.getString("token", null)).isEqualTo("legacy")
         assertThat(targetPreferences.getBoolean("enabled", false)).isTrue()
         verify { context.deleteSharedPreferences(legacyFileName) }
+    }
+
+    private fun givenALegacyFile() {
+        File(appDataDir, "shared_prefs").mkdirs()
+        File(File(appDataDir, "shared_prefs"), "$legacyFileName.xml").createNewFile()
+    }
+
+    @Test
+    fun `it should migrate every value type the previous storage held`() {
+        givenALegacyFile()
+
+        factory.create(fileName, KeyValueStorageType.UNENCRYPTED)
+
+        assertThat(targetPreferences.getString("token", null)).isEqualTo("legacy")
+        assertThat(targetPreferences.getBoolean("enabled", false)).isTrue()
+        assertThat(targetPreferences.getInt("count", 0)).isEqualTo(7)
+        assertThat(targetPreferences.getLong("timestamp", 0L)).isEqualTo(42L)
+        assertThat(targetPreferences.getFloat("ratio", 0f)).isEqualTo(0.5f)
+        assertThat(targetPreferences.getStringSet("tags", mutableSetOf()))
+            .containsExactly("a", "b")
+    }
+
+    @Test
+    fun `it should keep the storage usable when the migration fails`() {
+        givenALegacyFile()
+        every { context.getSharedPreferences(legacyFileName, Context.MODE_PRIVATE) } throws
+            IllegalStateException("unreadable")
+
+        val storage = factory.create(fileName, KeyValueStorageType.UNENCRYPTED)
+
+        assertThat(storage).isNotNull()
+        assertThat(targetPreferences.all).isEmpty()
+        verify(exactly = 0) { context.deleteSharedPreferences(any()) }
+    }
+
+    @Test
+    fun `it should ignore storage that does not use the current prefix`() {
+        givenALegacyFile()
+
+        factory.create("unrelated-storage", KeyValueStorageType.UNENCRYPTED)
+
+        assertThat(targetPreferences.all).isEmpty()
+        verify(exactly = 0) { context.deleteSharedPreferences(any()) }
     }
 
     @Test
