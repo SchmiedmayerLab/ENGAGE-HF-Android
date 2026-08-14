@@ -9,7 +9,7 @@
 package com.engagehf.bluetooth.data.models
 
 import com.engagehf.R
-import edu.stanford.spezi.ui.StringResource
+import com.engagehf.modules.ui.StringResource
 
 sealed interface BluetoothUiState {
     data class Idle(

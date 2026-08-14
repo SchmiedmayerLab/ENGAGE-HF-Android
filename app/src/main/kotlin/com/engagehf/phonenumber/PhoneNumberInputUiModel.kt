@@ -41,18 +41,18 @@ import androidx.compose.ui.tooling.preview.PreviewParameter
 import androidx.compose.ui.tooling.preview.PreviewParameterProvider
 import androidx.compose.ui.unit.dp
 import com.engagehf.R
-import edu.stanford.spezi.ui.StringResource
-import edu.stanford.spezi.ui.disabledAlpha
-import edu.stanford.spezi.ui.lighten
-import edu.stanford.spezi.ui.noRippleClickable
-import edu.stanford.spezi.ui.theme.Colors
-import edu.stanford.spezi.ui.theme.Colors.primary
-import edu.stanford.spezi.ui.theme.Sizes
-import edu.stanford.spezi.ui.theme.Spacings
-import edu.stanford.spezi.ui.theme.SpeziTheme
-import edu.stanford.spezi.ui.theme.TextStyles.bodyMedium
-import edu.stanford.spezi.ui.theme.TextStyles.bodySmall
-import edu.stanford.spezi.ui.theme.ThemePreviews
+import com.engagehf.modules.ui.StringResource
+import com.engagehf.modules.ui.disabledAlpha
+import com.engagehf.modules.ui.lighten
+import com.engagehf.modules.ui.noRippleClickable
+import com.engagehf.modules.ui.theme.Colors
+import com.engagehf.modules.ui.theme.Colors.primary
+import com.engagehf.modules.ui.theme.Sizes
+import com.engagehf.modules.ui.theme.Spacings
+import com.engagehf.modules.ui.theme.SpeziTheme
+import com.engagehf.modules.ui.theme.TextStyles.bodyMedium
+import com.engagehf.modules.ui.theme.TextStyles.bodySmall
+import com.engagehf.modules.ui.theme.ThemePreviews
 
 data class PhoneNumberInputUiModel(
     val phoneNumber: String,

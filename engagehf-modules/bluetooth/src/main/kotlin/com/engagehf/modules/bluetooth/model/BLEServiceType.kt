@@ -8,7 +8,7 @@
 
 package com.engagehf.modules.bluetooth.model
 
-import edu.stanford.spezi.foundation.UUID
+import com.engagehf.modules.foundation.UUID
 import java.util.UUID
 
 /**

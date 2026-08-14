@@ -33,7 +33,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.tooling.preview.PreviewParameter
 import androidx.compose.ui.tooling.preview.PreviewParameterProvider
 import com.engagehf.modules.onboarding.R
-import edu.stanford.spezi.ui.theme.Spacings
+import com.engagehf.modules.ui.theme.Spacings
 
 @OptIn(ExperimentalComposeUiApi::class)
 @Composable

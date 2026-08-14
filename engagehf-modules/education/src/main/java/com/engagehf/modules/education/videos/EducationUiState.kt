@@ -8,7 +8,7 @@
 
 package com.engagehf.modules.education.videos
 
-import edu.stanford.spezi.ui.StringResource
+import com.engagehf.modules.ui.StringResource
 import kotlinx.serialization.Serializable
 
 data class EducationUiState(

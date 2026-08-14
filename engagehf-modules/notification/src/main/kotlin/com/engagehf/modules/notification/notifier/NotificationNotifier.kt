@@ -22,7 +22,7 @@ import androidx.core.content.PermissionChecker
 import dagger.hilt.android.qualifiers.ApplicationContext
 import com.engagehf.modules.notification.R
 import com.engagehf.modules.notification.notifier.FirebaseMessage.Companion.FIREBASE_MESSAGE_KEY
-import edu.stanford.spezi.core.logging.speziLogger
+import com.engagehf.modules.core.logging.speziLogger
 import javax.inject.Inject
 
 /**

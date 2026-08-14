@@ -19,12 +19,12 @@ import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
-import edu.stanford.spezi.ui.VerticalSpacer
-import edu.stanford.spezi.ui.theme.Colors
-import edu.stanford.spezi.ui.theme.Spacings
-import edu.stanford.spezi.ui.theme.SpeziTheme
-import edu.stanford.spezi.ui.theme.TextStyles
-import edu.stanford.spezi.ui.theme.ThemePreviews
+import com.engagehf.modules.ui.VerticalSpacer
+import com.engagehf.modules.ui.theme.Colors
+import com.engagehf.modules.ui.theme.Spacings
+import com.engagehf.modules.ui.theme.SpeziTheme
+import com.engagehf.modules.ui.theme.TextStyles
+import com.engagehf.modules.ui.theme.ThemePreviews
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable

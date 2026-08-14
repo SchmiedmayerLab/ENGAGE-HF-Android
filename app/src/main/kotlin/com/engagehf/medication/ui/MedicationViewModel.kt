@@ -18,8 +18,8 @@ import com.engagehf.medication.data.MedicationRepository
 import com.engagehf.modules.education.EducationNavigationEvent
 import com.engagehf.modules.navigation.Navigator
 import com.engagehf.modules.utils.MessageNotifier
-import edu.stanford.spezi.core.logging.speziLogger
-import edu.stanford.spezi.ui.StringResource
+import com.engagehf.modules.core.logging.speziLogger
+import com.engagehf.modules.ui.StringResource
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.update

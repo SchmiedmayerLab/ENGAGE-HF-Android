@@ -15,8 +15,8 @@ import dagger.hilt.android.qualifiers.ApplicationContext
 import com.engagehf.R
 import com.engagehf.modules.utils.MessageNotifier
 import com.engagehf.modules.utils.TimeProvider
-import edu.stanford.spezi.core.coroutines.Dispatching
-import edu.stanford.spezi.core.logging.speziLogger
+import com.engagehf.modules.core.coroutines.Dispatching
+import com.engagehf.modules.core.logging.speziLogger
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.Flow

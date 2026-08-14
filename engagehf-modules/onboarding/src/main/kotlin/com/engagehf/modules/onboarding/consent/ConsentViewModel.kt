@@ -12,7 +12,7 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import dagger.hilt.android.lifecycle.HiltViewModel
 import com.engagehf.modules.account.manager.UserSessionManager
-import edu.stanford.spezi.ui.markdown.MarkdownParser
+import com.engagehf.modules.ui.markdown.MarkdownParser
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.update

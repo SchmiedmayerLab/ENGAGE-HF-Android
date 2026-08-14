@@ -17,8 +17,8 @@ import android.text.Layout
 import android.text.StaticLayout
 import android.text.TextPaint
 import androidx.compose.ui.graphics.asAndroidPath
-import edu.stanford.spezi.core.coroutines.Dispatching
-import edu.stanford.spezi.ui.markdown.MarkdownElement
+import com.engagehf.modules.core.coroutines.Dispatching
+import com.engagehf.modules.ui.markdown.MarkdownElement
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.withContext
 import java.io.ByteArrayOutputStream

@@ -10,7 +10,7 @@ package com.engagehf.modules.education.videos
 
 import androidx.compose.ui.test.assertIsDisplayed
 import androidx.compose.ui.test.junit4.ComposeTestRule
-import edu.stanford.spezi.testing.ui.onNodeWithIdentifier
+import com.engagehf.modules.testing.ui.onNodeWithIdentifier
 
 class EducationScreenSimulator(composeTestRule: ComposeTestRule) {
 

@@ -19,7 +19,7 @@ import dagger.hilt.android.lifecycle.HiltViewModel
 import com.engagehf.R
 import com.engagehf.bluetooth.component.AppScreenEvents
 import com.engagehf.modules.utils.MessageNotifier
-import edu.stanford.spezi.ui.StringResource
+import com.engagehf.modules.ui.StringResource
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.update

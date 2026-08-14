@@ -28,21 +28,21 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.PreviewParameter
 import androidx.compose.ui.tooling.preview.PreviewParameterProvider
 import androidx.hilt.navigation.compose.hiltViewModel
-import edu.stanford.spezi.contact.Contact
-import edu.stanford.spezi.contact.ContactOption
-import edu.stanford.spezi.contact.call
-import edu.stanford.spezi.contact.email
-import edu.stanford.spezi.contact.website
-import edu.stanford.spezi.ui.AppTopAppBar
-import edu.stanford.spezi.ui.CenteredBoxContent
-import edu.stanford.spezi.ui.ImageResource
-import edu.stanford.spezi.ui.StringResource
-import edu.stanford.spezi.ui.personalinfo.PersonNameComponents
-import edu.stanford.spezi.ui.theme.Colors.primary
-import edu.stanford.spezi.ui.theme.Spacings
-import edu.stanford.spezi.ui.theme.SpeziTheme
-import edu.stanford.spezi.ui.theme.TextStyles
-import edu.stanford.spezi.ui.theme.ThemePreviews
+import com.engagehf.modules.contact.Contact
+import com.engagehf.modules.contact.ContactOption
+import com.engagehf.modules.contact.call
+import com.engagehf.modules.contact.email
+import com.engagehf.modules.contact.website
+import com.engagehf.modules.ui.AppTopAppBar
+import com.engagehf.modules.ui.CenteredBoxContent
+import com.engagehf.modules.ui.ImageResource
+import com.engagehf.modules.ui.StringResource
+import com.engagehf.modules.ui.personalinfo.PersonNameComponents
+import com.engagehf.modules.ui.theme.Colors.primary
+import com.engagehf.modules.ui.theme.Spacings
+import com.engagehf.modules.ui.theme.SpeziTheme
+import com.engagehf.modules.ui.theme.TextStyles
+import com.engagehf.modules.ui.theme.ThemePreviews
 import java.util.Locale
 
 @Composable
@@ -118,7 +118,7 @@ private class ContactUiStateProvider : PreviewParameterProvider<ContactScreenVie
                 ),
                 image = ImageResource.Vector(
                     Icons.Default.AccountBox,
-                    StringResource(edu.stanford.spezi.contact.R.string.contact_profile_picture)
+                    StringResource(com.engagehf.modules.contact.R.string.contact_profile_picture)
                 ),
                 title = StringResource("University Founder"),
                 description = StringResource(

@@ -13,8 +13,8 @@ import androidx.compose.ui.test.junit4.ComposeTestRule
 import androidx.compose.ui.test.performClick
 import com.engagehf.modules.onboarding.sequential.SequentialOnboardingScreenTestIdentifier
 import com.engagehf.modules.onboarding.sequential.components.PageIndicatorTestIdentifier
-import edu.stanford.spezi.testing.ui.onNodeWithIdentifier
-import edu.stanford.spezi.testing.ui.waitNode
+import com.engagehf.modules.testing.ui.onNodeWithIdentifier
+import com.engagehf.modules.testing.ui.waitNode
 
 class SequentialOnboardingScreenSimulator(
     private val composeTestRule: ComposeTestRule,

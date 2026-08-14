@@ -16,8 +16,8 @@ import android.bluetooth.le.ScanFilter
 import android.bluetooth.le.ScanResult
 import android.bluetooth.le.ScanSettings
 import android.os.ParcelUuid
-import edu.stanford.spezi.core.coroutines.Dispatching
-import edu.stanford.spezi.core.logging.speziLogger
+import com.engagehf.modules.core.coroutines.Dispatching
+import com.engagehf.modules.core.logging.speziLogger
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.flow.MutableSharedFlow
 import kotlinx.coroutines.flow.asSharedFlow

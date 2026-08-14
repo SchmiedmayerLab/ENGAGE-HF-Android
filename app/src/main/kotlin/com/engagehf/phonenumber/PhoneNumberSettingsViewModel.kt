@@ -18,8 +18,8 @@ import com.engagehf.modules.account.manager.UserSessionManager
 import com.engagehf.modules.navigation.NavigationEvent
 import com.engagehf.modules.navigation.Navigator
 import com.engagehf.modules.utils.MessageNotifier
-import edu.stanford.spezi.ui.AsyncTextButton
-import edu.stanford.spezi.ui.StringResource
+import com.engagehf.modules.ui.AsyncTextButton
+import com.engagehf.modules.ui.StringResource
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.map

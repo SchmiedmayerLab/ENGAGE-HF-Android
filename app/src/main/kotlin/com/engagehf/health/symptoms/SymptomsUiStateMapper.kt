@@ -14,7 +14,7 @@ import com.engagehf.health.NewestHealthData
 import com.engagehf.health.TableEntryData
 import com.engagehf.modules.utils.LocaleProvider
 import com.engagehf.modules.utils.extensions.roundToDecimalPlaces
-import edu.stanford.spezi.ui.StringResource
+import com.engagehf.modules.ui.StringResource
 import java.time.ZonedDateTime
 import java.time.format.DateTimeFormatter
 import java.time.temporal.ChronoUnit

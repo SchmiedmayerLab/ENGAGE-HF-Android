@@ -9,7 +9,7 @@
 package com.engagehf.modules.onboarding.consent
 
 import androidx.compose.ui.graphics.Path
-import edu.stanford.spezi.ui.markdown.MarkdownElement
+import com.engagehf.modules.ui.markdown.MarkdownElement
 
 data class ConsentUiState(
     val firstName: FieldState = FieldState(value = "", error = false),

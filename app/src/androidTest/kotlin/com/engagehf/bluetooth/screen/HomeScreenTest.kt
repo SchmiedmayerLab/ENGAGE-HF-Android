@@ -16,7 +16,7 @@ import dagger.hilt.android.testing.HiltAndroidTest
 import com.engagehf.R
 import com.engagehf.bluetooth.data.models.UiState
 import com.engagehf.simulator.HomeScreenSimulator
-import edu.stanford.spezi.testing.ui.ComposeContentActivity
+import com.engagehf.modules.testing.ui.ComposeContentActivity
 import org.junit.Before
 import org.junit.Rule
 import org.junit.Test

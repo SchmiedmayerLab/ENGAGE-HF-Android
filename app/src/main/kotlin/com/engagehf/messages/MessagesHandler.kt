@@ -16,7 +16,7 @@ import com.engagehf.modules.navigation.Navigator
 import com.engagehf.modules.utils.MessageNotifier
 import com.engagehf.navigation.AppNavigationEvent
 import com.engagehf.navigation.screens.BottomBarItem
-import edu.stanford.spezi.core.logging.speziLogger
+import com.engagehf.modules.core.logging.speziLogger
 import java.util.concurrent.atomic.AtomicReference
 import javax.inject.Inject
 

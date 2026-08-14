@@ -23,8 +23,8 @@ import com.engagehf.modules.notification.notifier.Notifications
 import com.engagehf.modules.testing.SpeziTestScope
 import com.engagehf.modules.testing.mockTask
 import com.engagehf.modules.utils.BuildInfo
-import edu.stanford.spezi.storage.credential.InMemoryKeyValueStorage
-import edu.stanford.spezi.storage.credential.putSerializable
+import com.engagehf.modules.storage.credential.InMemoryKeyValueStorage
+import com.engagehf.modules.storage.credential.putSerializable
 import io.mockk.coEvery
 import io.mockk.coVerify
 import io.mockk.every

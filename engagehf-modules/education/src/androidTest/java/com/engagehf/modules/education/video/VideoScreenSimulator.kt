@@ -11,7 +11,7 @@ package com.engagehf.modules.education.video
 import androidx.compose.ui.test.assertIsDisplayed
 import androidx.compose.ui.test.assertTextEquals
 import androidx.compose.ui.test.junit4.ComposeTestRule
-import edu.stanford.spezi.testing.ui.onNodeWithIdentifier
+import com.engagehf.modules.testing.ui.onNodeWithIdentifier
 
 class VideoScreenSimulator(composeTestRule: ComposeTestRule) {
 

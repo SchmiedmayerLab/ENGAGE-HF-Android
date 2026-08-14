@@ -13,7 +13,7 @@ import androidx.lifecycle.viewModelScope
 import dagger.hilt.android.lifecycle.HiltViewModel
 import com.engagehf.modules.account.manager.InvitationAuthManager
 import com.engagehf.modules.onboarding.R
-import edu.stanford.spezi.ui.StringResource
+import com.engagehf.modules.ui.StringResource
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.update

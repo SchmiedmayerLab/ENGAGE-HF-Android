@@ -7,10 +7,10 @@
 //
 
 plugins {
-    alias(libs.plugins.spezi.library)
+    alias(libs.plugins.engagehf.library)
     alias(libs.plugins.kotlin.serialization)
-    alias(libs.plugins.spezi.compose)
-    alias(libs.plugins.spezi.hilt)
+    alias(libs.plugins.engagehf.compose)
+    alias(libs.plugins.engagehf.hilt)
     alias(libs.plugins.kotlin.parcelize)
 }
 
@@ -29,11 +29,11 @@ dependencies {
     implementation(project(":engagehf-modules:design"))
     implementation(project(":engagehf-modules:navigation"))
 
-    implementation(project(":spezi:foundation"))
-    implementation(project(":spezi:core"))
-    implementation(project(":spezi:core-coroutines"))
-    implementation(project(":spezi:core-logging"))
-    implementation(project(":spezi:ui"))
-    implementation(project(":spezi:storage-credential"))
-    androidTestImplementation(project(":spezi:testing-ui"))
+    implementation(project(":engagehf-modules:foundation"))
+    implementation(project(":engagehf-modules:core"))
+    implementation(project(":engagehf-modules:core-coroutines"))
+    implementation(project(":engagehf-modules:core-logging"))
+    implementation(project(":engagehf-modules:ui"))
+    implementation(project(":engagehf-modules:storage-credential"))
+    androidTestImplementation(project(":engagehf-modules:testing-ui"))
 }

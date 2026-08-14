@@ -17,7 +17,7 @@ import com.engagehf.modules.healthconnectonfhir.Metadata
 import com.engagehf.modules.utils.LocaleProvider
 import com.engagehf.modules.utils.TimeProvider
 import com.engagehf.modules.utils.extensions.roundToDecimalPlaces
-import edu.stanford.spezi.ui.StringResource
+import com.engagehf.modules.ui.StringResource
 import io.mockk.every
 import io.mockk.mockk
 import org.junit.Before

@@ -13,7 +13,7 @@ import com.google.firebase.messaging.RemoteMessage
 import dagger.hilt.android.AndroidEntryPoint
 import com.engagehf.modules.notification.notifier.FirebaseMessage
 import com.engagehf.modules.notification.notifier.NotificationNotifier
-import edu.stanford.spezi.core.logging.speziLogger
+import com.engagehf.modules.core.logging.speziLogger
 import javax.inject.Inject
 
 /*

@@ -57,14 +57,14 @@ import androidx.hilt.navigation.compose.hiltViewModel
 import com.engagehf.modules.account.R
 import com.engagehf.modules.account.register.FieldState
 import com.engagehf.modules.account.register.IconLeadingContent
-import edu.stanford.spezi.ui.AsyncTextButton
-import edu.stanford.spezi.ui.ValidatedOutlinedTextField
-import edu.stanford.spezi.ui.testIdentifier
-import edu.stanford.spezi.ui.theme.Colors
-import edu.stanford.spezi.ui.theme.Spacings
-import edu.stanford.spezi.ui.theme.SpeziTheme
-import edu.stanford.spezi.ui.theme.TextStyles.bodyLarge
-import edu.stanford.spezi.ui.theme.TextStyles.titleLarge
+import com.engagehf.modules.ui.AsyncTextButton
+import com.engagehf.modules.ui.ValidatedOutlinedTextField
+import com.engagehf.modules.ui.testIdentifier
+import com.engagehf.modules.ui.theme.Colors
+import com.engagehf.modules.ui.theme.Spacings
+import com.engagehf.modules.ui.theme.SpeziTheme
+import com.engagehf.modules.ui.theme.TextStyles.bodyLarge
+import com.engagehf.modules.ui.theme.TextStyles.titleLarge
 import com.engagehf.modules.design.R as DesignR
 
 @Composable

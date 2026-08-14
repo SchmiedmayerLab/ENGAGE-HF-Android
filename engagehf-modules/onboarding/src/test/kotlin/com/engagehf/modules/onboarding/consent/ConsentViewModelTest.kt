@@ -13,8 +13,8 @@ import com.google.common.truth.Truth.assertThat
 import com.engagehf.modules.account.manager.UserSessionManager
 import com.engagehf.modules.testing.CoroutineTestRule
 import com.engagehf.modules.testing.runTestUnconfined
-import edu.stanford.spezi.ui.markdown.MarkdownElement
-import edu.stanford.spezi.ui.markdown.MarkdownParser
+import com.engagehf.modules.ui.markdown.MarkdownElement
+import com.engagehf.modules.ui.markdown.MarkdownParser
 import io.mockk.coEvery
 import io.mockk.coVerify
 import io.mockk.every

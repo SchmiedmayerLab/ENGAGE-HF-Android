@@ -40,17 +40,17 @@ import androidx.compose.ui.unit.Dp
 import com.engagehf.R
 import com.engagehf.bluetooth.data.models.Action
 import com.engagehf.bluetooth.data.models.MessageUiModel
-import edu.stanford.spezi.ui.AsyncButton
-import edu.stanford.spezi.ui.DefaultElevatedCard
-import edu.stanford.spezi.ui.lighten
-import edu.stanford.spezi.ui.testIdentifier
-import edu.stanford.spezi.ui.theme.Colors
-import edu.stanford.spezi.ui.theme.Colors.primary
-import edu.stanford.spezi.ui.theme.Sizes
-import edu.stanford.spezi.ui.theme.Spacings
-import edu.stanford.spezi.ui.theme.SpeziTheme
-import edu.stanford.spezi.ui.theme.TextStyles
-import edu.stanford.spezi.ui.theme.ThemePreviews
+import com.engagehf.modules.ui.AsyncButton
+import com.engagehf.modules.ui.DefaultElevatedCard
+import com.engagehf.modules.ui.lighten
+import com.engagehf.modules.ui.testIdentifier
+import com.engagehf.modules.ui.theme.Colors
+import com.engagehf.modules.ui.theme.Colors.primary
+import com.engagehf.modules.ui.theme.Sizes
+import com.engagehf.modules.ui.theme.Spacings
+import com.engagehf.modules.ui.theme.SpeziTheme
+import com.engagehf.modules.ui.theme.TextStyles
+import com.engagehf.modules.ui.theme.ThemePreviews
 
 private const val TEXT_WEIGHT = 0.9f
 

@@ -23,11 +23,11 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.tooling.preview.PreviewParameter
 import androidx.compose.ui.tooling.preview.PreviewParameterProvider
 import androidx.hilt.navigation.compose.hiltViewModel
-import edu.stanford.spezi.ui.markdown.MarkdownComponent
-import edu.stanford.spezi.ui.markdown.MarkdownElement
-import edu.stanford.spezi.ui.testIdentifier
-import edu.stanford.spezi.ui.theme.Spacings
-import edu.stanford.spezi.ui.theme.SpeziTheme
+import com.engagehf.modules.ui.markdown.MarkdownComponent
+import com.engagehf.modules.ui.markdown.MarkdownElement
+import com.engagehf.modules.ui.testIdentifier
+import com.engagehf.modules.ui.theme.Spacings
+import com.engagehf.modules.ui.theme.SpeziTheme
 
 @Composable
 fun ConsentScreen() {

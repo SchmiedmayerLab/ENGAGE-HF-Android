@@ -25,7 +25,7 @@ import com.engagehf.modules.notification.fcm.DeviceRegistrationService
 import com.engagehf.modules.utils.TimeProvider
 import com.engagehf.navigation.AppNavigationEvent
 import com.engagehf.phonenumber.PhoneNumberSettingsNavigationEvent
-import edu.stanford.spezi.ui.StringResource
+import com.engagehf.modules.ui.StringResource
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.MutableStateFlow

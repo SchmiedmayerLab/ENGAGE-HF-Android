@@ -9,7 +9,7 @@
 package com.engagehf.medication.ui
 
 import androidx.compose.ui.graphics.Color
-import edu.stanford.spezi.ui.StringResource
+import com.engagehf.modules.ui.StringResource
 
 /**
  * Represents the state of the medication screen.

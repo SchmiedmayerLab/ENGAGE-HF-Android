@@ -10,7 +10,7 @@ package com.engagehf.bluetooth.pairing
 
 import android.bluetooth.BluetoothDevice
 import com.engagehf.R
-import edu.stanford.spezi.ui.StringResource
+import com.engagehf.modules.ui.StringResource
 import javax.inject.Inject
 
 @Suppress("MissingPermission")

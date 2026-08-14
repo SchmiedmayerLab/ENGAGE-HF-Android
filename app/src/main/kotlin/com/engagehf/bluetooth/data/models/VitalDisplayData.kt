@@ -9,7 +9,7 @@
 package com.engagehf.bluetooth.data.models
 
 import com.engagehf.bluetooth.component.OperationStatus
-import edu.stanford.spezi.ui.StringResource
+import com.engagehf.modules.ui.StringResource
 
 data class VitalDisplayData(
     val title: StringResource,

@@ -26,7 +26,7 @@ import com.engagehf.modules.onboarding.OnboardingNavigationEvent
 import com.engagehf.modules.utils.MessageNotifier
 import com.engagehf.navigation.AppNavigationEvent
 import com.engagehf.navigation.Routes
-import edu.stanford.spezi.core.logging.speziLogger
+import com.engagehf.modules.core.logging.speziLogger
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.asStateFlow

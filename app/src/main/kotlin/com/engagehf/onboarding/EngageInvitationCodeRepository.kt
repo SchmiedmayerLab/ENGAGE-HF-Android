@@ -13,7 +13,7 @@ import com.engagehf.modules.navigation.Navigator
 import com.engagehf.modules.onboarding.invitation.InvitationCodeRepository
 import com.engagehf.modules.onboarding.invitation.InvitationCodeViewData
 import com.engagehf.navigation.AppNavigationEvent
-import edu.stanford.spezi.ui.StringResource
+import com.engagehf.modules.ui.StringResource
 import javax.inject.Inject
 
 // TODO: Clarify / unify repositories or content provider apis

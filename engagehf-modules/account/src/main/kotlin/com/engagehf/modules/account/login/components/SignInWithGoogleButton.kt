@@ -19,11 +19,11 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import com.engagehf.modules.design.R
-import edu.stanford.spezi.ui.AsyncButton
-import edu.stanford.spezi.ui.theme.Sizes
-import edu.stanford.spezi.ui.theme.Spacings
-import edu.stanford.spezi.ui.theme.SpeziTheme
-import edu.stanford.spezi.ui.theme.ThemePreviews
+import com.engagehf.modules.ui.AsyncButton
+import com.engagehf.modules.ui.theme.Sizes
+import com.engagehf.modules.ui.theme.Spacings
+import com.engagehf.modules.ui.theme.SpeziTheme
+import com.engagehf.modules.ui.theme.ThemePreviews
 
 @Composable
 fun SignInWithGoogleButton(

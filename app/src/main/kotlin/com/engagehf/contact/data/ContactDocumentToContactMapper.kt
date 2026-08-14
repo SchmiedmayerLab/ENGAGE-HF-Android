@@ -9,12 +9,12 @@
 package com.engagehf.contact.data
 
 import com.google.firebase.firestore.DocumentSnapshot
-import edu.stanford.spezi.contact.Contact
-import edu.stanford.spezi.contact.ContactOption
-import edu.stanford.spezi.contact.call
-import edu.stanford.spezi.contact.email
-import edu.stanford.spezi.ui.StringResource
-import edu.stanford.spezi.ui.personalinfo.PersonNameComponents
+import com.engagehf.modules.contact.Contact
+import com.engagehf.modules.contact.ContactOption
+import com.engagehf.modules.contact.call
+import com.engagehf.modules.contact.email
+import com.engagehf.modules.ui.StringResource
+import com.engagehf.modules.ui.personalinfo.PersonNameComponents
 import javax.inject.Inject
 
 class ContactDocumentToContactMapper @Inject constructor() {

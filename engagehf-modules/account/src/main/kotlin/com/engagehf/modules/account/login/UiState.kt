@@ -9,7 +9,7 @@
 package com.engagehf.modules.account.login
 
 import com.engagehf.modules.account.register.FieldState
-import edu.stanford.spezi.ui.PendingActions
+import com.engagehf.modules.ui.PendingActions
 
 data class UiState(
     val password: FieldState = FieldState(),

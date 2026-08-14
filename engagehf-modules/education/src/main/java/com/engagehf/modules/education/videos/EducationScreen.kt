@@ -30,14 +30,14 @@ import androidx.hilt.navigation.compose.hiltViewModel
 import com.engagehf.modules.education.R
 import com.engagehf.modules.education.videos.component.ExpandableVideoSection
 import com.engagehf.modules.education.videos.component.LoadingVideoCard
-import edu.stanford.spezi.ui.RepeatingLazyColumn
-import edu.stanford.spezi.ui.StringResource
-import edu.stanford.spezi.ui.VerticalSpacer
-import edu.stanford.spezi.ui.testIdentifier
-import edu.stanford.spezi.ui.theme.Colors
-import edu.stanford.spezi.ui.theme.Spacings
-import edu.stanford.spezi.ui.theme.SpeziTheme
-import edu.stanford.spezi.ui.theme.ThemePreviews
+import com.engagehf.modules.ui.RepeatingLazyColumn
+import com.engagehf.modules.ui.StringResource
+import com.engagehf.modules.ui.VerticalSpacer
+import com.engagehf.modules.ui.testIdentifier
+import com.engagehf.modules.ui.theme.Colors
+import com.engagehf.modules.ui.theme.Spacings
+import com.engagehf.modules.ui.theme.SpeziTheme
+import com.engagehf.modules.ui.theme.ThemePreviews
 
 @Composable
 fun EducationScreen() {

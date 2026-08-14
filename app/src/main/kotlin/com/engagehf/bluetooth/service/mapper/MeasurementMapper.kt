@@ -10,7 +10,7 @@ package com.engagehf.bluetooth.service.mapper
 
 import android.bluetooth.BluetoothGattCharacteristic
 import com.engagehf.bluetooth.service.Measurement
-import edu.stanford.spezi.core.coroutines.Dispatching
+import com.engagehf.modules.core.coroutines.Dispatching
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.withContext
 import javax.inject.Inject

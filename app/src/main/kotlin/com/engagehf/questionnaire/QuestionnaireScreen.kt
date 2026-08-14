@@ -24,16 +24,16 @@ import androidx.compose.ui.tooling.preview.PreviewParameter
 import androidx.compose.ui.tooling.preview.PreviewParameterProvider
 import androidx.hilt.navigation.compose.hiltViewModel
 import com.engagehf.R
-import edu.stanford.spezi.questionnaire.QuestionnaireComposable
-import edu.stanford.spezi.questionnaire.QuestionnaireResult
-import edu.stanford.spezi.ui.CenteredBoxContent
-import edu.stanford.spezi.ui.StringResource
-import edu.stanford.spezi.ui.VerticalSpacer
-import edu.stanford.spezi.ui.testIdentifier
-import edu.stanford.spezi.ui.theme.Colors
-import edu.stanford.spezi.ui.theme.Colors.primary
-import edu.stanford.spezi.ui.theme.SpeziTheme
-import edu.stanford.spezi.ui.theme.ThemePreviews
+import com.engagehf.modules.questionnaire.QuestionnaireComposable
+import com.engagehf.modules.questionnaire.QuestionnaireResult
+import com.engagehf.modules.ui.CenteredBoxContent
+import com.engagehf.modules.ui.StringResource
+import com.engagehf.modules.ui.VerticalSpacer
+import com.engagehf.modules.ui.testIdentifier
+import com.engagehf.modules.ui.theme.Colors
+import com.engagehf.modules.ui.theme.Colors.primary
+import com.engagehf.modules.ui.theme.SpeziTheme
+import com.engagehf.modules.ui.theme.ThemePreviews
 
 @Composable
 fun QuestionnaireScreen() {

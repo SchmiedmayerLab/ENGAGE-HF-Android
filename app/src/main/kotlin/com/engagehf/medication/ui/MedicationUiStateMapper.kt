@@ -15,7 +15,7 @@ import com.engagehf.medication.data.DosageInformation
 import com.engagehf.medication.data.DoseSchedule
 import com.engagehf.medication.data.MedicationRecommendation
 import com.engagehf.medication.data.MedicationRecommendationType
-import edu.stanford.spezi.ui.StringResource
+import com.engagehf.modules.ui.StringResource
 import javax.inject.Inject
 import com.engagehf.modules.design.R.drawable as DrawableR
 

@@ -32,7 +32,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.tooling.preview.PreviewParameter
 import androidx.compose.ui.tooling.preview.PreviewParameterProvider
 import androidx.compose.ui.unit.dp
-import edu.stanford.spezi.ui.testIdentifier
+import com.engagehf.modules.ui.testIdentifier
 
 /**
  * A page indicator that shows the current page and the total number of pages.

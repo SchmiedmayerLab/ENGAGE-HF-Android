@@ -16,8 +16,8 @@ import com.engagehf.R
 import com.engagehf.bluetooth.component.AppScreenEvents
 import com.engagehf.bluetooth.service.EngageBLEService
 import com.engagehf.bluetooth.service.EngageBLEServiceEvent
-import edu.stanford.spezi.ui.PendingActions
-import edu.stanford.spezi.ui.StringResource
+import com.engagehf.modules.ui.PendingActions
+import com.engagehf.modules.ui.StringResource
 import kotlinx.coroutines.FlowPreview
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.flow.MutableStateFlow

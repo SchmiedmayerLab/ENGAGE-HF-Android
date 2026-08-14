@@ -20,9 +20,9 @@ import com.engagehf.modules.onboarding.onboarding.OnboardingScreenTestIdentifier
 import com.engagehf.modules.onboarding.sequential.SequentialOnboardingScreenTestIdentifier
 import com.engagehf.navigation.AppNavigationEvent
 import com.engagehf.navigation.screens.AppScreenTestIdentifier
-import edu.stanford.spezi.testing.ui.onAllNodes
-import edu.stanford.spezi.testing.ui.onNodeWithIdentifier
-import edu.stanford.spezi.ui.TestIdentifier
+import com.engagehf.modules.testing.ui.onAllNodes
+import com.engagehf.modules.testing.ui.onNodeWithIdentifier
+import com.engagehf.modules.ui.TestIdentifier
 
 class NavigatorSimulator(
     private val composeTestRule: ComposeTestRule,

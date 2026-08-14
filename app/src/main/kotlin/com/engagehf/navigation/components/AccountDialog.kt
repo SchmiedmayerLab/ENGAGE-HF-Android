@@ -42,23 +42,23 @@ import androidx.compose.ui.window.DialogProperties
 import com.engagehf.R
 import com.engagehf.navigation.screens.AccountUiState
 import com.engagehf.navigation.screens.Action
-import edu.stanford.spezi.ui.VerticalSpacer
-import edu.stanford.spezi.ui.lighten
-import edu.stanford.spezi.ui.theme.Colors
-import edu.stanford.spezi.ui.theme.Colors.onBackground
-import edu.stanford.spezi.ui.theme.Colors.onPrimary
-import edu.stanford.spezi.ui.theme.Colors.primary
-import edu.stanford.spezi.ui.theme.Colors.secondary
-import edu.stanford.spezi.ui.theme.Colors.surface
-import edu.stanford.spezi.ui.theme.Sizes
-import edu.stanford.spezi.ui.theme.Spacings
-import edu.stanford.spezi.ui.theme.SpeziTheme
-import edu.stanford.spezi.ui.theme.TextStyles
-import edu.stanford.spezi.ui.theme.TextStyles.bodyMedium
-import edu.stanford.spezi.ui.theme.TextStyles.bodySmall
-import edu.stanford.spezi.ui.theme.TextStyles.headlineMedium
-import edu.stanford.spezi.ui.theme.TextStyles.headlineSmall
-import edu.stanford.spezi.ui.theme.ThemePreviews
+import com.engagehf.modules.ui.VerticalSpacer
+import com.engagehf.modules.ui.lighten
+import com.engagehf.modules.ui.theme.Colors
+import com.engagehf.modules.ui.theme.Colors.onBackground
+import com.engagehf.modules.ui.theme.Colors.onPrimary
+import com.engagehf.modules.ui.theme.Colors.primary
+import com.engagehf.modules.ui.theme.Colors.secondary
+import com.engagehf.modules.ui.theme.Colors.surface
+import com.engagehf.modules.ui.theme.Sizes
+import com.engagehf.modules.ui.theme.Spacings
+import com.engagehf.modules.ui.theme.SpeziTheme
+import com.engagehf.modules.ui.theme.TextStyles
+import com.engagehf.modules.ui.theme.TextStyles.bodyMedium
+import com.engagehf.modules.ui.theme.TextStyles.bodySmall
+import com.engagehf.modules.ui.theme.TextStyles.headlineMedium
+import com.engagehf.modules.ui.theme.TextStyles.headlineSmall
+import com.engagehf.modules.ui.theme.ThemePreviews
 
 @Composable
 fun AccountDialog(accountUiState: AccountUiState, onAction: (Action) -> Unit) {

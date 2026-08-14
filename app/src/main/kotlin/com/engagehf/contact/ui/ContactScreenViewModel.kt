@@ -15,9 +15,9 @@ import com.engagehf.R
 import com.engagehf.contact.data.EngageContactRepository
 import com.engagehf.modules.navigation.NavigationEvent
 import com.engagehf.modules.navigation.Navigator
-import edu.stanford.spezi.contact.Contact
-import edu.stanford.spezi.core.logging.speziLogger
-import edu.stanford.spezi.ui.StringResource
+import com.engagehf.modules.contact.Contact
+import com.engagehf.modules.core.logging.speziLogger
+import com.engagehf.modules.ui.StringResource
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.launch

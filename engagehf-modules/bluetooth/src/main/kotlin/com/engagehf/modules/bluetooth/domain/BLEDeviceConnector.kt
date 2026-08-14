@@ -20,7 +20,7 @@ import dagger.assisted.AssistedInject
 import dagger.hilt.android.qualifiers.ApplicationContext
 import com.engagehf.modules.bluetooth.model.BLEDevice
 import com.engagehf.modules.bluetooth.model.BLEServiceEvent
-import edu.stanford.spezi.core.coroutines.Dispatching
+import com.engagehf.modules.core.coroutines.Dispatching
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.flow.MutableSharedFlow
 import kotlinx.coroutines.flow.asSharedFlow

@@ -15,8 +15,8 @@ import com.engagehf.contact.ui.ContactScreenViewModel.UiState
 import com.engagehf.modules.navigation.NavigationEvent
 import com.engagehf.modules.navigation.Navigator
 import com.engagehf.modules.testing.CoroutineTestRule
-import edu.stanford.spezi.contact.Contact
-import edu.stanford.spezi.ui.StringResource
+import com.engagehf.modules.contact.Contact
+import com.engagehf.modules.ui.StringResource
 import io.mockk.coEvery
 import io.mockk.mockk
 import io.mockk.verify

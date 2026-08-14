@@ -35,18 +35,18 @@ import androidx.compose.ui.tooling.preview.PreviewParameter
 import com.engagehf.medication.ui.MedicationCardUiModel
 import com.engagehf.medication.ui.MedicationScreenTestIdentifier
 import com.engagehf.medication.ui.MedicationViewModel
-import edu.stanford.spezi.ui.CircleShimmerEffect
-import edu.stanford.spezi.ui.DefaultElevatedCard
-import edu.stanford.spezi.ui.RectangleShimmerEffect
-import edu.stanford.spezi.ui.VerticalSpacer
-import edu.stanford.spezi.ui.height
-import edu.stanford.spezi.ui.testIdentifier
-import edu.stanford.spezi.ui.theme.Colors
-import edu.stanford.spezi.ui.theme.Sizes
-import edu.stanford.spezi.ui.theme.Spacings
-import edu.stanford.spezi.ui.theme.SpeziTheme
-import edu.stanford.spezi.ui.theme.TextStyles
-import edu.stanford.spezi.ui.theme.ThemePreviews
+import com.engagehf.modules.ui.CircleShimmerEffect
+import com.engagehf.modules.ui.DefaultElevatedCard
+import com.engagehf.modules.ui.RectangleShimmerEffect
+import com.engagehf.modules.ui.VerticalSpacer
+import com.engagehf.modules.ui.height
+import com.engagehf.modules.ui.testIdentifier
+import com.engagehf.modules.ui.theme.Colors
+import com.engagehf.modules.ui.theme.Sizes
+import com.engagehf.modules.ui.theme.Spacings
+import com.engagehf.modules.ui.theme.SpeziTheme
+import com.engagehf.modules.ui.theme.TextStyles
+import com.engagehf.modules.ui.theme.ThemePreviews
 
 private const val LOADING_ITEM_COUNT = 3
 

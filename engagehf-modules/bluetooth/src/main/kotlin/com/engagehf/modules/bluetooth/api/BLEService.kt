@@ -11,7 +11,7 @@ package com.engagehf.modules.bluetooth.api
 import android.bluetooth.BluetoothDevice
 import com.engagehf.modules.bluetooth.model.BLEServiceEvent
 import com.engagehf.modules.bluetooth.model.BLEServiceState
-import edu.stanford.spezi.foundation.UUID
+import com.engagehf.modules.foundation.UUID
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.StateFlow
 import java.util.UUID

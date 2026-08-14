@@ -17,7 +17,7 @@ import androidx.compose.ui.test.junit4.ComposeTestRule
 import androidx.compose.ui.test.onChild
 import androidx.compose.ui.test.performClick
 import com.engagehf.modules.onboarding.onboarding.OnboardingScreenTestIdentifier
-import edu.stanford.spezi.testing.ui.onNodeWithIdentifier
+import com.engagehf.modules.testing.ui.onNodeWithIdentifier
 
 class OnboardingScreenSimulator(
     private val composeTestRule: ComposeTestRule,

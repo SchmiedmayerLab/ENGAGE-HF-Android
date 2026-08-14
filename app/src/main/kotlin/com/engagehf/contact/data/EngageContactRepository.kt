@@ -10,8 +10,8 @@ package com.engagehf.contact.data
 
 import com.google.firebase.firestore.FirebaseFirestore
 import com.engagehf.modules.account.manager.UserSessionManager
-import edu.stanford.spezi.contact.Contact
-import edu.stanford.spezi.core.logging.speziLogger
+import com.engagehf.modules.contact.Contact
+import com.engagehf.modules.core.logging.speziLogger
 import kotlinx.coroutines.tasks.await
 import javax.inject.Inject
 

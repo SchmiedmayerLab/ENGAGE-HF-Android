@@ -45,19 +45,19 @@ import androidx.compose.ui.tooling.preview.PreviewParameter
 import androidx.compose.ui.tooling.preview.PreviewParameterProvider
 import androidx.compose.ui.unit.dp
 import com.engagehf.modules.education.videos.Video
-import edu.stanford.spezi.ui.AsyncImageResource
-import edu.stanford.spezi.ui.DefaultElevatedCard
-import edu.stanford.spezi.ui.RectangleShimmerEffect
-import edu.stanford.spezi.ui.VerticalSpacer
-import edu.stanford.spezi.ui.height
-import edu.stanford.spezi.ui.lighten
-import edu.stanford.spezi.ui.theme.Colors
-import edu.stanford.spezi.ui.theme.Sizes
-import edu.stanford.spezi.ui.theme.Spacings
-import edu.stanford.spezi.ui.theme.SpeziTheme
-import edu.stanford.spezi.ui.theme.TextStyles.bodyMedium
-import edu.stanford.spezi.ui.theme.TextStyles.titleLarge
-import edu.stanford.spezi.ui.theme.ThemePreviews
+import com.engagehf.modules.ui.AsyncImageResource
+import com.engagehf.modules.ui.DefaultElevatedCard
+import com.engagehf.modules.ui.RectangleShimmerEffect
+import com.engagehf.modules.ui.VerticalSpacer
+import com.engagehf.modules.ui.height
+import com.engagehf.modules.ui.lighten
+import com.engagehf.modules.ui.theme.Colors
+import com.engagehf.modules.ui.theme.Sizes
+import com.engagehf.modules.ui.theme.Spacings
+import com.engagehf.modules.ui.theme.SpeziTheme
+import com.engagehf.modules.ui.theme.TextStyles.bodyMedium
+import com.engagehf.modules.ui.theme.TextStyles.titleLarge
+import com.engagehf.modules.ui.theme.ThemePreviews
 
 private const val IMAGE_HEIGHT = 200
 private const val ASPECT_16_9 = 16f / 9f

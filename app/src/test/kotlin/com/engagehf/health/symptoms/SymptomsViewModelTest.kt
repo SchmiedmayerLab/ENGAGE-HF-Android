@@ -13,7 +13,7 @@ import com.engagehf.R
 import com.engagehf.bluetooth.component.AppScreenEvents
 import com.engagehf.health.HealthRepository
 import com.engagehf.modules.testing.CoroutineTestRule
-import edu.stanford.spezi.ui.StringResource
+import com.engagehf.modules.ui.StringResource
 import io.mockk.coEvery
 import io.mockk.every
 import io.mockk.mockk

@@ -14,7 +14,7 @@ import dagger.hilt.android.testing.HiltAndroidTest
 import com.engagehf.modules.onboarding.fakes.FakeOnboardingRepository
 import com.engagehf.modules.onboarding.onboarding.OnboardingView
 import com.engagehf.modules.onboarding.simulator.OnboardingScreenSimulator
-import edu.stanford.spezi.testing.ui.ComposeContentActivity
+import com.engagehf.modules.testing.ui.ComposeContentActivity
 import io.mockk.mockk
 import io.mockk.verify
 import kotlinx.coroutines.test.runTest

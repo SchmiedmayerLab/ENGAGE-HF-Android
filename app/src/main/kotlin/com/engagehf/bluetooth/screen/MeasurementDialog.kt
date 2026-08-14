@@ -28,10 +28,10 @@ import com.engagehf.R
 import com.engagehf.bluetooth.data.models.Action
 import com.engagehf.bluetooth.data.models.MeasurementDialogUiState
 import com.engagehf.bluetooth.service.Measurement
-import edu.stanford.spezi.ui.AsyncTextButton
-import edu.stanford.spezi.ui.testIdentifier
-import edu.stanford.spezi.ui.theme.Spacings
-import edu.stanford.spezi.ui.theme.TextStyles
+import com.engagehf.modules.ui.AsyncTextButton
+import com.engagehf.modules.ui.testIdentifier
+import com.engagehf.modules.ui.theme.Spacings
+import com.engagehf.modules.ui.theme.TextStyles
 
 @Composable
 fun MeasurementDialog(

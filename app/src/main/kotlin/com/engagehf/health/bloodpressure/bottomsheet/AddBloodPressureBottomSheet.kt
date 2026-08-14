@@ -30,11 +30,11 @@ import com.engagehf.health.components.AddDataHeader
 import com.engagehf.health.components.NumberPicker
 import com.engagehf.health.components.TimePicker
 import com.engagehf.health.time.TimePickerState
-import edu.stanford.spezi.ui.VerticalSpacer
-import edu.stanford.spezi.ui.theme.Spacings
-import edu.stanford.spezi.ui.theme.SpeziTheme
-import edu.stanford.spezi.ui.theme.TextStyles
-import edu.stanford.spezi.ui.theme.ThemePreviews
+import com.engagehf.modules.ui.VerticalSpacer
+import com.engagehf.modules.ui.theme.Spacings
+import com.engagehf.modules.ui.theme.SpeziTheme
+import com.engagehf.modules.ui.theme.TextStyles
+import com.engagehf.modules.ui.theme.ThemePreviews
 import java.time.Instant
 import java.time.LocalTime
 

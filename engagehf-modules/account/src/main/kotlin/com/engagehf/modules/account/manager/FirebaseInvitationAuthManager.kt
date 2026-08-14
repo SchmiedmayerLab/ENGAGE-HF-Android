@@ -9,7 +9,7 @@
 package com.engagehf.modules.account.manager
 
 import com.google.firebase.functions.FirebaseFunctions
-import edu.stanford.spezi.core.logging.speziLogger
+import com.engagehf.modules.core.logging.speziLogger
 import kotlinx.coroutines.tasks.await
 import javax.inject.Inject
 

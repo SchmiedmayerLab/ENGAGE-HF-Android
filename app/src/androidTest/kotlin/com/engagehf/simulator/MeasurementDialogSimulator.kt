@@ -14,8 +14,8 @@ import androidx.compose.ui.test.assertTextEquals
 import androidx.compose.ui.test.hasText
 import androidx.compose.ui.test.junit4.ComposeTestRule
 import com.engagehf.bluetooth.screen.MeasurementDialogTestIdentifier
-import edu.stanford.spezi.testing.ui.onAllNodes
-import edu.stanford.spezi.testing.ui.onNodeWithIdentifier
+import com.engagehf.modules.testing.ui.onAllNodes
+import com.engagehf.modules.testing.ui.onNodeWithIdentifier
 
 class MeasurementDialogSimulator(composeTestRule: ComposeTestRule) {
     private val root = composeTestRule.onNodeWithIdentifier(MeasurementDialogTestIdentifier.ROOT)

@@ -9,7 +9,7 @@
 package com.engagehf.messages
 
 import com.engagehf.R
-import edu.stanford.spezi.ui.StringResource
+import com.engagehf.modules.ui.StringResource
 
 sealed interface MessageAction {
     data class VideoAction(val sectionId: String, val videoId: String) : MessageAction

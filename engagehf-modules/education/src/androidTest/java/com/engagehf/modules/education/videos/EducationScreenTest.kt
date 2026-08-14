@@ -12,8 +12,8 @@ import androidx.compose.ui.test.junit4.createAndroidComposeRule
 import dagger.hilt.android.testing.HiltAndroidRule
 import dagger.hilt.android.testing.HiltAndroidTest
 import com.engagehf.modules.education.R
-import edu.stanford.spezi.testing.ui.ComposeContentActivity
-import edu.stanford.spezi.ui.StringResource
+import com.engagehf.modules.testing.ui.ComposeContentActivity
+import com.engagehf.modules.ui.StringResource
 import org.junit.Rule
 import org.junit.Test
 

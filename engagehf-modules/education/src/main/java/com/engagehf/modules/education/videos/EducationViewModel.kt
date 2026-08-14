@@ -15,8 +15,8 @@ import com.engagehf.modules.education.EducationNavigationEvent
 import com.engagehf.modules.education.R
 import com.engagehf.modules.education.videos.data.repository.EducationRepository
 import com.engagehf.modules.navigation.Navigator
-import edu.stanford.spezi.core.logging.speziLogger
-import edu.stanford.spezi.ui.StringResource
+import com.engagehf.modules.core.logging.speziLogger
+import com.engagehf.modules.ui.StringResource
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.launch

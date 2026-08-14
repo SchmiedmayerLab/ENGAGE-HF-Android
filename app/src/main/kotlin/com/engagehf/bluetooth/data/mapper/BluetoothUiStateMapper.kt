@@ -22,7 +22,7 @@ import com.engagehf.bluetooth.data.models.VitalDisplayData
 import com.engagehf.bluetooth.service.EngageBLEServiceState
 import com.engagehf.bluetooth.service.Measurement
 import com.engagehf.modules.utils.LocaleProvider
-import edu.stanford.spezi.ui.StringResource
+import com.engagehf.modules.ui.StringResource
 import java.time.Instant
 import java.time.ZoneId
 import java.time.ZonedDateTime

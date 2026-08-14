@@ -15,8 +15,8 @@ import com.engagehf.modules.bluetooth.api.BLEService
 import com.engagehf.modules.bluetooth.model.BLEDevice
 import com.engagehf.modules.bluetooth.model.BLEServiceEvent
 import com.engagehf.modules.bluetooth.model.BLEServiceState
-import edu.stanford.spezi.core.coroutines.Dispatching
-import edu.stanford.spezi.core.logging.speziLogger
+import com.engagehf.modules.core.coroutines.Dispatching
+import com.engagehf.modules.core.logging.speziLogger
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.flow.Flow

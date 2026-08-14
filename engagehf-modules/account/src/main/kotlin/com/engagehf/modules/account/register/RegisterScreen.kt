@@ -44,16 +44,16 @@ import androidx.compose.ui.tooling.preview.PreviewParameter
 import androidx.compose.ui.tooling.preview.PreviewParameterProvider
 import androidx.hilt.navigation.compose.hiltViewModel
 import com.engagehf.modules.account.R
-import edu.stanford.spezi.ui.AsyncButton
-import edu.stanford.spezi.ui.ValidatedOutlinedTextField
-import edu.stanford.spezi.ui.VerticalSpacer
-import edu.stanford.spezi.ui.testIdentifier
-import edu.stanford.spezi.ui.theme.Colors.primary
-import edu.stanford.spezi.ui.theme.Sizes
-import edu.stanford.spezi.ui.theme.Spacings
-import edu.stanford.spezi.ui.theme.SpeziTheme
-import edu.stanford.spezi.ui.theme.TextStyles.titleLarge
-import edu.stanford.spezi.ui.theme.TextStyles.titleSmall
+import com.engagehf.modules.ui.AsyncButton
+import com.engagehf.modules.ui.ValidatedOutlinedTextField
+import com.engagehf.modules.ui.VerticalSpacer
+import com.engagehf.modules.ui.testIdentifier
+import com.engagehf.modules.ui.theme.Colors.primary
+import com.engagehf.modules.ui.theme.Sizes
+import com.engagehf.modules.ui.theme.Spacings
+import com.engagehf.modules.ui.theme.SpeziTheme
+import com.engagehf.modules.ui.theme.TextStyles.titleLarge
+import com.engagehf.modules.ui.theme.TextStyles.titleSmall
 
 @Composable
 fun RegisterScreen(

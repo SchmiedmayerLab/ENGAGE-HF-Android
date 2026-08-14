@@ -15,7 +15,7 @@ import com.engagehf.bluetooth.service.EngageBLEService
 import com.engagehf.bluetooth.service.EngageBLEServiceEvent
 import com.engagehf.modules.testing.CoroutineTestRule
 import com.engagehf.modules.testing.runTestUnconfined
-import edu.stanford.spezi.ui.StringResource
+import com.engagehf.modules.ui.StringResource
 import io.mockk.every
 import io.mockk.mockk
 import io.mockk.verify

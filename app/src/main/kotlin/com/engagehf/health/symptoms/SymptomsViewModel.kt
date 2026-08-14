@@ -18,8 +18,8 @@ import com.engagehf.bluetooth.component.AppScreenEvents
 import com.engagehf.health.AggregatedHealthData
 import com.engagehf.health.HealthRepository
 import com.engagehf.health.TableEntryData
-import edu.stanford.spezi.core.logging.speziLogger
-import edu.stanford.spezi.ui.StringResource
+import com.engagehf.modules.core.logging.speziLogger
+import com.engagehf.modules.ui.StringResource
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.update

@@ -12,7 +12,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.res.stringResource
 import com.engagehf.modules.onboarding.R
 import com.engagehf.modules.onboarding.invitation.InvitationCodeView
-import edu.stanford.spezi.ui.CommonScaffold
+import com.engagehf.modules.ui.CommonScaffold
 
 @Composable
 fun InvitationCodeScreen() {

@@ -21,7 +21,7 @@ import com.engagehf.bluetooth.service.EngageBLEServiceState
 import com.engagehf.bluetooth.service.Measurement
 import com.engagehf.modules.bluetooth.model.BLEDevice
 import com.engagehf.modules.utils.LocaleProvider
-import edu.stanford.spezi.ui.StringResource
+import com.engagehf.modules.ui.StringResource
 import io.mockk.every
 import io.mockk.mockk
 import org.junit.Test

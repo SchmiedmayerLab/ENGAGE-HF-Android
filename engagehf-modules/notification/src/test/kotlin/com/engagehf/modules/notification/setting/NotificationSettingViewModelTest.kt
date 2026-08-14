@@ -17,7 +17,7 @@ import com.engagehf.modules.notification.R
 import com.engagehf.modules.notification.fcm.DeviceRegistrationService
 import com.engagehf.modules.testing.CoroutineTestRule
 import com.engagehf.modules.utils.MessageNotifier
-import edu.stanford.spezi.ui.StringResource
+import com.engagehf.modules.ui.StringResource
 import io.mockk.every
 import io.mockk.mockk
 import io.mockk.verify

@@ -27,8 +27,8 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import com.engagehf.R
-import edu.stanford.spezi.ui.theme.Spacings
-import edu.stanford.spezi.ui.theme.TextStyles
+import com.engagehf.modules.ui.theme.Spacings
+import com.engagehf.modules.ui.theme.TextStyles
 import java.time.Instant
 import java.time.LocalTime
 

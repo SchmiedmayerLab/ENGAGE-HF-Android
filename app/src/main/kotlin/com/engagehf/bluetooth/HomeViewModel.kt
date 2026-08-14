@@ -30,7 +30,7 @@ import com.engagehf.messages.MessagesHandler
 import com.engagehf.modules.notification.NotificationPermissions
 import com.engagehf.modules.notification.fcm.DeviceRegistrationService
 import com.engagehf.navigation.screens.BottomBarItem
-import edu.stanford.spezi.core.logging.speziLogger
+import com.engagehf.modules.core.logging.speziLogger
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.update

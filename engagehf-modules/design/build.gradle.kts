@@ -7,8 +7,8 @@
 //
 
 plugins {
-    alias(libs.plugins.spezi.library)
-    alias(libs.plugins.spezi.hilt)
+    alias(libs.plugins.engagehf.library)
+    alias(libs.plugins.engagehf.hilt)
     alias(libs.plugins.compose.compiler)
 }
 
@@ -23,9 +23,9 @@ android {
 dependencies {
     implementation(project(":engagehf-modules:utils"))
 
-    implementation(project(":spezi:foundation"))
-    implementation(project(":spezi:core"))
-    implementation(project(":spezi:ui"))
+    implementation(project(":engagehf-modules:foundation"))
+    implementation(project(":engagehf-modules:core"))
+    implementation(project(":engagehf-modules:ui"))
 
     val composeBom = platform(libs.compose.bom)
     implementation(composeBom)
@@ -35,7 +35,7 @@ dependencies {
 
     androidTestImplementation(libs.bundles.compose.androidTest)
     androidTestImplementation(composeBom)
-    androidTestImplementation(project(":spezi:testing-ui"))
+    androidTestImplementation(project(":engagehf-modules:testing-ui"))
 
     debugImplementation(libs.compose.ui.tooling)
     debugImplementation(libs.compose.ui.test.manifest)

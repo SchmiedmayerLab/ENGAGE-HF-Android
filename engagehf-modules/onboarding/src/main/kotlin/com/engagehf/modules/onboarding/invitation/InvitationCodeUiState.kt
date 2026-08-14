@@ -8,7 +8,7 @@
 
 package com.engagehf.modules.onboarding.invitation
 
-import edu.stanford.spezi.ui.StringResource
+import com.engagehf.modules.ui.StringResource
 
 data class InvitationCodeUiState(
     val description: StringResource = StringResource(""),

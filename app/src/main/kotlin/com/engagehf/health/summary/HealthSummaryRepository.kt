@@ -11,8 +11,8 @@ package com.engagehf.health.summary
 import com.google.firebase.functions.FirebaseFunctions
 import com.engagehf.modules.account.manager.UserSessionManager
 import com.engagehf.modules.utils.JsonMap
-import edu.stanford.spezi.core.coroutines.Dispatching
-import edu.stanford.spezi.core.logging.speziLogger
+import com.engagehf.modules.core.coroutines.Dispatching
+import com.engagehf.modules.core.logging.speziLogger
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.tasks.await
 import kotlinx.coroutines.withContext

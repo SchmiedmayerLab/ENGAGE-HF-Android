@@ -18,7 +18,7 @@ import com.engagehf.modules.navigation.Navigator
 import com.engagehf.modules.testing.CoroutineTestRule
 import com.engagehf.modules.testing.verifyNever
 import com.engagehf.modules.utils.MessageNotifier
-import edu.stanford.spezi.ui.StringResource
+import com.engagehf.modules.ui.StringResource
 import io.mockk.coEvery
 import io.mockk.every
 import io.mockk.mockk

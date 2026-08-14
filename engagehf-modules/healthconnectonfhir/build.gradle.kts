@@ -7,8 +7,8 @@
 //
 
 plugins {
-    alias(libs.plugins.spezi.library)
-    alias(libs.plugins.spezi.hilt)
+    alias(libs.plugins.engagehf.library)
+    alias(libs.plugins.engagehf.hilt)
 }
 
 android {

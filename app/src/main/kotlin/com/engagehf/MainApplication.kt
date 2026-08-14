@@ -10,7 +10,7 @@ package com.engagehf
 
 import android.app.Application
 import dagger.hilt.android.HiltAndroidApp
-import edu.stanford.spezi.core.logging.SpeziLogger
+import com.engagehf.modules.core.logging.SpeziLogger
 
 @HiltAndroidApp
 class MainApplication : Application() {

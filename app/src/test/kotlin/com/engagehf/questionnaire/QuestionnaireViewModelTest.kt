@@ -19,7 +19,7 @@ import com.engagehf.modules.testing.coVerifyNever
 import com.engagehf.modules.testing.runTestUnconfined
 import com.engagehf.modules.testing.verifyNever
 import com.engagehf.modules.utils.MessageNotifier
-import edu.stanford.spezi.ui.StringResource
+import com.engagehf.modules.ui.StringResource
 import io.mockk.Runs
 import io.mockk.coEvery
 import io.mockk.coVerify

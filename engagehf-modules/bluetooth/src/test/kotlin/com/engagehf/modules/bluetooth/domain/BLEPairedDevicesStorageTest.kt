@@ -15,7 +15,7 @@ import com.engagehf.modules.bluetooth.model.BLEDevice
 import com.engagehf.modules.testing.SpeziTestScope
 import com.engagehf.modules.testing.runTestUnconfined
 import com.engagehf.modules.utils.TimeProvider
-import edu.stanford.spezi.storage.credential.InMemoryKeyValueStorage
+import com.engagehf.modules.storage.credential.InMemoryKeyValueStorage
 import io.mockk.every
 import io.mockk.mockk
 import io.mockk.verify

@@ -14,8 +14,8 @@ import com.google.i18n.phonenumbers.PhoneNumberUtil
 import dagger.hilt.android.qualifiers.ApplicationContext
 import com.engagehf.R
 import com.engagehf.modules.account.manager.UserSessionManager
-import edu.stanford.spezi.core.coroutines.Dispatching
-import edu.stanford.spezi.core.logging.speziLogger
+import com.engagehf.modules.core.coroutines.Dispatching
+import com.engagehf.modules.core.logging.speziLogger
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.tasks.await
 import kotlinx.coroutines.withContext

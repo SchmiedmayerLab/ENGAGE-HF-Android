@@ -17,13 +17,13 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.style.TextOverflow
-import edu.stanford.spezi.ui.ComposableContent
-import edu.stanford.spezi.ui.noRippleClickable
-import edu.stanford.spezi.ui.theme.Colors
-import edu.stanford.spezi.ui.theme.Spacings
-import edu.stanford.spezi.ui.theme.SpeziTheme
-import edu.stanford.spezi.ui.theme.TextStyles
-import edu.stanford.spezi.ui.theme.ThemePreviews
+import com.engagehf.modules.ui.ComposableContent
+import com.engagehf.modules.ui.noRippleClickable
+import com.engagehf.modules.ui.theme.Colors
+import com.engagehf.modules.ui.theme.Spacings
+import com.engagehf.modules.ui.theme.SpeziTheme
+import com.engagehf.modules.ui.theme.TextStyles
+import com.engagehf.modules.ui.theme.ThemePreviews
 
 data class CountryCodeUiModel(
     val emojiFlag: String,

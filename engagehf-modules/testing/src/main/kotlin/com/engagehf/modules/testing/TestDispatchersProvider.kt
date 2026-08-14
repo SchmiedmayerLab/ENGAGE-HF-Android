@@ -8,7 +8,7 @@
 
 package com.engagehf.modules.testing
 
-import edu.stanford.spezi.core.coroutines.DispatchersProvider
+import com.engagehf.modules.core.coroutines.DispatchersProvider
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.test.UnconfinedTestDispatcher
 

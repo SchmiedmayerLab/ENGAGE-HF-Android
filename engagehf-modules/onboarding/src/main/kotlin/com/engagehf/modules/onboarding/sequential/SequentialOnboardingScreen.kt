@@ -34,14 +34,14 @@ import androidx.compose.ui.tooling.preview.PreviewParameterProvider
 import androidx.hilt.navigation.compose.hiltViewModel
 import com.engagehf.modules.onboarding.sequential.components.OnboardingViewPage
 import com.engagehf.modules.onboarding.sequential.components.PageIndicator
-import edu.stanford.spezi.ui.testIdentifier
-import edu.stanford.spezi.ui.theme.Colors.onPrimary
-import edu.stanford.spezi.ui.theme.Colors.onSecondary
-import edu.stanford.spezi.ui.theme.Colors.onTertiary
-import edu.stanford.spezi.ui.theme.Colors.primary
-import edu.stanford.spezi.ui.theme.Colors.secondary
-import edu.stanford.spezi.ui.theme.Colors.tertiary
-import edu.stanford.spezi.ui.theme.Spacings
+import com.engagehf.modules.ui.testIdentifier
+import com.engagehf.modules.ui.theme.Colors.onPrimary
+import com.engagehf.modules.ui.theme.Colors.onSecondary
+import com.engagehf.modules.ui.theme.Colors.onTertiary
+import com.engagehf.modules.ui.theme.Colors.primary
+import com.engagehf.modules.ui.theme.Colors.secondary
+import com.engagehf.modules.ui.theme.Colors.tertiary
+import com.engagehf.modules.ui.theme.Spacings
 
 /**
  * The screen that displays the sequential onboarding steps.

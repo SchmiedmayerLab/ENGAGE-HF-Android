@@ -56,11 +56,11 @@ import com.engagehf.health.AggregatedHealthData
 import com.engagehf.health.AverageHealthData
 import com.engagehf.health.HealthUiData
 import com.engagehf.health.HealthUiStateMapper.Companion.ADAPTIVE_Y_VALUES_FRACTION
-import edu.stanford.spezi.ui.theme.Colors.onTertiary
-import edu.stanford.spezi.ui.theme.Colors.primary
-import edu.stanford.spezi.ui.theme.Colors.secondary
-import edu.stanford.spezi.ui.theme.Colors.tertiary
-import edu.stanford.spezi.ui.theme.Spacings
+import com.engagehf.modules.ui.theme.Colors.onTertiary
+import com.engagehf.modules.ui.theme.Colors.primary
+import com.engagehf.modules.ui.theme.Colors.secondary
+import com.engagehf.modules.ui.theme.Colors.tertiary
+import com.engagehf.modules.ui.theme.Spacings
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 

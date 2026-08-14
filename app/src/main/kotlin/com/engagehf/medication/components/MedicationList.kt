@@ -20,8 +20,8 @@ import com.engagehf.medication.ui.MedicationCardUiModel
 import com.engagehf.medication.ui.MedicationUiState
 import com.engagehf.medication.ui.MedicationViewModel
 import com.engagehf.medication.ui.Medications
-import edu.stanford.spezi.ui.theme.SpeziTheme
-import edu.stanford.spezi.ui.theme.ThemePreviews
+import com.engagehf.modules.ui.theme.SpeziTheme
+import com.engagehf.modules.ui.theme.ThemePreviews
 
 @Composable
 fun MedicationList(

@@ -19,7 +19,7 @@ import com.google.common.truth.Truth.assertThat
 import com.engagehf.modules.testing.SpeziTestScope
 import com.engagehf.modules.testing.runTestUnconfined
 import com.engagehf.modules.testing.verifyNever
-import edu.stanford.spezi.foundation.UUID
+import com.engagehf.modules.foundation.UUID
 import io.mockk.Called
 import io.mockk.Runs
 import io.mockk.every

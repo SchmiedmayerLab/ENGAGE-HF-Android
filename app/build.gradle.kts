@@ -7,11 +7,11 @@
 //
 
 plugins {
-    alias(libs.plugins.spezi.application)
-    alias(libs.plugins.spezi.compose)
-    alias(libs.plugins.spezi.hilt)
-    alias(libs.plugins.spezi.desugaring)
-    alias(libs.plugins.spezi.serialization)
+    alias(libs.plugins.engagehf.application)
+    alias(libs.plugins.engagehf.compose)
+    alias(libs.plugins.engagehf.hilt)
+    alias(libs.plugins.engagehf.desugaring)
+    alias(libs.plugins.engagehf.serialization)
     alias(libs.plugins.kotlin.parcelize)
     alias(libs.plugins.google.gms.google.services)
 }
@@ -62,15 +62,15 @@ dependencies {
     implementation(project(":engagehf-modules:notification"))
     implementation(project(":engagehf-modules:onboarding"))
 
-    implementation(project(":spezi:contact"))
-    implementation(project(":spezi:foundation"))
-    implementation(project(":spezi:core"))
-    implementation(project(":spezi:core-coroutines"))
-    implementation(project(":spezi:core-logging"))
-    implementation(project(":spezi:ui"))
+    implementation(project(":engagehf-modules:contact"))
+    implementation(project(":engagehf-modules:foundation"))
+    implementation(project(":engagehf-modules:core"))
+    implementation(project(":engagehf-modules:core-coroutines"))
+    implementation(project(":engagehf-modules:core-logging"))
+    implementation(project(":engagehf-modules:ui"))
 
-    implementation(project(":spezi:ui-personalinfo"))
-    implementation(project(":spezi:questionnaire"))
+    implementation(project(":engagehf-modules:ui-personalinfo"))
+    implementation(project(":engagehf-modules:questionnaire"))
 
     implementation(libs.firebase.firestore.ktx)
     implementation(libs.firebase.functions.ktx)
@@ -91,6 +91,6 @@ dependencies {
     implementation(libs.googlecode.phonenumber)
 
     androidTestImplementation(project(":engagehf-modules:testing"))
-    implementation(project(":spezi:testing-ui"))
-    androidTestImplementation(project(":spezi:testing-ui"))
+    implementation(project(":engagehf-modules:testing-ui"))
+    androidTestImplementation(project(":engagehf-modules:testing-ui"))
 }

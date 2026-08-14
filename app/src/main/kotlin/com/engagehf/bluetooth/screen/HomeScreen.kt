@@ -53,18 +53,18 @@ import com.engagehf.bluetooth.data.models.UiState
 import com.engagehf.bluetooth.data.models.VitalDisplayData
 import com.engagehf.messages.MessageAction
 import com.engagehf.messages.MessageItem
-import edu.stanford.spezi.ui.AsyncTextButton
-import edu.stanford.spezi.ui.DefaultElevatedCard
-import edu.stanford.spezi.ui.LifecycleEvent
-import edu.stanford.spezi.ui.PermissionRequester
-import edu.stanford.spezi.ui.StringResource
-import edu.stanford.spezi.ui.VerticalSpacer
-import edu.stanford.spezi.ui.testIdentifier
-import edu.stanford.spezi.ui.theme.Colors
-import edu.stanford.spezi.ui.theme.Spacings
-import edu.stanford.spezi.ui.theme.SpeziTheme
-import edu.stanford.spezi.ui.theme.TextStyles
-import edu.stanford.spezi.ui.theme.ThemePreviews
+import com.engagehf.modules.ui.AsyncTextButton
+import com.engagehf.modules.ui.DefaultElevatedCard
+import com.engagehf.modules.ui.LifecycleEvent
+import com.engagehf.modules.ui.PermissionRequester
+import com.engagehf.modules.ui.StringResource
+import com.engagehf.modules.ui.VerticalSpacer
+import com.engagehf.modules.ui.testIdentifier
+import com.engagehf.modules.ui.theme.Colors
+import com.engagehf.modules.ui.theme.Spacings
+import com.engagehf.modules.ui.theme.SpeziTheme
+import com.engagehf.modules.ui.theme.TextStyles
+import com.engagehf.modules.ui.theme.ThemePreviews
 
 @Composable
 fun HomeScreen() {

@@ -33,16 +33,16 @@ import androidx.compose.ui.tooling.preview.PreviewParameter
 import androidx.compose.ui.tooling.preview.PreviewParameterProvider
 import androidx.hilt.navigation.compose.hiltViewModel
 import com.engagehf.modules.onboarding.R
-import edu.stanford.spezi.ui.testIdentifier
-import edu.stanford.spezi.ui.theme.Colors.primary
-import edu.stanford.spezi.ui.theme.Sizes
-import edu.stanford.spezi.ui.theme.Spacings
-import edu.stanford.spezi.ui.theme.SpeziTheme
-import edu.stanford.spezi.ui.theme.TextStyles.bodyLarge
-import edu.stanford.spezi.ui.theme.TextStyles.bodyMedium
-import edu.stanford.spezi.ui.theme.TextStyles.titleLarge
-import edu.stanford.spezi.ui.theme.TextStyles.titleSmall
-import edu.stanford.spezi.ui.theme.ThemePreviews
+import com.engagehf.modules.ui.testIdentifier
+import com.engagehf.modules.ui.theme.Colors.primary
+import com.engagehf.modules.ui.theme.Sizes
+import com.engagehf.modules.ui.theme.Spacings
+import com.engagehf.modules.ui.theme.SpeziTheme
+import com.engagehf.modules.ui.theme.TextStyles.bodyLarge
+import com.engagehf.modules.ui.theme.TextStyles.bodyMedium
+import com.engagehf.modules.ui.theme.TextStyles.titleLarge
+import com.engagehf.modules.ui.theme.TextStyles.titleSmall
+import com.engagehf.modules.ui.theme.ThemePreviews
 
 /**
  * The onboarding screen.

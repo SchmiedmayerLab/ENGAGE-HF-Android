@@ -54,9 +54,9 @@ import com.engagehf.onboarding.OnboardingScreen
 import com.engagehf.phonenumber.PhoneNumberSettingsNavigationEvent
 import com.engagehf.phonenumber.PhoneNumberSettingsScreen
 import com.engagehf.questionnaire.QuestionnaireScreen
-import edu.stanford.spezi.core.coroutines.Dispatching
-import edu.stanford.spezi.ui.theme.Sizes
-import edu.stanford.spezi.ui.theme.SpeziTheme
+import com.engagehf.modules.core.coroutines.Dispatching
+import com.engagehf.modules.ui.theme.Sizes
+import com.engagehf.modules.ui.theme.SpeziTheme
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.launch
 import javax.inject.Inject

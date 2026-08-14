@@ -21,7 +21,7 @@ import com.engagehf.modules.bluetooth.model.BLEServiceEvent
 import com.engagehf.modules.bluetooth.model.BLEServiceState
 import com.engagehf.modules.testing.SpeziTestScope
 import com.engagehf.modules.testing.runTestUnconfined
-import edu.stanford.spezi.foundation.UUID
+import com.engagehf.modules.foundation.UUID
 import io.mockk.coEvery
 import io.mockk.every
 import io.mockk.mockk

@@ -22,9 +22,9 @@ import com.engagehf.modules.notification.NotificationPermissions
 import com.engagehf.modules.notification.R
 import com.engagehf.modules.notification.fcm.DeviceRegistrationService
 import com.engagehf.modules.utils.MessageNotifier
-import edu.stanford.spezi.core.logging.speziLogger
-import edu.stanford.spezi.ui.PendingActions
-import edu.stanford.spezi.ui.StringResource
+import com.engagehf.modules.core.logging.speziLogger
+import com.engagehf.modules.ui.PendingActions
+import com.engagehf.modules.ui.StringResource
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.update

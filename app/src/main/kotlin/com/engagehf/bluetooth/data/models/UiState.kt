@@ -10,7 +10,7 @@ package com.engagehf.bluetooth.data.models
 
 import com.engagehf.R
 import com.engagehf.messages.MessageAction
-import edu.stanford.spezi.ui.StringResource
+import com.engagehf.modules.ui.StringResource
 import com.engagehf.modules.design.R as DesignR
 
 data class UiState(

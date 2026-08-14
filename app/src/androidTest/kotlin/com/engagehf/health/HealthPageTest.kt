@@ -14,7 +14,7 @@ import androidx.health.connect.client.records.WeightRecord
 import androidx.health.connect.client.units.Mass
 import com.engagehf.modules.healthconnectonfhir.Metadata
 import com.engagehf.simulator.HealthPageSimulator
-import edu.stanford.spezi.ui.StringResource
+import com.engagehf.modules.ui.StringResource
 import org.junit.Rule
 import org.junit.Test
 import java.time.ZonedDateTime

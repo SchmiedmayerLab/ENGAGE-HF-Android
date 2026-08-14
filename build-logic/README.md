@@ -33,8 +33,8 @@ To apply a convention plugin, add the following to your `build.gradle.kts`:
 
 ```kotlin
 plugins {
-  alias(libs.plugins.spezi.application)
-  alias(libs.plugins.spezi.compose)
+  alias(libs.plugins.engagehf.application)
+  alias(libs.plugins.engagehf.compose)
 }
 ```
 

@@ -8,7 +8,7 @@
 
 package com.engagehf.modules.account
 
-import edu.stanford.spezi.core.coroutines.Dispatching
+import com.engagehf.modules.core.coroutines.Dispatching
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.flow.MutableSharedFlow
 import kotlinx.coroutines.flow.SharedFlow

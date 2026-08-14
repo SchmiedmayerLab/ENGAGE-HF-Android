@@ -73,13 +73,13 @@ import com.patrykandpatrick.vico.core.common.component.TextComponent
 import com.patrykandpatrick.vico.core.common.shape.Shape
 import com.engagehf.R
 import com.engagehf.health.HealthTableItem
-import edu.stanford.spezi.ui.CenteredBoxContent
-import edu.stanford.spezi.ui.VerticalSpacer
-import edu.stanford.spezi.ui.theme.Colors.primary
-import edu.stanford.spezi.ui.theme.Colors.secondary
-import edu.stanford.spezi.ui.theme.Sizes
-import edu.stanford.spezi.ui.theme.Spacings
-import edu.stanford.spezi.ui.theme.TextStyles
+import com.engagehf.modules.ui.CenteredBoxContent
+import com.engagehf.modules.ui.VerticalSpacer
+import com.engagehf.modules.ui.theme.Colors.primary
+import com.engagehf.modules.ui.theme.Colors.secondary
+import com.engagehf.modules.ui.theme.Sizes
+import com.engagehf.modules.ui.theme.Spacings
+import com.engagehf.modules.ui.theme.TextStyles
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 
