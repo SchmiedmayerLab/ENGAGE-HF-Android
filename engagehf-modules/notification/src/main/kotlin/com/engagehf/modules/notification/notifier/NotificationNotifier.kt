@@ -22,7 +22,7 @@ import androidx.core.content.PermissionChecker
 import dagger.hilt.android.qualifiers.ApplicationContext
 import com.engagehf.modules.notification.R
 import com.engagehf.modules.notification.notifier.FirebaseMessage.Companion.FIREBASE_MESSAGE_KEY
-import com.engagehf.modules.core.logging.speziLogger
+import com.engagehf.modules.core.logging.engageLogger
 import javax.inject.Inject
 
 /**
@@ -33,7 +33,7 @@ internal class NotificationNotifier @Inject constructor(
     @Notifications.TargetActivity private val componentName: ComponentName,
     private val notificationManagerCompat: NotificationManagerCompat,
 ) {
-    private val logger by speziLogger()
+    private val logger by engageLogger()
 
     fun sendNotification(firebaseMessage: FirebaseMessage): Unit = with(context) {
         runCatching {
@@ -56,7 +56,7 @@ internal class NotificationNotifier @Inject constructor(
     private fun createMessageNotification(
         firebaseMessage: FirebaseMessage,
     ): Notification {
-        return NotificationCompat.Builder(context, SPEZI_MESSAGE_NOTIFICATION_CHANNEL_ID)
+        return NotificationCompat.Builder(context, MESSAGE_NOTIFICATION_CHANNEL_ID)
             .setPriority(NotificationCompat.PRIORITY_DEFAULT)
             .setSmallIcon(com.engagehf.modules.design.R.drawable.ic_info)
             .setContentTitle(firebaseMessage.title)
@@ -75,7 +75,7 @@ internal class NotificationNotifier @Inject constructor(
         componentName: ComponentName,
     ): PendingIntent? = PendingIntent.getActivity(
         context,
-        SPEZI_MESSAGE_NOTIFICATION_REQUEST_CODE,
+        MESSAGE_NOTIFICATION_REQUEST_CODE,
         Intent()
             .setComponent(componentName)
             .setAction(Intent.ACTION_VIEW)
@@ -85,17 +85,20 @@ internal class NotificationNotifier @Inject constructor(
 
     private fun createNotificationChannel() {
         val channel = NotificationChannel(
-            SPEZI_MESSAGE_NOTIFICATION_CHANNEL_ID,
+            MESSAGE_NOTIFICATION_CHANNEL_ID,
             context.getString(R.string.notification_message_notification_channel_name),
             NotificationManager.IMPORTANCE_DEFAULT,
         ).apply {
             description = context.getString(R.string.notification_message_notification_channel_description)
         }
         notificationManagerCompat.createNotificationChannel(channel)
+        // Installs from before the com.engagehf rename registered the channel under the old id.
+        notificationManagerCompat.deleteNotificationChannel(LEGACY_MESSAGE_NOTIFICATION_CHANNEL_ID)
     }
 
     companion object {
-        const val SPEZI_MESSAGE_NOTIFICATION_CHANNEL_ID = "SPEZI_MESSAGE_NOTIFICATION_CHANNEL"
-        const val SPEZI_MESSAGE_NOTIFICATION_REQUEST_CODE = 0
+        const val MESSAGE_NOTIFICATION_CHANNEL_ID = "ENGAGE_MESSAGE_NOTIFICATION_CHANNEL"
+        const val MESSAGE_NOTIFICATION_REQUEST_CODE = 0
+        private const val LEGACY_MESSAGE_NOTIFICATION_CHANNEL_ID = "SPEZI_MESSAGE_NOTIFICATION_CHANNEL"
     }
 }

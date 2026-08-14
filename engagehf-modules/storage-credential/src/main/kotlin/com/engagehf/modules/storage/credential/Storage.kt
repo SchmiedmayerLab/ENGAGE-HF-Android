@@ -21,6 +21,9 @@ interface Storage {
     annotation class Unencrypted
 
     companion object {
-        internal const val STORAGE_FILE_PREFIX = "edu.stanford.spezi.storage."
+        internal const val STORAGE_FILE_PREFIX = "com.engagehf.modules.storage."
+
+        /// Prefix installs from before the com.engagehf rename used; read only by the migration.
+        internal const val LEGACY_STORAGE_FILE_PREFIX = "edu.stanford.spezi.storage."
     }
 }

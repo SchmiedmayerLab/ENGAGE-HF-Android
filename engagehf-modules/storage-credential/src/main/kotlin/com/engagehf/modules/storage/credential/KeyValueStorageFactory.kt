@@ -10,10 +10,11 @@ package com.engagehf.modules.storage.credential
 
 import android.content.Context
 import android.content.SharedPreferences
+import java.io.File
 import androidx.security.crypto.EncryptedSharedPreferences
 import androidx.security.crypto.MasterKey
 import dagger.hilt.android.qualifiers.ApplicationContext
-import com.engagehf.modules.core.logging.speziLogger
+import com.engagehf.modules.core.logging.engageLogger
 import javax.inject.Inject
 import javax.inject.Singleton
 
@@ -29,7 +30,7 @@ internal class KeyValueStorageFactoryImpl @Inject constructor(
     private val storageFactory: KeyValueStorageImpl.Factory,
     @ApplicationContext private val context: Context,
 ) : KeyValueStorageFactory {
-    private val logger by speziLogger()
+    private val logger by engageLogger()
 
     private val masterKey: MasterKey by lazy {
         MasterKey.Builder(context)
@@ -55,8 +56,41 @@ internal class KeyValueStorageFactoryImpl @Inject constructor(
                     context.deleteSharedPreferences(fileName)
                     createEncryptedStorage(fileName = fileName).getOrThrow()
                 }
+            }.also { migrateLegacyStorage(fileName = fileName, type = type, target = it) }
+        }
+    }
+
+    // Installs from before the com.engagehf rename keep their entries under the old file name.
+    private fun migrateLegacyStorage(
+        fileName: String,
+        type: KeyValueStorageType,
+        target: SharedPreferences,
+    ) = runCatching {
+        if (!fileName.startsWith(Storage.STORAGE_FILE_PREFIX)) return@runCatching
+        val legacyFileName =
+            Storage.LEGACY_STORAGE_FILE_PREFIX + fileName.removePrefix(Storage.STORAGE_FILE_PREFIX)
+        val legacyFile = File(File(context.dataDir, "shared_prefs"), "$legacyFileName.xml")
+        if (!legacyFile.exists()) return@runCatching
+        val legacy = when (type) {
+            KeyValueStorageType.UNENCRYPTED -> createUnencryptedStorage(fileName = legacyFileName)
+            KeyValueStorageType.ENCRYPTED -> createEncryptedStorage(fileName = legacyFileName).getOrThrow()
+        }
+        val editor = target.edit()
+        legacy.all.forEach { (key, value) ->
+            when (value) {
+                is Boolean -> editor.putBoolean(key, value)
+                is Float -> editor.putFloat(key, value)
+                is Int -> editor.putInt(key, value)
+                is Long -> editor.putLong(key, value)
+                is String -> editor.putString(key, value)
+                is Set<*> -> @Suppress("UNCHECKED_CAST") editor.putStringSet(key, value as Set<String>)
             }
         }
+        editor.apply()
+        context.deleteSharedPreferences(legacyFileName)
+        logger.i { "Migrated ${legacy.all.size} entries from $legacyFileName" }
+    }.onFailure {
+        logger.e(it) { "Failed to migrate legacy storage for $fileName" }
     }
 
     private fun createUnencryptedStorage(fileName: String) = context.getSharedPreferences(

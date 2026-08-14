@@ -13,7 +13,7 @@ import dagger.hilt.android.qualifiers.ApplicationContext
 import com.engagehf.modules.core.DefaultInitializer
 import com.engagehf.modules.core.Module
 import com.engagehf.modules.core.coroutines.Dispatching
-import com.engagehf.modules.core.logging.speziLogger
+import com.engagehf.modules.core.logging.engageLogger
 import com.engagehf.modules.storage.local.LocalStorageSetting.Encrypted
 import com.engagehf.modules.storage.local.LocalStorageSetting.EncryptedUsingKeyStore
 import com.engagehf.modules.storage.local.LocalStorageSetting.Unencrypted
@@ -77,7 +77,7 @@ internal class LocalStorageImpl @Inject constructor(
     private val keyStorage: KeyStorage,
 ) : LocalStorage {
 
-    private val logger by speziLogger()
+    private val logger by engageLogger()
 
     override suspend fun <T : Any> store(
         key: String,
@@ -154,7 +154,11 @@ internal class LocalStorageImpl @Inject constructor(
     private fun file(key: String): File {
         val directory = File(context.filesDir, "${STORAGE_FILE_PREFIX}LocalStorage")
         if (!directory.exists()) {
-            directory.mkdirs()
+            // Installs from before the com.engagehf rename keep their files under the old prefix.
+            val legacyDirectory = File(context.filesDir, "${LEGACY_STORAGE_FILE_PREFIX}LocalStorage")
+            if (!legacyDirectory.exists() || !legacyDirectory.renameTo(directory)) {
+                directory.mkdirs()
+            }
         }
         return File(directory, "$key.localstorage")
     }
@@ -182,6 +186,7 @@ internal class LocalStorageImpl @Inject constructor(
 
     private companion object {
         const val ANDROID_KEYSTORE_TAG = "LocalStorageTag"
-        const val STORAGE_FILE_PREFIX = "edu.stanford.spezi.storage."
+        const val STORAGE_FILE_PREFIX = "com.engagehf.modules.storage."
+        const val LEGACY_STORAGE_FILE_PREFIX = "edu.stanford.spezi.storage."
     }
 }
