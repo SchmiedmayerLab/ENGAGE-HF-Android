@@ -1,6 +1,6 @@
 # Module navigation
 
-This module provides a structured approach to handling navigation events in the Spezi Framework. The
+This module provides a structured approach to handling navigation events in the ENGAGE-HF Android app. The
 module defines navigation events and a navigator interface to manage navigation within the app.
 
 ## Components
@@ -14,8 +14,8 @@ their own navigation events to custom routes by implementing this interface.
 ### CustomNavigationEvent
 
 For
-example [`AccountNavigationEvent`](../../engagehf-modules/account/src/main/kotlin/edu/stanford/spezi/module/account/AccountNavigationEvent.kt)
-is a sealed class that extends NavigationEvent. Each Spezi
+example [`AccountNavigationEvent`](../../engagehf-modules/account/src/main/kotlin/com/engagehf/modules/module/account/AccountNavigationEvent.kt)
+is a sealed class that extends NavigationEvent. Each ENGAGE-HF
 Module provides a implementation of `NavigationEvent` so the user has access to all public available
 navigation destinations.
 
@@ -52,7 +52,7 @@ sealed class AccountNavigationEvent : NavigationEvent {
 }
 ```
 
-You can also use all the public available navigation events from the Spezi Modules.
+You can also use all the public available navigation events from the ENGAGE-HF modules.
 
 #### 2. NavGraph
 

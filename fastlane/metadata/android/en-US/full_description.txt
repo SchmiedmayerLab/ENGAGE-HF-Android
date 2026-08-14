@@ -1,6 +1,6 @@
 Disclaimer: This app is only for participants in the ENGAGE-HF research study.Disclaimer: This app is only for participants in the ENGAGE-HF research study.
 
-Welcome to ENGAGE-HF, your personalized heart health companion! Developed by Stanford University using the Stanford Spezi framework in collaboration with the DOT HF network, funded by the American Heart Association Health Tech SFRN, this app is designed to make managing heart failure easier and more effective.
+Welcome to ENGAGE-HF, your personalized heart health companion! Developed by Stanford University in collaboration with the DOT HF network, funded by the American Heart Association Health Tech SFRN, this app is designed to make managing heart failure easier and more effective.
 
 With ENGAGE-HF, you have the power to optimize your heart failure treatment plan and improve your overall well-being. Our app simplifies the process of getting the best combination of medicines to help you live longer and healthier. By tracking your vitals and health status over time, you'll be more engaged in your heart failure care, allowing for personalized interventions and better health outcomes.
 
